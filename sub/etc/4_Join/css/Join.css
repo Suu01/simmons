@@ -1,0 +1,587 @@
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #82ca9c;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+article {
+  display: block;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+body, button, input {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+main,
+aside,
+article,
+footer {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li {
+    display: block;
+  }
+}
+
+header nav ul.gnb li:first-child {
+  display: block;
+}
+
+header nav ul.gnb li:first-child img {
+  height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li:nth-child(2) a span {
+    margin-top: 0;
+  }
+}
+
+header nav ul.gnb li a img {
+  width: 25px;
+  height: auto;
+}
+
+header nav ul.gnb li a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #82ca9c;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu {
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu li {
+    display: block;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+
+main {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+main nav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    display: block;
+  }
+}
+
+main nav .wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+main nav .wrapper .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 30px;
+}
+
+main nav .wrapper .gnb li {
+  display: inline-block;
+  padding-top: 112px;
+  padding-right: 58px;
+}
+
+main nav .wrapper .gnb li a {
+  font-size: 1em;
+  font-family: "SCoreDream";
+}
+
+main .title-join {
+  position: relative;
+  margin: 0 0;
+  padding: 0 0;
+  margin-top: 36px;
+  margin-left: 34px;
+  padding-top: 33px;
+  font-size: 3em;
+}
+
+main .title-join .title {
+  margin-top: 55px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-join .title {
+    display: block;
+    float: left;
+    margin-top: 10px;
+  }
+}
+
+main .title-join .title .title-fir {
+  font-size: 1.5em;
+  font-family: "SCoreDream";
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-join .title .title-fir {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-left: -283px;
+    margin-top: -90px;
+    padding-top: 5px;
+    font-size: 90px;
+  }
+}
+
+main .title-join .title .title-sub {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-join .title .title-sub {
+    display: block;
+    width: 1024px;
+    font-size: 22px;
+    font-family: "SCoreDream";
+    margin-top: -30px;
+    margin-left: -320px;
+    padding-left: 279px;
+    padding-top: 7px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-join .title .title-sub {
+    display: block;
+    width: 1024px;
+    font-size: 22px;
+    font-family: "SCoreDream";
+    margin-top: -30px;
+    margin-left: -320px;
+    padding-left: 279px;
+    padding-top: 7px;
+  }
+}
+
+main .title-join .form_area {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+main .title-join .form_area .wrap_email {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+main .title-join .form_area .wrap_email .join_text input {
+  width: 427px;
+  height: 46px;
+  border-radius: 10px;
+}
+
+main .title-join .form_area .wrap_pw {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+main .title-join .form_area .wrap_pw .inp_text input {
+  width: 427px;
+  height: 46px;
+  border-radius: 10px;
+}
+
+main .title-join .form_area .wrap_repw {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+main .title-join .form_area .wrap_repw input {
+  width: 427px;
+  height: 46px;
+  border-radius: 10px;
+}
+
+main .title-join .form_area .name-gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .title-join .form_area .name-gender .wrap_name {
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-left: 7px;
+}
+
+main .title-join .form_area .name-gender .wrap_name .name_lab {
+  font-size: 17px;
+  padding-left: 9px;
+  padding-top: 2px;
+  margin-top: 10px;
+}
+
+main .title-join .form_area .name-gender .wrap_name .name_text input {
+  width: 227px;
+  height: 46px;
+  border-radius: 10px;
+}
+
+main .title-join .form_area .name-gender .wrap_name .name_text #join_name {
+  padding-top: 35px;
+  background-color: antiquewhite;
+}
+
+main .title-join .form_area .name-gender .wrap_gender {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+main .title-join .form_area .name-gender .wrap_gender .join_gender {
+  font-size: 17px;
+  width: 47px;
+  font-size: 17px;
+  padding-left: 9px;
+  padding-top: 2px;
+  margin-top: 10px;
+}
+
+main .title-join .form_area .info#info_birth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: beige;
+  font-size: 17px;
+}
+
+main .title-join .form_area .info#info_birth select {
+  margin-left: 7px;
+}
+
+main .title-join .form_area .info#info_birth select:first-child {
+  margin-left: 0px;
+}
+
+main .title-join .form_area .info#info_birth select::-webkit-scrollbar {
+  width: 10px;
+}
+
+main .title-join .form_area .info#info_birth select::-webkit-scrollbar-thumb {
+  background-color: #b6b6b6;
+  border-radius: 3px;
+}
+
+main .title-join .form_area .info#info_birth select::-webkit-scrollbar-track {
+  background-color: #ebe9e9;
+  border-radius: 6px;
+}
+
+main .title-join .form_area .wrap_phonenum {
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-top: 5px;
+}
+
+main .title-join .form_area .wrap_phonenum .join_pho label {
+  font-size: 17px;
+}
+
+main .title-join .form_area .wrap_phonenum .join_pho input {
+  width: 427px;
+  height: 46px;
+  border-radius: 10px;
+}
+
+main .title-join .form_area .wrap_join_term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 17px;
+}
+
+main .title-join .form_area .wrap_join_term .all_terms ul li {
+  font-size: 17px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .title-join .form_button {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 78%;
+  padding-top: 38px;
+}
+
+main .title-join .form_button button .submit {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: block;
+  text-align: center;
+  width: 328px;
+  height: 46px;
+  background-color: #82ca9c;
+  border-radius: 10px;
+  border-color: white;
+  padding-left: 10%;
+  margin-top: 35px;
+  margin-left: -2px;
+  font-size: 25px;
+}
+
+main .title-join .form_button button .submit a {
+  color: #fefefe;
+  font-size: 1em;
+  font-family: "SCoreDream";
+  margin-right: 50px;
+  width: 80%;
+}
+/*# sourceMappingURL=Join.css.map */

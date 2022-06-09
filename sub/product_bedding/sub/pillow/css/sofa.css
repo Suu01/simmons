@@ -1,0 +1,243 @@
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fefefc;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+header,
+nav,
+main,
+section,
+aside,
+article,
+footer {
+  display: block;
+}
+
+body {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 80px;
+    padding-top: 0;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+header h1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+header nav {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li {
+    display: block;
+  }
+}
+
+header nav ul.gnb li:first-child {
+  display: block;
+}
+
+header nav ul.gnb li:first-child img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li:first-child {
+    display: none;
+  }
+}
+
+header nav ul.gnb li a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #82ca9c;
+}
+
+header div.side-menu {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu li {
+    display: block;
+    margin-top: 35px;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 0;
+}
+
+header div.side-menu .s-menu li:first-child a {
+  color: #333333;
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+/*# sourceMappingURL=sofa.css.map */

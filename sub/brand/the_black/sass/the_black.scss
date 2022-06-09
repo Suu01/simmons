@@ -1,0 +1,527 @@
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss";
+
+body {
+    padding-top: 60px;
+
+    @include responsive(tablet-size) {
+        padding-top: 0;
+        padding-left: 70px;
+    }
+
+    @include responsive(pc-size) {
+        padding-left: 80px;
+    }
+}
+
+// header-area
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: $width-wide;
+    height: 60px;
+    padding: 0 15px;
+    border-bottom: 1px solid #333;
+    background-color: $bg-color;
+
+    @include responsive(tablet-size) {
+        width: 70px;
+        height: 100%;
+        flex-direction: column;
+        // align-items: baseline;
+        padding: 60px 0;
+        border-bottom: 0;
+        border-right: 1px solid #333;
+    }
+
+    @include responsive(pc-size) {
+        width: 80px;
+    }
+
+    h1 {
+        // background-color: aqua;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include responsive(tablet-size) {
+            // height: 20%;
+            position: static;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+        }
+
+        // a {
+        //     img {
+        //         @include responsive(pc-size) {
+        //             width: 62px;
+        //             height: 44px;
+        //         }
+        //     }
+        // }
+    }
+
+    nav {
+        // background-color: aquamarine;
+
+        @include responsive(tablet-size) {
+            height: 30%;
+        }
+
+        ul.gnb {
+
+            @include responsive(tablet-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            li {
+                display: none;
+    
+                @include responsive(tablet-size) {
+                    display: block;
+                }
+    
+                &:first-child {
+                    display: block;
+    
+                    @include responsive(tablet-size) {
+                        display: none;
+                    }
+                }
+    
+                &:nth-child(2) {
+                    a {
+                        span {
+                            @include responsive(tablet-size) {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+    
+                a {
+                    img {
+                        width: 25px;
+                        height: auto;
+                    }
+    
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        // margin-top: 70px;
+                        background-color: $point-color;
+                    }
+                }
+            }
+        }
+    }
+
+    div.side-menu {
+        // background-color: pink;
+
+        @include responsive(tablet-size) {
+            height: 20%;
+        }
+
+            .s-menu {
+                
+                @include responsive(tablet-size) {
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                li {
+                    display: none;
+    
+                    @include responsive(tablet-size) {
+                        display: block;
+                    }
+    
+                    &:first-child {
+                        font-size: 18px;
+                        transform: rotate(-90deg);
+                    }
+        
+                    &:last-child {
+                        display: block;
+        
+                        a {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+/////////////////////// header ////////////////////////////
+
+
+main {
+    #head {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url(../images/theblack_bg.png) no-repeat center;
+        background-size: cover;
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            // background-color: pink;
+            line-height: 100vh;
+            vertical-align: center;
+            font: {
+                family: $font;
+                size: 2.5em;
+                weight: 300;
+                style: italic;
+            }
+            color: $bg-color;
+            text-align: center;
+            text-shadow: 1.5px 4px 1.5px #000;
+            letter-spacing: 0.03em;
+            line-height: 1.2em;
+
+            @include responsive(tablet-size) {
+                font: {
+                    size: 4.8em;
+                    weight: 500;
+                }
+                text-shadow: 5px 6px 2px #000;
+                letter-spacing: 0.03em;
+            }
+            @include responsive(pc-size) {
+                font: {
+                    size: 9.4vw;
+                    weight: 600;
+                }
+                text-shadow: 5px 6px 2px #000;
+                letter-spacing: 0.07em;
+                line-height: 18vh;
+            }
+        }
+    }
+/////////////////////// #head ////////////////////////////
+
+    #contents{
+        margin-top: 30px;
+
+        .wrapper {
+            @include wrapper;
+
+            img {
+                width: 100%;
+                height: 50vw;
+
+                @include responsive(tablet-size) {
+                    width: 50%;
+                    height: 20vw;
+                }
+                @include responsive(pc-size) {
+                    height: 18vw;
+                }
+            }
+
+            h2 {
+                @include txt(0.9em, 700);
+                text-align: center;
+                letter-spacing: 0.01em;
+                word-break: keep-all;
+                margin-top: 30px;
+                margin-bottom: 15px;
+
+                @include responsive(tablet-size) {
+                    @include txt(1.2em, 400);
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+                @include responsive(pc-size) {
+                    @include txt(1.5em, 400);
+                    letter-spacing: 0.03em;
+                    margin-bottom: 5px;
+                }
+            }
+
+            p {
+                @include txt(0.73em, 400);
+                text-align: center;
+                letter-spacing: 0.02em;
+                word-break: keep-all;
+                line-height: 1.8em;
+                margin-bottom: 30px;
+
+                @include responsive(tablet-size) {
+                    @include txt(0.75em, 400);
+                    letter-spacing: 0.02em;
+                    line-height: 1.2em;
+                }
+                @include responsive(pc-size) {
+                    @include txt(0.85em, 300);
+                    letter-spacing: 0.01em;
+                }
+            }
+
+            .story, .zoning {
+                @include responsive(tablet-size) {
+                    @include dire;
+                    margin-bottom: 50px;
+                }
+                @include responsive(pc-size) {
+                    margin-bottom: 65px;
+                }
+
+                h2, p {
+                    @include responsive(tablet-size) {
+                        text-align: left;
+                        padding-left: 10%;
+                    }
+                }
+            }
+
+            .advanced, .layering {
+                @include responsive(tablet-size) {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .advanced, .layering > .layering_flex {
+                @include responsive(tablet-size) {
+                    @include dire(row-reverse);
+                }
+                @include responsive(pc-size) {
+                    margin-bottom: 65px;
+                }
+
+                h2, p {
+                    @include responsive(tablet-size) {
+                        width: 100%;
+                        text-align: right;
+                        padding-right: 10%;
+                    }
+                }
+            }
+
+            .story_text, .advanced_text,
+            .zoning_text, .layering_text {
+                @include responsive(tablet-size) {
+                    width: 50%;
+                }
+            }
+
+            .zoning > .zoning_img_00,
+            .zoning > .zoning_img_02,
+            .zoning > .zoning_img_03,
+            .zoning > .zoning_img_04,
+            .zoning > .zoning_img_05 {
+                display: none;
+            }
+
+            .layering {
+                .layering_flex {
+                    @include responsive(tablet-size) {
+                        margin-bottom: 20px;
+                    }
+
+                    @include responsive(pc-size) {
+                        margin-bottom: 35px;
+                    }
+                }
+                .mat {
+                    display: flex;
+                    flex-wrap: nowrap;
+
+                    .mat_img {
+                        height: 5.5em;
+
+                        @include responsive(pc-size) {
+                            width: 13em;
+                            height: 7.5em;
+                        }
+                    }
+
+                    .spring {
+                        width: 100%;
+                        margin-right: 20px;
+
+                        @include responsive(tablet-size) {
+                            @include dire;
+                        }
+
+                        .spring_text {
+                            @include responsive(tablet-size) {
+                                margin-left: 10px;
+                            }
+                            @include responsive(pc-size) {
+                                margin-left: 15px;
+                            }
+
+                            h2 {
+                                margin-top: 15px;
+
+                                @include responsive(tablet-size) {
+                                    @include txt(0.7em, 500);
+                                    text-align: left;
+                                    letter-spacing: 0.02em;
+                                    line-height: 1.2em;
+                                    margin-bottom: 10px;
+                                }
+                                @include responsive(pc-size) {
+                                    @include txt(0.9em, 500);
+                                    margin-bottom: 10px;
+                                }
+                            }
+
+                            p {
+                                @include responsive(tablet-size) {
+                                    @include txt(0.65em, 400);
+                                    text-align: left;
+                                    letter-spacing: 0.02em;
+                                    line-height: 1.2em;
+                                    margin-bottom: 15px;
+                                }
+                                @include responsive(pc-size) {
+                                    @include txt(0.83em, 400);
+                                    letter-spacing: 0.03em;
+                                    line-height: 1.3em;
+                                }
+                            }
+                        }
+                    }
+
+                    .friendly {
+                        width: 100%;
+
+                        @include responsive(tablet-size) {
+                            @include dire; 
+                        }
+
+                        .friendly_text {
+                            @include responsive(tablet-size) {
+                                margin-left: 10px;
+                            }
+                            @include responsive(pc-size) {
+                                margin-left: 15px;
+                            }
+
+                            h2 {
+                                margin-top: 15px;
+
+                                @include responsive(tablet-size) {
+                                    @include txt(0.7em, 500);
+                                    text-align: left;
+                                    letter-spacing: 0.02em;
+                                    line-height: 1.2em;
+                                    margin-bottom: 7px;
+                                }
+                                @include responsive(pc-size) {
+                                    @include txt(0.9em, 500);
+                                    margin-bottom: 8px;
+                                }
+                            }
+
+                            p {
+                                @include responsive(tablet-size) {
+                                    @include txt(0.65em, 400);
+                                    text-align: left;
+                                    letter-spacing: 0.02em;
+                                    line-height: 1.2em;
+                                    margin-bottom: 10px;
+                                }
+                                @include responsive(pc-size) {
+                                    @include txt(0.83em, 400);
+                                    letter-spacing: 0.03em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .safety {
+                img {
+                    @include responsive(tablet-size) {
+                        width: 70%;
+                        height: 15em;
+                        margin: 0 auto;
+                    }
+                    @include responsive(pc-size) {
+                        width: 70%;
+                        height: 20em;
+                        margin: 0 auto;
+                    }
+                }
+
+                .safety_text {
+                    @include responsive(tablet-size) {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                    @include responsive(pc-size) {
+                        width: 45%;
+                    }
+
+                    h2 {
+                        @include responsive(tablet-size) {
+                            margin-top: 20px;
+                        }
+                        @include responsive(pc-size) {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .cc_1 {
+                        font-weight: 500;
+
+                        @include responsive(tablet-size) {
+                            @include txt(0.76em, 500);
+                            letter-spacing: 0.02em;
+                            line-height: 1.2em;
+                        }
+                        @include responsive(pc-size) {
+                            @include txt(0.98em, 500);
+                            line-height: 1.8em;
+                        }
+                    }
+
+                    .cc_2, .cc_3 {
+                        @include responsive(tablet-size) {
+                            @include txt(0.69em, 400);
+                            letter-spacing: 0.02em;
+                            line-height: 1.2em;
+                        }
+                        @include responsive(pc-size) {
+                            @include txt(0.83em, 400);
+                            letter-spacing: 0.04em;
+                            line-height: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/////////////////////// main ////////////////////////////

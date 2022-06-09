@@ -1,0 +1,424 @@
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss";
+
+body {
+    @include responsive(pc-size) {
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: $width-wide;
+    height: 60px;
+    padding: 0 15px;
+    border-bottom: 1px solid #333;
+    background-color: $bg-color;
+
+    @include responsive(pc-size) {
+        width: 80px;
+        height: 100%;
+        flex-direction: column;
+        padding: 60px 0;
+        border-bottom: 0;
+        border-right: 1px solid #333;
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include responsive(pc-size) {
+            position: static;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+        }
+    }
+
+    nav {
+        @include responsive(pc-size) {
+            height: 30%;
+        }
+
+        ul.gnb {
+
+            @include responsive(pc-size) {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            li {
+                display: none;
+    
+                @include responsive(pc-size) {
+                    display: block;
+                }
+    
+                &:first-child {
+                    display: block;
+
+                    img {
+                        height: 20px;
+                    }
+    
+                    @include responsive(pc-size) {
+                        display: none;
+                    }
+                }
+    
+                &:nth-child(2) {
+                    a {
+                        span {
+                            @include responsive(pc-size) {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+    
+                a {
+                    img {
+                        width: 25px;
+                        height: auto;
+                    }
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: $point-color;
+                    }
+                }
+            }
+        }
+    }
+
+    div.side-menu {
+        @include responsive(pc-size) {
+            height: 20%;
+        }
+
+            .s-menu {
+                
+                @include responsive(pc-size) {
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                li {
+                    display: none;
+    
+                    @include responsive(pc-size) {
+                        display: block;
+                    }
+    
+                    &:first-child {
+                        font-size: 18px;
+                    }
+        
+                    &:last-child {
+                        display: block;
+        
+                        a {
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+main {
+    width: $width-wide;
+    // text-align: center;
+    // padding: 0 auto;
+
+    @include responsive(tablet-size) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include responsive(pc-size) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    
+    nav {
+        display: none;
+
+        @include responsive(pc-size) {
+            display: block;
+
+        }
+
+        .wrapper {
+            width: 100%;
+
+            @include responsive(pc-size) {
+                width: 1024px;
+                margin: 0 auto;
+            }
+
+            @include responsive(tablet-size) {
+                width: 1024px;
+                margin: 0 auto;
+            }
+
+            .gnb {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                flex-direction: row;
+                margin-left: 30px;
+    
+                li {
+                    display: inline-block;
+                    padding-top: 112px;
+                    padding-right: 58px;
+    
+                    a {
+                        font-size: 1em;
+                        font-family: $main-font;
+                    }
+    
+                }
+            }
+
+        }
+    
+    }
+
+    .title-cart{
+        position: relative;
+        margin: 0 0;
+        padding: 0 20;
+        margin-top: 36px;
+        padding-top: 33px;
+        font-size: 3em;
+
+            .title {
+                margin-top: 35px;
+
+                // padding: 0 auto;
+
+                @include responsive(tablet) {
+                    // display: block;
+                    // padding-left: 397px;
+                    // margin-top: 10px;
+                    
+                    background-color: aquamarine;
+                    
+                } 
+
+                @include responsive(pc-size) {
+                    display: block;
+                    // padding-left: 697px;
+                    margin-top: 10px;
+                }
+
+
+                .title-fir {
+                    font-size: 1.5em;
+                    font-family: $main-font;
+                    font-weight: 500;
+                    // margin: 0 auto;
+                    padding-left: 25px;
+                    margin-top: 30px;
+
+                    @include responsive(tablet) {
+                        padding-left: 120px;
+
+                    } 
+
+                    @include responsive(pc-size) {
+                        display: block;
+                        float: left;
+                        margin: 0 auto;
+                        padding: 0 auto;
+                        margin-left: -283px;
+                        margin-top: -90px;
+                        padding-top: 5px;
+                        font-size: 90px;
+                    }
+                }
+                .title-sub {
+                    display: none;                      
+                    @include responsive(tablet-size) {
+                        display: block;
+                        width: 1024px;
+                        font-size: 22px;
+                        font-family: $main-font;
+                        margin-top: -50px;
+                        margin-left: -420px;
+                        padding-left: 630px;
+                        padding-top: 7px;
+                    }
+
+                    @include responsive(pc-size) {
+                        display: block;
+                        width: 1024px;
+                        font-size: 22px;
+                        font-family: $main-font;
+
+                        padding-left: 430px;
+                        padding-top: 5px;
+                    }
+                }
+            }
+        nav.content-menu {
+            display: block;
+            padding-top: 2px;
+            margin: 0 auto;
+            text-align: center;
+            padding-left: 30px;
+
+            @include responsive(tablet-size) {
+                padding-top: 88px;
+                margin: 0 auto;
+                width: $width-half;
+            }
+
+            @include responsive(pc-size) {
+                padding-top: 88px;
+                margin: 0 auto;
+                width: 50%;
+            }
+
+            ul {
+                display: flex;
+                width: 800px;
+                margin: 32px auto 34px;
+                font-size: 30px;
+                        
+                li {
+                    &:first-child a{
+                        border-right: 0;
+                        border-bottom: 0;
+                        }
+
+                    a {
+                        color: #333333;
+                        width: 200px;
+                        text-align: center;
+                        border: 1px solid #666666;
+                        padding: 10px;
+        
+                        &:hover {
+                            color: $point-color;
+                            border-left: 2px solid $point-color;
+                            border-top: 2px solid $point-color;
+                            border-right: 2px solid $point-color;
+                            font-size: 29px;
+                        }
+                    }
+                }
+            
+            }
+        }
+
+        .notice-content {
+            margin: 0 auto;
+            padding: 0 auto;
+            width: $width-wide;
+            height: 455px;
+            align-items: center;
+            
+            @include responsive(tablet-size) {
+                padding-top: 38px;
+                padding-left: 20px;
+
+                margin: 0 auto;
+                padding: 0 auto;
+                width: 50%;
+            }
+            @include responsive(pc-size) {
+                padding-top: 38px;
+                padding-left: -5px;
+                margin-left: 50px;
+                margin: 0 auto;
+                padding: 0 auto;
+
+            }
+            .notice {
+                align-items: center;
+                padding-left: 21%;
+                margin-top: -45px;
+
+                @include responsive(tablet) {
+                    margin: 0 auto;
+                    background-color: aquamarine;
+                }
+
+                @include responsive(pc-size) {
+                    margin: 0 auto;
+                    padding: 0 auto;
+                }
+            }
+
+            .notice-text {
+                font-size: 23px;
+                color: #666666;
+                text-align: center;
+                margin-top: -55px;
+                padding: 0 auto;
+                margin: 0 auto;
+
+                @include responsive(tablet) {
+                    margin: 0 auto;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                margin: 0 auto;
+                padding: 0 auto;
+                margin-top: 45px;
+                
+                display: block;
+                text-align: center;
+                width: 328px;
+                height: 46px;
+                background-color: $point-color;
+                border-color: #fff;
+                border-radius: 10px;
+                font-size: 17px;
+                
+                a {
+                    
+                    color: #fefefe;
+                    font-size: 1em;
+                    font-family: $main-font;
+                    padding-left: 11px;
+                    margin-right: 50px;
+                    width: 100%;
+                    
+                }
+
+            }
+
+        }
+    }    
+    
+}
+

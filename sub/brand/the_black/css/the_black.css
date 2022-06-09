@@ -1,0 +1,755 @@
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SCoreDream";
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  vertical-align: bottom;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+header,
+nav,
+main,
+section,
+aside,
+article,
+footer {
+  display: block;
+}
+
+body {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 0;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-left: 80px;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 70px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+  }
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb li {
+    display: block;
+  }
+}
+
+header nav ul.gnb li:first-child {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb li:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav ul.gnb li:nth-child(2) a span {
+    margin-top: 0;
+  }
+}
+
+header nav ul.gnb li a img {
+  width: 25px;
+  height: auto;
+}
+
+header nav ul.gnb li a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #82ca9c;
+}
+
+@media screen and (min-width: 768px) {
+  header div.side-menu {
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header div.side-menu .s-menu li {
+    display: block;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+
+main #head {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/theblack_bg.png) no-repeat center;
+  background-size: cover;
+}
+
+main #head h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  line-height: 100vh;
+  vertical-align: center;
+  font-family: "Ramaraja", serif;
+  font-size: 2.5em;
+  font-weight: 300;
+  font-style: italic;
+  color: #fefefc;
+  text-align: center;
+  text-shadow: 1.5px 4px 1.5px #000;
+  letter-spacing: 0.03em;
+  line-height: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+  main #head h1 {
+    font-size: 4.8em;
+    font-weight: 500;
+    text-shadow: 5px 6px 2px #000;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #head h1 {
+    font-size: 9.4vw;
+    font-weight: 600;
+    text-shadow: 5px 6px 2px #000;
+    letter-spacing: 0.07em;
+    line-height: 18vh;
+  }
+}
+
+main #contents {
+  margin-top: 30px;
+}
+
+main #contents .wrapper {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+main #contents .wrapper img {
+  width: 100%;
+  height: 50vw;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper img {
+    width: 50%;
+    height: 20vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper img {
+    height: 18vw;
+  }
+}
+
+main #contents .wrapper h2 {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.01em;
+  word-break: keep-all;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.03em;
+    margin-bottom: 5px;
+  }
+}
+
+main #contents .wrapper p {
+  font-size: 0.73em;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.02em;
+  word-break: keep-all;
+  line-height: 1.8em;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper p {
+    font-size: 0.75em;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper p {
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .story, main #contents .wrapper .zoning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .story, main #contents .wrapper .zoning {
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .story h2, main #contents .wrapper .story p, main #contents .wrapper .zoning h2, main #contents .wrapper .zoning p {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .advanced, main #contents .wrapper .layering {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .advanced, main #contents .wrapper .layering > .layering_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .advanced, main #contents .wrapper .layering > .layering_flex {
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .advanced h2, main #contents .wrapper .advanced p, main #contents .wrapper .layering > .layering_flex h2, main #contents .wrapper .layering > .layering_flex p {
+    width: 100%;
+    text-align: right;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .story_text, main #contents .wrapper .advanced_text,
+  main #contents .wrapper .zoning_text, main #contents .wrapper .layering_text {
+    width: 50%;
+  }
+}
+
+main #contents .wrapper .zoning > .zoning_img_00,
+main #contents .wrapper .zoning > .zoning_img_02,
+main #contents .wrapper .zoning > .zoning_img_03,
+main #contents .wrapper .zoning > .zoning_img_04,
+main #contents .wrapper .zoning > .zoning_img_05 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .layering_flex {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .layering_flex {
+    margin-bottom: 35px;
+  }
+}
+
+main #contents .wrapper .layering .mat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+main #contents .wrapper .layering .mat .mat_img {
+  height: 5.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .mat_img {
+    width: 13em;
+    height: 7.5em;
+  }
+}
+
+main #contents .wrapper .layering .mat .spring {
+  width: 100%;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .spring {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .spring .spring_text {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .spring .spring_text {
+    margin-left: 15px;
+  }
+}
+
+main #contents .wrapper .layering .mat .spring .spring_text h2 {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .spring .spring_text h2 {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .spring .spring_text h2 {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .spring .spring_text p {
+    font-size: 0.65em;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .spring .spring_text p {
+    font-size: 0.83em;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+  }
+}
+
+main #contents .wrapper .layering .mat .friendly {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .friendly {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .friendly .friendly_text {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .friendly .friendly_text {
+    margin-left: 15px;
+  }
+}
+
+main #contents .wrapper .layering .mat .friendly .friendly_text h2 {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .friendly .friendly_text h2 {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .friendly .friendly_text h2 {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .layering .mat .friendly .friendly_text p {
+    font-size: 0.65em;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .layering .mat .friendly .friendly_text p {
+    font-size: 0.83em;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .safety img {
+    width: 70%;
+    height: 15em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .safety img {
+    width: 70%;
+    height: 20em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .safety .safety_text {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .safety .safety_text {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .safety .safety_text h2 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .safety .safety_text h2 {
+    margin-bottom: 20px;
+  }
+}
+
+main #contents .wrapper .safety .safety_text .cc_1 {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .safety .safety_text .cc_1 {
+    font-size: 0.76em;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .safety .safety_text .cc_1 {
+    font-size: 0.98em;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.8em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main #contents .wrapper .safety .safety_text .cc_2, main #contents .wrapper .safety .safety_text .cc_3 {
+    font-size: 0.69em;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.02em;
+    line-height: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main #contents .wrapper .safety .safety_text .cc_2, main #contents .wrapper .safety .safety_text .cc_3 {
+    font-size: 0.83em;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+  }
+}
+/*# sourceMappingURL=the_black.css.map */

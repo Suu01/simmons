@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="./css/Join.css">
+    <!-- <script src=""></script> -->
+
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn"></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><span></span></a></li>
+            </ul>
+        </nav>
+        <div class="side-menu">
+            <ul class="s-menu">
+                <li><a href="#">Login</a></li>
+                <li><a href="#"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon"></a></li>
+            </ul>
+        </div> <!-- side-menu -->
+    </header>
+
+    <main>
+        <nav class="main-menu">            
+            <div class="wrapper">
+                <ul class="gnb">
+                    <li><a href="../../../index.html">HOME</a></li>
+                    <li><a href="../../community/community.html">고객센터</a></li>
+                </ul>
+            </div> <!-- wrapper -->
+        </nav> <!-- main-menu -->
+
+        <div class="title-join">
+            <div class="title">
+                <div class="title-fir">
+                    <p>Join</p>
+                </div>
+
+                <div class="title-sub">
+                    <p>회원가입</p>
+                </div>
+                
+            </div> <!-- title -->
+        
+            <div class="form_area">
+                <div class="wrap_email">
+                    
+                    <div class="join_lab">
+                        <label for="join_id"></label>
+                    </div>
+                    <div class="join_text">
+                        <input type="text" id="join_id" name="cstmid" valid="required" placeholder="   이메일 ">
+                    </div>
+                    <!--
+                        <p class="error-sv">이메일을 입력해주세요</p>
+                    -->
+
+                </div>
+
+                <div class="wrap_pw">
+                    
+                    <div class="inp_text">
+                        <input type="password" id="join_pw" name="passwd" valid="required" placeholder="   비밀번호 ">
+                    </div>
+                    <!--
+                        <p class="error-nml">비밀번호는 영문/숫자/특수문자 조합으로 최소 8자이상 12자 이내로 입력해야 합니다.</p>
+                        <p class="error-sv">비밀번호를 입력하세요</p>
+                    -->
+
+                </div>
+
+                <div class="wrap_repw">
+                    
+                    <div class="inp_text">
+                        <input type="password" id="join_pw_chk" valid="required" placeholder="   비밀번호 재입력 ">
+                    </div>
+                    <!--
+                        <p class="error-nml">비밀번호가 일치하지 않습니다.</p>
+                        <p class="error-sv">비밀번호 재입력을 입력하세요</p>
+                    -->
+
+                </div>
+
+                <div class="name-gender">
+                    
+                    <div class="wrap_name">
+                        
+                        <div class="name_lab">
+                            <label for="join_name">이름</label>
+                        </div>
+                        <div class="name_text">
+                            <input type="text" id="join_name" name="nm" valid="required" placeholder="   이름을(를) 입력하세요 ">
+                        </div>
+    
+                        <!--
+                            <p class="error-sv">이름을(를) 입력하세요</p>
+                        -->
+    
+                    </div>
+    
+    
+    
+                    <div class="wrap_gender">
+                        
+                        <div class="join_gender">
+                            <label for="join_id">성별</label>
+                        </div>
+    
+                        <div class="join_text">
+                            <select name="gender" id="choice" size="1">
+                                <optgroup label="선택">
+                                    <option value="남" selected>남</option>
+                                    <option value="여">여</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="info" id="info_birth"> <!-- 세부항목 수정필요 -->
+                    <span>생년월일</span>
+                    <select class="box" id="birth_year">
+                        <option disabled selected>1990</option>
+                    </select>
+
+                    <select class="box" id="birth_month">
+                        <option disabled selected>월</option>
+                    </select>
+
+                    <select class="box" id="birth_day">
+                        <option disabled selected>일</option>
+                    </select>
+
+                </div>
+
+                <div class="wrap_phonenum">
+                    
+                    <div class="join_pho">
+                        <label for="join_id"></label>
+                        <input type="text" id="join_id" name="cstmid" valid="required" placeholder="   휴대폰번호 입력 ">
+                    </div>
+   
+                    
+                    <!--
+                        <p class="error-sv">휴대폰번호를 입력해주세요</p>
+                    -->
+
+                </div>
+
+
+
+                <!-- 약관동의-->
+
+                <div class="wrap_join_term">
+                    <div class="all_terms">
+
+                        <ul>
+                            <li>
+                                <label for="join_terms_all">
+                                    <span>약관동의</span>
+                                </label>
+                                
+                                <input type="checkbox" id="join_terms_all">
+                            </li>
+
+                            <li>
+                                <label for="join_terms1">
+                                    <span>이용약관 (필수)</span>
+                                    <!-- <span class="mak">(필수)</span> -->
+                                </label>
+
+                                <input type="checkbox" id="join_terms_all">
+                            </li>
+
+
+                            <li>
+                                <label for="join_terms2">
+                                    <span>개인정보처리방침 (필수)</span>
+                                    <!-- <span class="mak">(필수)</span> -->
+                                </label>
+
+                                <input type="checkbox" id="join_terms_all">
+                            </li>
+
+                            <li>
+                                <label for="join_terms3">
+                                    <span>마케팅 수신동의 (선택)</span>
+                                    <!-- <span class="mak">(선택)</span> -->
+                                </label>
+
+                                <input type="checkbox" id="join_terms_all">
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+                
+            </div> <!-- form_area -->
+
+            <div class="form_button">
+                <!-- <label for="login"></label> -->
+                <button type="submit" class="notice-submit"><a href="#">가입하기</a></button>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+@import url("https://webfontworld.github.io/cafe24/Cafe24Danjunghae.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'SCoreDream';
+  background-color: #fefefc;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #82ca9c;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+article {
+  display: block;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+body, button, input {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+main,
+aside,
+article,
+footer {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border-bottom: 1px solid #333;
+  background-color: #fefefc;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 80px;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+    border-bottom: 0;
+    border-right: 1px solid #333;
+  }
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    position: static;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    height: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header nav ul.gnb li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li {
+    display: block;
+  }
+}
+
+header nav ul.gnb li:first-child {
+  display: block;
+}
+
+header nav ul.gnb li:first-child img {
+  height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li:first-child {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header nav ul.gnb li:nth-child(2) a span {
+    margin-top: 0;
+  }
+}
+
+header nav ul.gnb li a img {
+  width: 25px;
+  height: auto;
+}
+
+header nav ul.gnb li a span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #82ca9c;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu {
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header div.side-menu .s-menu li {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.side-menu .s-menu li {
+    display: block;
+  }
+}
+
+header div.side-menu .s-menu li:first-child {
+  font-size: 18px;
+}
+
+header div.side-menu .s-menu li:last-child {
+  display: block;
+}
+
+header div.side-menu .s-menu li:last-child a img {
+  width: 25px;
+  height: 25px;
+}
+
+main {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+main nav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav {
+    display: block;
+  }
+}
+
+main nav .wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main nav .wrapper {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+main nav .wrapper .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 30px;
+}
+
+main nav .wrapper .gnb li {
+  display: inline-block;
+  padding-top: 112px;
+  padding-right: 58px;
+}
+
+main nav .wrapper .gnb li a {
+  font-size: 1em;
+  font-family: "SCoreDream";
+}
+
+main .title-cart {
+  position: relative;
+  margin: 0 0;
+  padding: 0 20;
+  margin-top: 36px;
+  padding-top: 33px;
+  font-size: 3em;
+}
+
+main .title-cart .title {
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .title {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+main .title-cart .title .title-fir {
+  font-size: 1.5em;
+  font-family: "SCoreDream";
+  font-weight: 500;
+  padding-left: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .title .title-fir {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-left: -283px;
+    margin-top: -90px;
+    padding-top: 5px;
+    font-size: 90px;
+  }
+}
+
+main .title-cart .title .title-sub {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart .title .title-sub {
+    display: block;
+    width: 1024px;
+    font-size: 22px;
+    font-family: "SCoreDream";
+    margin-top: -50px;
+    margin-left: -420px;
+    padding-left: 630px;
+    padding-top: 7px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .title .title-sub {
+    display: block;
+    width: 1024px;
+    font-size: 22px;
+    font-family: "SCoreDream";
+    padding-left: 430px;
+    padding-top: 5px;
+  }
+}
+
+main .title-cart nav.content-menu {
+  display: block;
+  padding-top: 2px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart nav.content-menu {
+    padding-top: 88px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart nav.content-menu {
+    padding-top: 88px;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+main .title-cart nav.content-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  margin: 32px auto 34px;
+  font-size: 30px;
+}
+
+main .title-cart nav.content-menu ul li:first-child a {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+main .title-cart nav.content-menu ul li a {
+  color: #333333;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #666666;
+  padding: 10px;
+}
+
+main .title-cart nav.content-menu ul li a:hover {
+  color: #82ca9c;
+  border-left: 2px solid #82ca9c;
+  border-top: 2px solid #82ca9c;
+  border-right: 2px solid #82ca9c;
+  font-size: 29px;
+}
+
+main .title-cart .notice-content {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: 455px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart .notice-content {
+    padding-top: 38px;
+    padding-left: 20px;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .notice-content {
+    padding-top: 38px;
+    padding-left: -5px;
+    margin-left: 50px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+main .title-cart .notice-content .notice {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 21%;
+  margin-top: -45px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .notice-content .notice {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
+
+main .title-cart .notice-content .notice-text {
+  font-size: 23px;
+  color: #666666;
+  text-align: center;
+  margin-top: -55px;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+main .title-cart .notice-content button {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-top: 45px;
+  display: block;
+  text-align: center;
+  width: 328px;
+  height: 46px;
+  background-color: #82ca9c;
+  border-color: #fff;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+main .title-cart .notice-content button a {
+  color: #fefefe;
+  font-size: 1em;
+  font-family: "SCoreDream";
+  padding-left: 11px;
+  margin-right: 50px;
+  width: 100%;
+}
+/*# sourceMappingURL=cart.css.map */
