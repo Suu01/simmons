@@ -513,6 +513,9 @@ main .title-login .find-login {
 @media screen and (min-width: 768px) {
   main .title-login .find-login {
     display: none;
+    position: relative;
+    padding-bottom: 360px;
+    margin-top: 300px;
   }
 }
 
@@ -521,10 +524,10 @@ main .title-login .find-login {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
     margin-left: 80px;
-    padding-bottom: 80px;
-    padding-top: 100px;
+    margin-top: -940px;
+    padding-top: 320px;
+    height: 70px;
   }
 }
 
