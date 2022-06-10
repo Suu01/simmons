@@ -569,6 +569,7 @@ main div.gallery section.gallery-intro {
 
 main div.gallery section.gallery-intro div.g {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {

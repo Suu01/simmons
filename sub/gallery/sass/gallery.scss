@@ -412,6 +412,7 @@ main {
             
             div.g {
                 width: $width-wide;
+                margin-bottom: 50px;
 
                 @include responsive(tablet-size) {
                     margin-bottom: 150px;
