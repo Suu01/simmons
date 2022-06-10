@@ -1028,28 +1028,37 @@ main section.f-wrap footer {
 
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer {
-    width: 30%;
+    width: 33%;
     padding: 0 30px;
   }
 }
 
-main section.f-wrap footer div.footer-logo {
+@media screen and (min-width: 1024px) {
+  main section.f-wrap footer .footer-wrap {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+main section.f-wrap footer .footer-wrap div.footer-logo {
   width: 45%;
   height: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.footer-logo {
+  main section.f-wrap footer .footer-wrap div.footer-logo {
     width: 48%;
   }
 }
 
-main section.f-wrap footer div.footer-logo h2 a img {
+main section.f-wrap footer .footer-wrap div.footer-logo h2 a img {
   width: 100%;
   height: auto;
 }
 
-main section.f-wrap footer div.f-top {
+main section.f-wrap footer .footer-wrap div.f-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1057,31 +1066,31 @@ main section.f-wrap footer div.f-top {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.f-top {
-    margin-top: 0;
+  main section.f-wrap footer .footer-wrap div.f-top {
+    margin-top: 12%;
   }
 }
 
-main section.f-wrap footer div.f-top div {
+main section.f-wrap footer .footer-wrap div.f-top div {
   margin-right: 5%;
 }
 
-main section.f-wrap footer div.f-top div a {
+main section.f-wrap footer .footer-wrap div.f-top div a {
   font-size: 3.4vw;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.f-top div a {
-    font-size: 1.3vw;
+  main section.f-wrap footer .footer-wrap div.f-top div a {
+    font-size: 1.25vw;
   }
 }
 
-main section.f-wrap footer div.sns-icon {
+main section.f-wrap footer .footer-wrap div.sns-icon {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon ul {
+main section.f-wrap footer .footer-wrap div.sns-icon ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1096,27 +1105,33 @@ main section.f-wrap footer div.sns-icon ul {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.sns-icon ul {
-    margin: 0;
+  main section.f-wrap footer .footer-wrap div.sns-icon ul {
+    margin: 7% 0;
   }
 }
 
-main section.f-wrap footer div.sns-icon ul li {
+main section.f-wrap footer .footer-wrap div.sns-icon ul li {
   width: 5.5%;
   height: auto;
   margin-right: 7%;
 }
 
-main section.f-wrap footer div.sns-icon ul li a {
+@media screen and (min-width: 1024px) {
+  main section.f-wrap footer .footer-wrap div.sns-icon ul li {
+    margin-right: 9%;
+  }
+}
+
+main section.f-wrap footer .footer-wrap div.sns-icon ul li a {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon ul li a img {
+main section.f-wrap footer .footer-wrap div.sns-icon ul li a img {
   width: 100%;
   height: auto;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1126,110 +1141,109 @@ main section.f-wrap footer div.sns-icon .rl-icon {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon div {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon div {
   width: 13%;
   margin-left: 3.4%;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon div a {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon div a {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon div a img {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon div a img {
   width: 100%;
   height: auto;
 }
 
-main section.f-wrap footer div.f-des {
+main section.f-wrap footer .footer-wrap div.f-des {
   width: 100%;
 }
 
-main section.f-wrap footer div.f-des ul {
+main section.f-wrap footer .footer-wrap div.f-des ul {
   width: 100%;
 }
 
-main section.f-wrap footer div.f-des ul li {
+main section.f-wrap footer .footer-wrap div.f-des ul li {
   font-size: 3vw;
   color: #fefefc;
   margin-bottom: 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.f-des ul li {
+  main section.f-wrap footer .footer-wrap div.f-des ul li {
     font-size: 1vw;
-    margin-bottom: 0;
   }
 }
 
-main section.f-wrap footer div.f-des ul li:last-child {
+main section.f-wrap footer .footer-wrap div.f-des ul li:last-child {
   margin-bottom: 0;
 }
 
-main section.f-wrap footer div.f-des ul li:nth-child(4) {
+main section.f-wrap footer .footer-wrap div.f-des ul li:nth-child(4) {
   display: inline-block;
   margin-right: 3%;
 }
 
-main section.f-wrap footer div.f-des ul li:nth-child(5) {
+main section.f-wrap footer .footer-wrap div.f-des ul li:nth-child(5) {
   display: inline-block;
 }
 
-main section.f-wrap footer div.f-des ul li:nth-child(5) a {
+main section.f-wrap footer .footer-wrap div.f-des ul li:nth-child(5) a {
   color: #666666;
 }
 
-main section.f-wrap footer div.kcp {
+main section.f-wrap footer .footer-wrap div.kcp {
   width: 100%;
   margin: 11.3% 0;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.kcp {
-    margin: 0;
+  main section.f-wrap footer .footer-wrap div.kcp {
+    margin: 7% auto;
   }
 }
 
-main section.f-wrap footer div.kcp .k-icon {
+main section.f-wrap footer .footer-wrap div.kcp .k-icon {
   width: 15%;
   margin: auto;
   margin-bottom: 2.6%;
 }
 
-main section.f-wrap footer div.kcp .k-icon img {
+main section.f-wrap footer .footer-wrap div.kcp .k-icon img {
   width: 100%;
   height: auto;
   margin-bottom: 0;
 }
 
-main section.f-wrap footer div.kcp .k-des {
+main section.f-wrap footer .footer-wrap div.kcp .k-des {
   text-align: center;
   width: 90%;
   margin: auto;
 }
 
-main section.f-wrap footer div.kcp .k-des p {
+main section.f-wrap footer .footer-wrap div.kcp .k-des p {
   font-size: 2.8vw;
   line-height: 2;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.kcp .k-des p {
+  main section.f-wrap footer .footer-wrap div.kcp .k-des p {
     font-size: 0.9vw;
   }
 }
 
-main section.f-wrap footer div.copyright {
+main section.f-wrap footer .footer-wrap div.copyright {
   text-align: center;
 }
 
-main section.f-wrap footer div.copyright p {
+main section.f-wrap footer .footer-wrap div.copyright p {
   font-size: 2.6vw;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.copyright p {
+  main section.f-wrap footer .footer-wrap div.copyright p {
     font-size: 0.7vw;
   }
 }

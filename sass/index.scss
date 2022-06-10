@@ -852,188 +852,195 @@ main {
             }
 
             @include responsive(pc-size) {
-                width: 30%;
+                width: 33%;
                 padding: 0 30px;
             }
         
-            div.footer-logo {
-                width: 45%;
-                height: auto;
-
+            .footer-wrap {
                 @include responsive(pc-size) {
-                    width: 48%;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
-        
-                h2 {
-                    a {
+
+                div.footer-logo {
+                    width: 45%;
+                    height: auto;
+    
+                    @include responsive(pc-size) {
+                        width: 48%;
+                    }
+            
+                    h2 {
+                        a {
+                            img {
+                                width: $width-wide;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            
+                div.f-top {
+                    display: flex;
+                    margin-top: 20.4%;
+    
+                    @include responsive(pc-size) {
+                        margin-top: 12%;
+                    }
+            
+                    div {
+                        margin-right: 5%;
+            
+                        a {
+                            font-size: 3.4vw;
+                            color: $bg-color;
+    
+                            @include responsive(pc-size) {
+                                font-size: 1.25vw;
+                            }
+                        }
+                    }
+                }
+            
+                div.sns-icon {
+                    width: $width-wide;
+            
+                    ul {
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin: 9% 0;
+    
+                        @include responsive(pc-size) {
+                            margin: 7% 0;
+                        }
+            
+                        li {
+                            width: 5.5%;
+                            height: auto;
+                            margin-right: 7%;
+    
+                            @include responsive(pc-size) {
+                                margin-right: 9%;
+                            }
+    
+                            a {
+                                width: $width-wide;
+            
+                                img {
+                                    width: $width-wide;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+            
+                    .rl-icon {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: $width-wide;
+            
+                        div {
+                            width: 13%;
+                            margin-left: 3.4%;
+    
+                            a {
+                                width: $width-wide;
+            
+                                img {
+                                    width: $width-wide;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                div.f-des {
+                    width: $width-wide;
+            
+                    ul {
+                        width: $width-wide;
+            
+                        li {
+                            font-size: 3vw;
+                            color: $bg-color;
+                            margin-bottom: 5%;
+    
+                            @include responsive(pc-size) {
+                                font-size: 1vw;
+                            }
+            
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+            
+                            &:nth-child(4) {
+                                display: inline-block;
+                                margin-right: 3%;
+                            }
+            
+                            &:nth-child(5) {
+                                display: inline-block;
+            
+                                a {
+                                    color: $font-sub-color;
+                                }
+                            }
+                        }
+                    }
+            
+                }
+            
+                div.kcp {
+                    width: $width-wide;
+                    margin: 11.3% 0;
+    
+                    @include responsive(pc-size) {
+                        margin: 7% auto;
+                    }
+            
+                    .k-icon {
+                        width: 15%;
+                        margin: auto;
+                        margin-bottom: 2.6%;
+            
                         img {
                             width: $width-wide;
                             height: auto;
-                        }
-                    }
-                }
-            }
-        
-            div.f-top {
-                display: flex;
-                margin-top: 20.4%;
-
-                @include responsive(pc-size) {
-                    margin-top: 0;
-                }
-        
-                div {
-                    margin-right: 5%;
-        
-                    a {
-                        font-size: 3.4vw;
-                        color: $bg-color;
-
-                        @include responsive(pc-size) {
-                            font-size: 1.3vw;
-                        }
-                    }
-                }
-            }
-        
-            div.sns-icon {
-                width: $width-wide;
-        
-                ul {
-                    display: flex;
-                    width: 100%;
-                    justify-content: flex-start;
-                    align-items: center;
-                    margin: 9% 0;
-
-                    @include responsive(pc-size) {
-                        margin: 0;
-                    }
-        
-                    li {
-                        width: 5.5%;
-                        height: auto;
-                        margin-right: 7%;
-
-                        @include responsive(pc-size) {
-                            // margin-right: 9%;
-                        }
-
-                        a {
-                            width: $width-wide;
-        
-                            img {
-                                width: $width-wide;
-                                height: auto;
-                            }
-                        }
-                    }
-                }
-        
-                .rl-icon {
-                    display: flex;
-                    justify-content: flex-end;
-                    width: $width-wide;
-        
-                    div {
-                        width: 13%;
-                        margin-left: 3.4%;
-
-                        a {
-                            width: $width-wide;
-        
-                            img {
-                                width: $width-wide;
-                                height: auto;
-                            }
-                        }
-                    }
-                }
-            }
-        
-            div.f-des {
-                width: $width-wide;
-        
-                ul {
-                    width: $width-wide;
-        
-                    li {
-                        font-size: 3vw;
-                        color: $bg-color;
-                        margin-bottom: 5%;
-
-                        @include responsive(pc-size) {
-                            font-size: 1vw;
                             margin-bottom: 0;
                         }
-        
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-        
-                        &:nth-child(4) {
-                            display: inline-block;
-                            margin-right: 3%;
-                        }
-        
-                        &:nth-child(5) {
-                            display: inline-block;
-        
-                            a {
-                                color: $font-sub-color;
+                    }
+            
+                    .k-des {
+                        text-align: center;
+                        width: 90%;
+                        margin: auto;
+            
+                        p {
+                            font-size: 2.8vw;
+                            line-height: 2;
+                            color: $bg-color;
+    
+                            @include responsive(pc-size) {
+                                font-size: 0.9vw;
                             }
                         }
                     }
                 }
-        
-            }
-        
-            div.kcp {
-                width: $width-wide;
-                margin: 11.3% 0;
-
-                @include responsive(pc-size) {
-                    margin: 0;
-                }
-        
-                .k-icon {
-                    width: 15%;
-                    margin: auto;
-                    margin-bottom: 2.6%;
-        
-                    img {
-                        width: $width-wide;
-                        height: auto;
-                        margin-bottom: 0;
-                    }
-                }
-        
-                .k-des {
+            
+                div.copyright {
                     text-align: center;
-                    width: 90%;
-                    margin: auto;
-        
+            
                     p {
-                        font-size: 2.8vw;
-                        line-height: 2;
+                        font-size: 2.6vw;
                         color: $bg-color;
-
+    
                         @include responsive(pc-size) {
-                            font-size: 0.9vw;
+                            font-size: 0.7vw;
                         }
-                    }
-                }
-            }
-        
-            div.copyright {
-                text-align: center;
-        
-                p {
-                    font-size: 2.6vw;
-                    color: $bg-color;
-
-                    @include responsive(pc-size) {
-                        font-size: 0.7vw;
                     }
                 }
             }
