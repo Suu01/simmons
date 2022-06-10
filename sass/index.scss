@@ -840,11 +840,10 @@ main {
     
     
         }
-   
+
         // footer
         footer {
             padding: 16.5% 20px 10% 20px;
-            // padding: 80px 20px 20px 20px;
             width: $width-wide;
             background-color: $point-color;
         
@@ -854,7 +853,7 @@ main {
 
             @include responsive(pc-size) {
                 width: 30%;
-                padding: 10% 30px;
+                padding: 0 30px;
             }
         
             div.footer-logo {
@@ -878,11 +877,9 @@ main {
             div.f-top {
                 display: flex;
                 margin-top: 20.4%;
-                // margin-top: 90px;
-                // background-color: pink;
 
                 @include responsive(pc-size) {
-                    margin-top: 15%;
+                    margin-top: 0;
                 }
         
                 div {
@@ -890,7 +887,6 @@ main {
         
                     a {
                         font-size: 3.4vw;
-                        // font-size: 17px;
                         color: $bg-color;
 
                         @include responsive(pc-size) {
@@ -898,13 +894,6 @@ main {
                         }
                     }
                 }
-                // div.f-top-fir {
-                //     // background-color: aqua;
-                // }
-        
-                // div.f-top-sec {
-                //     // background-color: aquamarine;
-                // }
             }
         
             div.sns-icon {
@@ -915,22 +904,19 @@ main {
                     width: 100%;
                     justify-content: flex-start;
                     align-items: center;
-                    // background-color: pink;
                     margin: 9% 0;
-                    // margin: 30px 0;
 
                     @include responsive(pc-size) {
-                        margin: 10% 0;
+                        margin: 0;
                     }
         
                     li {
                         width: 5.5%;
                         height: auto;
                         margin-right: 7%;
-                        // background-color: skyblue;
 
                         @include responsive(pc-size) {
-                            margin-right: 9%;
+                            // margin-right: 9%;
                         }
 
                         a {
@@ -948,12 +934,10 @@ main {
                     display: flex;
                     justify-content: flex-end;
                     width: $width-wide;
-                    // background-color: pink;
         
                     div {
                         width: 13%;
                         margin-left: 3.4%;
-                        // margin-left: 15px;
 
                         a {
                             width: $width-wide;
@@ -975,14 +959,12 @@ main {
         
                     li {
                         font-size: 3vw;
-                        // font-size: 15px;
                         color: $bg-color;
                         margin-bottom: 5%;
-                        // margin-bottom: 20px;
 
                         @include responsive(pc-size) {
                             font-size: 1vw;
-                            margin-bottom: 6%;
+                            margin-bottom: 0;
                         }
         
                         &:last-child {
@@ -1009,10 +991,9 @@ main {
             div.kcp {
                 width: $width-wide;
                 margin: 11.3% 0;
-                // margin: 50px 0;
 
                 @include responsive(pc-size) {
-                    margin: 10% 0;
+                    margin: 0;
                 }
         
                 .k-icon {
@@ -1023,19 +1004,17 @@ main {
                     img {
                         width: $width-wide;
                         height: auto;
+                        margin-bottom: 0;
                     }
                 }
         
                 .k-des {
                     text-align: center;
-                    // text-align: justify;
                     width: 90%;
                     margin: auto;
-                    // margin-top: 12px;
         
                     p {
                         font-size: 2.8vw;
-                        // font-size: 14px;
                         line-height: 2;
                         color: $bg-color;
 
@@ -1051,7 +1030,6 @@ main {
         
                 p {
                     font-size: 2.6vw;
-                    // font-size: 13px;
                     color: $bg-color;
 
                     @include responsive(pc-size) {

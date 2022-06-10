@@ -1029,7 +1029,7 @@ main section.f-wrap footer {
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer {
     width: 30%;
-    padding: 10% 30px;
+    padding: 0 30px;
   }
 }
 
@@ -1058,7 +1058,7 @@ main section.f-wrap footer div.f-top {
 
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer div.f-top {
-    margin-top: 15%;
+    margin-top: 0;
   }
 }
 
@@ -1097,7 +1097,7 @@ main section.f-wrap footer div.sns-icon ul {
 
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer div.sns-icon ul {
-    margin: 10% 0;
+    margin: 0;
   }
 }
 
@@ -1105,12 +1105,6 @@ main section.f-wrap footer div.sns-icon ul li {
   width: 5.5%;
   height: auto;
   margin-right: 7%;
-}
-
-@media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.sns-icon ul li {
-    margin-right: 9%;
-  }
 }
 
 main section.f-wrap footer div.sns-icon ul li a {
@@ -1163,7 +1157,7 @@ main section.f-wrap footer div.f-des ul li {
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer div.f-des ul li {
     font-size: 1vw;
-    margin-bottom: 6%;
+    margin-bottom: 0;
   }
 }
 
@@ -1191,7 +1185,7 @@ main section.f-wrap footer div.kcp {
 
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer div.kcp {
-    margin: 10% 0;
+    margin: 0;
   }
 }
 
@@ -1204,6 +1198,7 @@ main section.f-wrap footer div.kcp .k-icon {
 main section.f-wrap footer div.kcp .k-icon img {
   width: 100%;
   height: auto;
+  margin-bottom: 0;
 }
 
 main section.f-wrap footer div.kcp .k-des {
