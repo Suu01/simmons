@@ -1,14 +1,13 @@
-//header
 @import "style.scss";
 @import "common.scss";
 @import "mixin.scss";
 
 body {
     -ms-overflow-style: none;
-    padding-top: 60px;
+    // padding-top: 60px;
 
     @include responsive(pc-size) {
-        padding-top: 0;
+        // padding-top: 0;
         padding-left: 80px;
     }
 }

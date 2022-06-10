@@ -7,13 +7,6 @@
           box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
 body {
   font-family: "SCoreDream";
   background-color: #fefefc;
@@ -33,7 +26,6 @@ ul li, ol li {
 
 img {
   display: block;
-  vertical-align: bottom;
 }
 
 h1 {
@@ -69,12 +61,10 @@ footer {
 
 body {
   -ms-overflow-style: none;
-  padding-top: 60px;
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    padding-top: 0;
     padding-left: 80px;
   }
 }
