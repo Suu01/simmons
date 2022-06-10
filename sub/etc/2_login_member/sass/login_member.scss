@@ -373,14 +373,21 @@ main {
 
             @include responsive(tablet-size) {
                 display: none;
+
+                position: relative;
+                padding-bottom: 360px;
+                margin-top: 300px;
+                
             }
 
             @include responsive(pc-size) {
                 display: flex;
-                position: relative;
+                // position: relative;
                 margin-left: 80px;
-                padding-bottom: 80px;
-                padding-top: 100px;
+                margin-top: -940px;
+
+                padding-top: 320px;
+                height: 70px;
             }
 
             
