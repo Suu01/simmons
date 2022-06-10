@@ -99,7 +99,6 @@ header {
                         width: 10px;
                         height: 10px;
                         border-radius: 50%;
-                        // margin-top: 70px;
                         background-color: $point-color;
                     }
                 }
@@ -108,7 +107,6 @@ header {
     }
 
     div.side-menu {
-        // background-color: pink;
 
         @include responsive(pc-size) {
             height: 20%;
@@ -133,7 +131,6 @@ header {
     
                     &:first-child {
                         font-size: 18px;
-                        // transform: rotate(-90deg);
                     }
         
                     &:last-child {

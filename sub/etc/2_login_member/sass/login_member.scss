@@ -149,11 +149,8 @@ header {
         }
     }
 
-
-
 main {
     width: $width-wide;
-
 
     @include responsive(tablet-size) {
         display: flex;
@@ -225,7 +222,6 @@ main {
             margin-top: 55px;
             padding: 0 auto;
 
-
             @include responsive(pc-size) {
                 display: block;
                 padding-left: 42px;
@@ -273,6 +269,7 @@ main {
                 }
             }
         }
+
         .loginform {        
             margin: 0 auto;
             padding: 0 auto;
@@ -293,13 +290,11 @@ main {
                 margin-top: 42px;
             }
 
-
             .loginform-box {
                 
                 margin-left: auto;
                 margin-right: auto;
-                
-                
+                 
                 .loginform-input-form {
                     width: 450px;
                     margin: 0 auto;
@@ -386,10 +381,9 @@ main {
                 margin-left: 80px;
                 padding-bottom: 80px;
                 padding-top: 100px;
-                
             }
 
-            #log {
+            
                 .login-id {
                     
                     @include responsive(pc-size) {
@@ -399,35 +393,35 @@ main {
                     
                     .login-align {
                             
-                            cursor: pointer;
-                            color: #333333;
-                            display: flex;
-                            justify-content: space-between;
-                            margin: 0 auto; 
-                            width: 100%;
-                            padding-left: 10px;
-                            margin-left: 30px;
-                            
-                            li {
-                                &:hover {
-                                    color: $point-color;
-                                }
-
-                                border-right: 1px solid #333333;
-                                padding-right: 30px;
-                                margin-left: 14.5px;
-                                justify-content: space-between;
-                
-                                &:last-child {
-                                    border-right: 0; 
-                                }
-
+                        cursor: pointer;
+                        color: #333333;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 auto; 
+                        width: 100%;
+                        padding-left: 10px;
+                        margin-left: 30px;
+                        
+                        li {
+                            &:hover {
+                                color: $point-color;
                             }
 
+                            border-right: 1px solid #333333;
+                            padding-right: 30px;
+                            margin-left: 14.5px;
+                            justify-content: space-between;
+            
+                            &:last-child {
+                                border-right: 0; 
+                            }
 
                         }
                     }
+
+
                 }
+            
             
             }
 

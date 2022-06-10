@@ -529,12 +529,12 @@ main .title-login .find-login {
 }
 
 @media screen and (min-width: 1024px) {
-  main .title-login .find-login #log .login-id {
+  main .title-login .find-login .login-id {
     padding-top: 20px;
     padding-left: 70px;
     margin-top: 450px;
   }
-  main .title-login .find-login #log .login-id .login-align {
+  main .title-login .find-login .login-id .login-align {
     cursor: pointer;
     color: #333333;
     display: -webkit-box;
@@ -548,7 +548,7 @@ main .title-login .find-login {
     padding-left: 10px;
     margin-left: 30px;
   }
-  main .title-login .find-login #log .login-id .login-align li {
+  main .title-login .find-login .login-id .login-align li {
     border-right: 1px solid #333333;
     padding-right: 30px;
     margin-left: 14.5px;
@@ -556,10 +556,10 @@ main .title-login .find-login {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  main .title-login .find-login #log .login-id .login-align li:hover {
+  main .title-login .find-login .login-id .login-align li:hover {
     color: #82ca9c;
   }
-  main .title-login .find-login #log .login-id .login-align li:last-child {
+  main .title-login .find-login .login-id .login-align li:last-child {
     border-right: 0;
   }
 }

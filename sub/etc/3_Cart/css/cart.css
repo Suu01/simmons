@@ -303,14 +303,15 @@ main nav .wrapper {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   main nav .wrapper {
+    width: 100%;
     width: 1024px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   main nav .wrapper {
     width: 1024px;
     margin: 0 auto;
@@ -346,19 +347,21 @@ main nav .wrapper .gnb li a {
 main .title-cart {
   position: relative;
   margin: 0 0;
-  padding: 0 20;
+  padding: 0 20px;
   margin-top: 36px;
   padding-top: 33px;
   font-size: 3em;
 }
 
 main .title-cart .title {
-  margin-top: 35px;
+  margin-top: 55px;
+  padding: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
   main .title-cart .title {
     display: block;
+    padding-left: 697px;
     margin-top: 10px;
   }
 }
@@ -367,8 +370,8 @@ main .title-cart .title .title-fir {
   font-size: 1.5em;
   font-family: "SCoreDream";
   font-weight: 500;
-  padding-left: 25px;
-  margin-top: 30px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -377,7 +380,7 @@ main .title-cart .title .title-fir {
     float: left;
     margin: 0 auto;
     padding: 0 auto;
-    margin-left: -283px;
+    margin-left: -515px;
     margin-top: -90px;
     padding-top: 5px;
     font-size: 90px;
@@ -395,7 +398,7 @@ main .title-cart .title .title-sub {
     font-size: 22px;
     font-family: "SCoreDream";
     margin-top: -50px;
-    margin-left: -420px;
+    margin-left: -320px;
     padding-left: 630px;
     padding-top: 7px;
   }
@@ -403,12 +406,12 @@ main .title-cart .title .title-sub {
 
 @media screen and (min-width: 1024px) {
   main .title-cart .title .title-sub {
-    display: block;
+    position: relative;
     width: 1024px;
     font-size: 22px;
     font-family: "SCoreDream";
-    padding-left: 430px;
-    padding-top: 5px;
+    padding-left: 2%;
+    top: -29px;
   }
 }
 
@@ -440,9 +443,10 @@ main .title-cart nav.content-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 800px;
+  width: 150px;
   margin: 32px auto 34px;
-  font-size: 30px;
+  font-size: 20px;
+  width: 85%;
 }
 
 main .title-cart nav.content-menu ul li:first-child a {
@@ -452,10 +456,16 @@ main .title-cart nav.content-menu ul li:first-child a {
 
 main .title-cart nav.content-menu ul li a {
   color: #333333;
-  width: 200px;
+  width: 180px;
   text-align: center;
   border: 1px solid #666666;
   padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart nav.content-menu ul li a {
+    width: 330px;
+  }
 }
 
 main .title-cart nav.content-menu ul li a:hover {
@@ -463,7 +473,7 @@ main .title-cart nav.content-menu ul li a:hover {
   border-left: 2px solid #82ca9c;
   border-top: 2px solid #82ca9c;
   border-right: 2px solid #82ca9c;
-  font-size: 29px;
+  font-size: 20px;
 }
 
 main .title-cart .notice-content {
@@ -479,10 +489,14 @@ main .title-cart .notice-content {
 @media screen and (min-width: 768px) {
   main .title-cart .notice-content {
     padding-top: 38px;
-    padding-left: 20px;
+    padding-left: 120px;
     margin: 0 auto;
     padding: 0 auto;
-    width: 50%;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
 }
 
@@ -490,7 +504,7 @@ main .title-cart .notice-content {
   main .title-cart .notice-content {
     padding-top: 38px;
     padding-left: -5px;
-    margin-left: 50px;
+    margin-left: 150px;
     margin: 0 auto;
     padding: 0 auto;
   }
@@ -500,7 +514,7 @@ main .title-cart .notice-content .notice {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 21%;
+  padding-left: 27%;
   margin-top: -45px;
 }
 
@@ -508,19 +522,35 @@ main .title-cart .notice-content .notice {
   main .title-cart .notice-content .notice {
     margin: 0 auto;
     padding: 0 auto;
+    position: relative;
+    padding-left: 460px;
+    margin-left: 60px;
   }
 }
 
 main .title-cart .notice-content .notice-text {
-  font-size: 23px;
+  font-size: 22px;
   color: #666666;
   text-align: center;
-  margin-top: -55px;
+  padding-left: 120px;
+  position: relative;
+  padding-left: 30px;
   padding: 0 auto;
   margin: 0 auto;
 }
 
-main .title-cart .notice-content button {
+@media screen and (min-width: 1024px) {
+  main .title-cart .notice-content .btn-go {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    margin-left: 1%;
+  }
+}
+
+main .title-cart .notice-content .btn-go button {
+  position: relative;
   cursor: pointer;
   margin: 0 auto;
   padding: 0 auto;
@@ -532,10 +562,10 @@ main .title-cart .notice-content button {
   background-color: #82ca9c;
   border-color: #fff;
   border-radius: 10px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
-main .title-cart .notice-content button a {
+main .title-cart .notice-content .btn-go button a {
   color: #fefefe;
   font-size: 1em;
   font-family: "SCoreDream";

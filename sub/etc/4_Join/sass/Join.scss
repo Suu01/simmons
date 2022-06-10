@@ -2,21 +2,13 @@
 @import "common.scss";
 @import "mixin.scss";
 
-// body {
-//     padding-top: 60px;
-
-//     @include responsive(pc-size) {
-//         padding-left: 80px;
-//         padding-top: 0;
-//     }
-// }
 body {
     @include responsive(pc-size) {
         margin: 0 auto;
         padding: 0 auto;
     }
 }
-// header-area
+
 header {
     position: fixed;
     top: 0;
@@ -35,20 +27,18 @@ header {
         width: 80px;
         height: 100%;
         flex-direction: column;
-        // align-items: baseline;
+
         padding: 60px 0;
         border-bottom: 0;
         border-right: 1px solid #333;
     }
 
     h1 {
-        // background-color: aqua;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         @include responsive(pc-size) {
-            // height: 20%;
             position: static;
             top: 0;
             left: 0;
@@ -57,7 +47,6 @@ header {
     }
 
     nav {
-        //background-color: aquamarine;
         @include responsive(pc-size) {
             height: 30%;
         } 
@@ -110,7 +99,6 @@ header {
                         width: 10px;
                         height: 10px;
                         border-radius: 50%;
-                        // margin-top: 70px;
                         background-color: $point-color;
                     }
                 }
@@ -119,7 +107,6 @@ header {
     }
 
     div.side-menu {
-        // background-color: pink;
 
         @include responsive(pc-size) {
             height: 20%;
@@ -144,7 +131,6 @@ header {
     
                     &:first-child {
                         font-size: 18px;
-                        // transform: rotate(-90deg);
                     }
         
                     &:last-child {
@@ -225,22 +211,18 @@ main {
     .title-join{
         position: relative;
         margin: 0 0;
-        padding: 0 0;
+        padding: 0 20px;
         margin-top: 36px;
-        margin-left: 34px;
-        
         padding-top: 33px;
         font-size: 3em;
 
         .title {
             margin-top: 55px;
-            display: block;
-            margin: 0 auto;
             padding: 0 auto;
 
             @include responsive(pc-size) {
                 display: block;
-                float: left;
+                padding-left: 42px;
                 margin-top: 10px;
             }
 
@@ -248,9 +230,7 @@ main {
                 font-size: 1.5em;
                 font-family: $main-font;
                 font-weight: 500;
-                //display: flex;
                 margin: 0 auto;
-                //padding: 0 auto;
                 margin-top: 50px;
 
                 @include responsive(pc-size) {
@@ -262,22 +242,20 @@ main {
                     margin-top: -90px;
                     padding-top: 5px;
                     font-size: 90px;
-                    //background-color: aqua;
-                    
                 }
 
             }
             .title-sub {
-                display: none;
-                //background-color: aquamarine;                        
+                display: none;                       
                 @include responsive(tablet-size) {
                     display: block;
+                    position: relative;
                     width: 1024px;
                     font-size: 22px;
                     font-family: $main-font;
-                    margin-top: -30px;
-                    margin-left: -320px;
-                    padding-left: 279px;
+                    margin-top: -55px;
+                    margin-left: -360px;
+                    padding-left: 510px;
                     padding-top: 7px;
                 }
 
@@ -286,10 +264,8 @@ main {
                     width: 1024px;
                     font-size: 22px;
                     font-family: $main-font;
-                    margin-top: -30px;
-                    margin-left: -320px;
-                    padding-left: 279px;
-                    padding-top: 7px;
+                    padding-left: 325px;
+                    padding-top: -27px;
                 }
             }
         }
@@ -297,19 +273,12 @@ main {
             margin: 0 auto;
             padding: 0 auto;
 
-            @include resposive(pc-size) {
-                margin: 0 auto;
-                padding: 0 auto;
-            }
-
             .wrap_email {
                 margin: 0 auto;
                 padding: 0 auto;
 
                 .join_text {
-                    // background-color: #333;
                     input {
-                        // background-color: aqua;
                         width: 427px;
                         height: 46px;
                         border-radius: 10px;
@@ -335,14 +304,12 @@ main {
                 padding: 0 auto;
 
                 .inp_text {
-                    // background-color: antiquewhite;  
+                    margin: 0 auto;
                 }
                 input {
-                    // background-color: aqua;
                     width: 427px;
                     height: 46px;
                     border-radius: 10px;
-                    
                 }
             }
 
@@ -350,14 +317,13 @@ main {
                 display: flex; 
 
                 .wrap_name {
-                    margin: 0 auto;
-                    padding: 0 auto;
-                    
-                    margin-left: 7px;
+
+                    position: relative;
+                    padding-top: 8px;
 
                     .name_lab {
+
                         font-size: 17px;
-                        
                         padding-left: 9px;
                         padding-top: 2px;
                         margin-top: 10px;
@@ -369,17 +335,14 @@ main {
                             height: 46px;
                             border-radius: 10px;
                         }
-
-                        #join_name {
-                            padding-top: 35px;
-                            
-                        }
                     }
                 }
 
                 .wrap_gender {
-                    margin: 0 auto;
-                    padding: 0 auto;
+
+                    position: relative;
+                    padding-left: 65px;
+                    padding-top: -25px;
 
                     .join_gender {
 
@@ -387,38 +350,54 @@ main {
                         width: 47px;
                         font-size: 17px;
                         padding-left: 9px;
-                        padding-top: 2px;
-                        margin-top: 10px;
+                        padding-top: -22px;
+                        margin-top: 20px;
+
+                
                     }
     
                     .join_text {
-                        // background-color: burlywood;
+                        #choice {
+                            position: relative;
+                            width: 127px;
+                            height: 46px;
+                            border-radius: 10px;
+                        }
 
                     }
                 }
             }
-
-
             .info#info_birth {
-                display: flex;
-                font-size: 17px;
-                
 
+                @include responsive(tablet-size) {
+                    position: relative;
+                    padding-left: 10px;
+                    margin-left: -90px;
+                }
+                .birthday {
+                    position: relative;
+                    padding-right: 15px;
+                    width: 25%;
+                    padding-top: 10px;
+
+                    @include responsive(tablet-size) {
+                        position: relative;
+                        padding-left: 75px;
+                        margin-left: 5px;
+                    }
+                }
+                display: flex;
+                font-size: 15px;
+                width: 91%;
+                padding-top: 30px;
+                padding-left: 27px;
+                
                 select {
                     
                     margin-left: 7px;
-                    &:first-child {
-                        margin-left: 0px;
-                    }
-                    &::-webkit-scrollbar {
-                        width: 10px;
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        border-radius: 3px;
-                    }
-                    &::-webkit-scrollbar-track {
-                        border-radius: 6px;
-                    }
+                    width: 110px;
+                    height: 46px;
+                    border-radius: 10px;
                 }
             }
 
@@ -442,68 +421,84 @@ main {
                 }
             }
 
-
             .wrap_join_term {
-                display: flex;
-                // border-color: 1px solid #333;
-                
+                display: flex;   
+                position: relative;
+                padding-top: 30px;
                 font-size: 17px;
+                align-items: center;
+                width: 90%;
+
+                margin: 0 auto;
+                padding: 0 auto;
+                height: 160px;
+                padding: 0 75px;
+
 
                 .all_terms {
                     ul {
                         li {
-                            font-size: 17px;
+                            font-size: 16px;
+                            line-height: 30px;
                             list-style: none;
                             display: flex;
                             justify-content: space-between;
-
-                            // input {
-                            //     background-color: #333;
-                            //     padding-left: 300px;
-                            // }
+                            padding-left: -10px;
                         }
                     }
                 }
+
+                
+                .all_terms_checkbx {
+                    ul {
+                        li {
+                            
+                            line-height: 30px;
+                            list-style: none;
+                            
+                            justify-content: space-between;
+                            padding-left: 62px;
+                        }
+                    }
+                }
+
             }
         }
 
-        .form_button {
-
+        .join-button {
             margin: 0 auto;
             padding: 0 auto;
             width: 78%;
-            padding-top: 38px;
+            padding-top: 54px;
+            transform: translateY(-305px);
 
             button {
-                .submit {
-
-                    cursor: pointer;
-                    margin: 0 auto;
-                    padding: 0 auto;
-                    display: block;
-                    text-align: center;
-                    width: 328px;
-                    height: 46px;
-                    background-color: $point-color;
-                    border-radius: 10px;
-                    border-color: white;
-                    padding-left: 10%;
-                    margin-top: 35px;
-                    margin-left: -2px;
-                    font-size: 25px;
-
-                    a {
-                        color: #fefefe;
-                        font-size: 1em;
-                        font-family: $main-font;
-                        margin-right: 50px;
-                        width: 80%;
-                        
-                    }
-
+                cursor: pointer;
+                margin: 0 auto;
+                padding: 0 auto;
+                display: block;
+                text-align: center;
+                width: 328px;
+                height: 46px;
+                background-color: $point-color;
+                border-radius: 10px;
+                border-color: white;
+                padding-left: 10%;
+                margin-top: 255px;
+                margin-left: -2px;
+                font-size: 25px;
+                
+                a {
+                    color: #fefefe;
+                    font-size: 1em;
+                    font-family: $main-font;
+                    margin-right: 50px;
+                    width: 80%;
+                    
                 }
+
             }
-        }  
+        }
     }    
     
 }

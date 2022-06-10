@@ -148,8 +148,6 @@ header {
 
 main {
     width: $width-wide;
-    // text-align: center;
-    // padding: 0 auto;
 
     @include responsive(tablet-size) {
         display: flex;
@@ -169,21 +167,22 @@ main {
 
         @include responsive(pc-size) {
             display: block;
-
         }
 
         .wrapper {
             width: 100%;
+
+            @include responsive(tablet-size) {
+                width: 100%;
+                width: 1024px;
+                margin: 0 auto;
+            }
 
             @include responsive(pc-size) {
                 width: 1024px;
                 margin: 0 auto;
             }
 
-            @include responsive(tablet-size) {
-                width: 1024px;
-                margin: 0 auto;
-            }
 
             .gnb {
                 display: flex;
@@ -212,54 +211,38 @@ main {
     .title-cart{
         position: relative;
         margin: 0 0;
-        padding: 0 20;
+        padding: 0 20px;
         margin-top: 36px;
         padding-top: 33px;
         font-size: 3em;
 
             .title {
-                margin-top: 35px;
-
-                // padding: 0 auto;
-
-                @include responsive(tablet) {
-                    // display: block;
-                    // padding-left: 397px;
-                    // margin-top: 10px;
-                    
-                    background-color: aquamarine;
-                    
-                } 
+                margin-top: 55px;
+                padding: 0 auto;
 
                 @include responsive(pc-size) {
                     display: block;
-                    // padding-left: 697px;
+                    padding-left: 697px;
                     margin-top: 10px;
                 }
-
 
                 .title-fir {
                     font-size: 1.5em;
                     font-family: $main-font;
                     font-weight: 500;
-                    // margin: 0 auto;
-                    padding-left: 25px;
-                    margin-top: 30px;
-
-                    @include responsive(tablet) {
-                        padding-left: 120px;
-
-                    } 
+                    margin: 0 auto;
+                    margin-top: 50px;
 
                     @include responsive(pc-size) {
                         display: block;
                         float: left;
                         margin: 0 auto;
                         padding: 0 auto;
-                        margin-left: -283px;
+                        margin-left: -515px;
                         margin-top: -90px;
                         padding-top: 5px;
                         font-size: 90px;
+
                     }
                 }
                 .title-sub {
@@ -270,19 +253,19 @@ main {
                         font-size: 22px;
                         font-family: $main-font;
                         margin-top: -50px;
-                        margin-left: -420px;
+                        margin-left: -320px;
                         padding-left: 630px;
                         padding-top: 7px;
                     }
 
                     @include responsive(pc-size) {
-                        display: block;
+                        position: relative;
                         width: 1024px;
                         font-size: 22px;
                         font-family: $main-font;
+                        padding-left: 2%;
+                        top: -29px;
 
-                        padding-left: 430px;
-                        padding-top: 5px;
                     }
                 }
             }
@@ -307,9 +290,11 @@ main {
 
             ul {
                 display: flex;
-                width: 800px;
+                width: 150px;
                 margin: 32px auto 34px;
-                font-size: 30px;
+                font-size: 20px;
+                
+                width: 85%;
                         
                 li {
                     &:first-child a{
@@ -319,17 +304,23 @@ main {
 
                     a {
                         color: #333333;
-                        width: 200px;
+                        width: 180px;
                         text-align: center;
                         border: 1px solid #666666;
                         padding: 10px;
+
+                        
+                        @include responsive(pc-size) {
+                            width: 330px;
+                            
+                        }
         
                         &:hover {
                             color: $point-color;
                             border-left: 2px solid $point-color;
                             border-top: 2px solid $point-color;
                             border-right: 2px solid $point-color;
-                            font-size: 29px;
+                            font-size: 20px;
                         }
                     }
                 }
@@ -343,78 +334,115 @@ main {
             width: $width-wide;
             height: 455px;
             align-items: center;
+
             
             @include responsive(tablet-size) {
                 padding-top: 38px;
-                padding-left: 20px;
+                padding-left: 120px;
 
                 margin: 0 auto;
                 padding: 0 auto;
-                width: 50%;
+                display: block;
+                
+                align-items: center;
+                width: $width-wide;
+
             }
             @include responsive(pc-size) {
                 padding-top: 38px;
                 padding-left: -5px;
-                margin-left: 50px;
+                margin-left: 150px;
                 margin: 0 auto;
                 padding: 0 auto;
 
             }
             .notice {
                 align-items: center;
-                padding-left: 21%;
+                padding-left: 27%;
                 margin-top: -45px;
 
                 @include responsive(tablet) {
-                    margin: 0 auto;
-                    background-color: aquamarine;
+                    align-items: center;
+                    padding-left: 35%;
+                    margin-top: -75px;
                 }
 
                 @include responsive(pc-size) {
                     margin: 0 auto;
                     padding: 0 auto;
+                    position: relative;
+                    padding-left: 460px;
+                    margin-left: 60px;
                 }
             }
 
             .notice-text {
-                font-size: 23px;
+                font-size: 22px;
                 color: #666666;
                 text-align: center;
-                margin-top: -55px;
+                padding-left: 120px;
+                position: relative;
+                padding-left: 30px;
                 padding: 0 auto;
                 margin: 0 auto;
 
                 @include responsive(tablet) {
-                    margin: 0 auto;
+                    align-items: center;
+                    padding-left: 35%;
+                    margin-top: -75px;
                 }
             }
 
-            button {
-                cursor: pointer;
-                margin: 0 auto;
-                padding: 0 auto;
-                margin-top: 45px;
-                
-                display: block;
-                text-align: center;
-                width: 328px;
-                height: 46px;
-                background-color: $point-color;
-                border-color: #fff;
-                border-radius: 10px;
-                font-size: 17px;
-                
-                a {
-                    
-                    color: #fefefe;
-                    font-size: 1em;
-                    font-family: $main-font;
-                    padding-left: 11px;
-                    margin-right: 50px;
+            .btn-go {
+
+                @include responsive(tablet) {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0 auto;
                     width: 100%;
-                    
+                    margin-left: 29%;
                 }
 
+                @include responsive(pc-size) {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    width: 100%;
+                    margin-left: 1%;
+
+                }
+
+                button {
+
+                    position: relative;
+                    cursor: pointer;
+                    margin: 0 auto;
+                    padding: 0 auto;
+                    margin-top: 45px;
+                    
+                    display: block;
+                    text-align: center;
+    
+                    width: 328px;
+                    height: 46px;
+                    background-color: $point-color;
+                    border-color: #fff;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    
+                    a {
+                        
+                        color: #fefefe;
+                        font-size: 1em;
+                        font-family: $main-font;
+                        padding-left: 11px;
+                        margin-right: 50px;
+                        width: 100%;
+                        
+                    }
+                }
+    
+                
             }
 
         }
