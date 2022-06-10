@@ -341,7 +341,7 @@ main {
                         line-height: 1.8;
     
                         @include responsive(pc-size) {
-                            font-size: 1vw;
+                            font-size: 1.1vw;
                         }
                     }
                 }
@@ -412,8 +412,8 @@ main {
             .ev-wrap {
                 @include responsive(pc-size) {
                     position: relative;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    top: 45%;
+                    transform: translateY(-45%);
                 }
 
                 h2 {
@@ -516,7 +516,6 @@ main {
         }
     }
 
-    // pc버전 구조 수정
     // popup-wrap
     section.popup-wrap {
 
@@ -566,177 +565,179 @@ main {
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 50%;
+                width: 45%;
                 height: 100vh;
-                padding: 8% 40px;
+                padding: 0 40px;
             }
 
-            .title {
-                width: $width-wide;
+            .popup-des-wrap {
+                @include responsive(pc-size) {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    // background-color: yellow;
+                }
 
-                div {
+                .title {
+                    width: $width-wide;
+    
+                    div {
+                        width: $width-wide;
+                        
+                        div {
+                            width: 35%;
+                            margin: auto;
+    
+                            @include responsive(pc-size) {
+                                width: 28%;
+                            }
+    
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+    
+                    h2 { 
+                        // width: 100%;
+                        font-size: 8.5vw;
+                        font-weight: 400;
+                        letter-spacing: 1.4vw;
+                        margin: 4.2%;
+    
+                        @include responsive(pc-size) {
+                            font-size: 3.4vw;
+                            letter-spacing: 0.7vw;
+                            margin: 6% 0;
+                            text-align: center;
+                        }
+                    }
+    
+                    h3 {
+                        font-size: 5vw;
+                        font-weight: 400;
+                        letter-spacing: 0.4vw;
+                        margin-bottom: 12.5%;
+    
+                        @include responsive(pc-size) {
+                            font-size: 2.2vw;
+                            text-align: center;
+                            letter-spacing: 0.2vw;
+                            margin-bottom: 0;
+                        }
+    
+                        span {
+                            display: inline-block;
+                            color: $point-color;
+                        }
+                    }
+                }
+    
+                .tit-des {
+                    width: $width-wide;
+    
+                    p {
+                        font-size: 3.6vw;
+                        font-weight: 500;
+                        font-family: $main-font;
+                        letter-spacing: 0.4vw;
+                        line-height: 1.6;
+    
+                        @include responsive(pc-size) {
+                            text-align: center;
+                            font-size: 1.6vw;
+                            letter-spacing: 0.2vw;
+                            font-weight: 500;
+                            margin: 8% 0;
+                        }
+                    }
+                }
+    
+                .popup-loc {
                     width: $width-wide;
                     
-                    div {
-                        width: 35%;
-                        margin: auto;
-
+                    div.map-wrap {
+                        width: $width-wide;
+                        margin: 6.2% 0;
+    
                         @include responsive(pc-size) {
-                            width: 33%;
+                            margin: 0;
+                            margin-bottom: 3%;
                         }
-
+    
                         img {
-                            width: 100%;
+                            width: 14.5%;
                             height: auto;
+                            margin: auto;
+    
+                            @include responsive(pc-size) {
+                                width: 13%;
+                            }
                         }
                     }
-                }
-
-                h2 { 
-                    // width: 100%;
-                    font-size: 8.5vw;
-                    font-weight: 400;
-                    letter-spacing: 1.4vw;
-                    // letter-spacing: 7px;
-                    margin: 4.2%;
-                    // margin: 20px;
-
-                    @include responsive(pc-size) {
-                        font-size: 3.6vw;
-                        letter-spacing: 0.7vw;
-                        margin: 13% 0 5% 0;
-                        text-align: right;
-                    }
-                }
-
-                h3 {
-                    font-size: 5vw;
-                    font-weight: 400;
-                    letter-spacing: 0.4vw;
-                    // letter-spacing: 2px;
-                    margin-bottom: 12.5%;
-                    // margin-bottom: 60px;
-
-                    @include responsive(pc-size) {
-                        font-size: 2.4vw;
-                        text-align: right;
-                        letter-spacing: 0.3vw;
-                        margin-bottom: 13%;
-                    }
-
-                    span {
-                        display: inline-block;
-                        color: $point-color;
-                    }
-                }
-            }
-
-            .tit-des {
-                width: $width-wide;
-
-                p {
-                    font-size: 3.6vw;
-                    font-weight: 500;
-                    font-family: $main-font;
-                    letter-spacing: 0.4vw;
-                    line-height: 1.6;
-
-                    @include responsive(pc-size) {
-                        text-align: right;
-                        font-size: 2.1vw;
-                        letter-spacing: 0.2vw;
-                        font-weight: 500;
-                    }
-                }
-            }
-
-            .popup-loc {
-                width: $width-wide;
-                
-                div.map-wrap {
-                    width: $width-wide;
-                    margin: 6.2% 0;
-                    // margin: 30px 0;
-
-                    @include responsive(pc-size) {
-                        margin: 15% 0 5% 0;
-                    }
-
-                    img {
-                        width: 14.5%;
-                        // width: 70px;
-                        height: auto;
-                        margin: auto;
-
-                        @include responsive(pc-size) {
-                            width: 14%;
+    
+                    div.log-wrap {
+                        width: $width-wide;
+    
+                        div {
+                            width: 55%;
+                            margin: auto;
+    
+                            @include responsive(pc-size) {
+                                width: 33%;
+                            }
+    
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
                         }
                     }
-                }
-
-                div.log-wrap {
-                    width: $width-wide;
-
-                    div {
-                        width: 55%;
-                        margin: auto;
-
-                        @include responsive(pc-size) {
-                            width: 35%;
-                        }
-
-                        img {
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                }
-
-                h3 {
-                    font-size: 4.6vw;
-                    font-weight: 400;
-                    letter-spacing: 0.4vw;
-                    margin: 3.7% 0;
-                    // margin: 18px 0;
-
-                    @include responsive(pc-size) {
-                        font-size: 2vw;
-                        letter-spacing: 0.2vw;
-                        margin: 4% 0;
-                    }
-
-                    span {
-                        display: inline-block;
-                        color: $point-color;
-                    }
-                }
-            }
-
-            div.loc-btn {
-                width: $width-wide;
-
-                div.loc-box {
-                    margin: auto;
-                    width: 40%;
-                    // width: 200px;
-                    border: 4px solid #abd4bb;
-
-                    @include responsive(pc-size) {
-                        width: 30%;
-                        padding: 0.8% 0 0.4% 0;
-                    }
-
-                    p {
+    
+                    h3 {
+                        font-size: 4.6vw;
                         font-weight: 400;
-                        font-size: 7vw;
-                        // font-size: 26px;
-                        font-family: $main-font;
-                        letter-spacing: 0.6vw;
-                        color: $point-color;
-
+                        letter-spacing: 0.4vw;
+                        margin: 3.7% 0;
+    
                         @include responsive(pc-size) {
-                            font-size: 2.4vw;
-                            letter-spacing: 0;
+                            font-size: 1.9vw;
+                            letter-spacing: 0.2vw;
+                            margin: 2%;
+                        }
+    
+                        span {
+                            display: inline-block;
+                            color: $point-color;
+                        }
+                    }
+                }
+    
+                div.loc-btn {
+                    width: $width-wide;
+    
+                    div.loc-box {
+                        margin: auto;
+                        width: 40%;
+                        border: 4px solid #abd4bb;
+    
+                        @include responsive(pc-size) {
+                            width: 30%;
+                            padding: 0.8% 0 0.4% 0;
+                        }
+    
+                        p {
+                            font-weight: 400;
+                            font-size: 7vw;
+                            font-family: $main-font;
+                            letter-spacing: 0.6vw;
+                            color: $point-color;
+    
+                            @include responsive(pc-size) {
+                                font-size: 2.4vw;
+                                letter-spacing: 0;
+                            }
                         }
                     }
                 }
@@ -744,7 +745,6 @@ main {
         }
     }
 
-    // pc버전 구조 수정
     // f-wrap
     section.f-wrap {
         @include responsive(pc-size) {
