@@ -414,28 +414,34 @@ main section.f-sec-flex section.section2 {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 {
-    margin: 0;
     width: 60%;
-  }
-}
-
-main section.f-sec-flex section.section2 .section2-wrap {
-  margin: auto;
-}
-
-@media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 .section2-wrap {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
     margin: 0;
   }
 }
 
 main section.f-sec-flex section.section2 .section2-wrap h2 {
   display: none;
+}
+
+main section.f-sec-flex section.section2 .section2-wrap .sec2-img-p {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.f-sec-flex section.section2 .section2-wrap .sec2-img-p {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+main section.f-sec-flex section.section2 .section2-wrap .sec2-img-p .img img {
+  width: 40%;
+  margin: auto;
 }
 
 main section.f-sec-flex section.section2 .section2-wrap .sec2-txt {
@@ -455,6 +461,8 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-1 {
+    position: absolute;
+    top: 5%;
     padding-left: 5%;
     text-align: left;
   }
@@ -467,7 +475,7 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-img {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-img {
-    margin: 4% 0;
+    display: none;
   }
 }
 
@@ -489,7 +497,9 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img img {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex section.section2 .sec2-2 {
+  main section.f-sec-flex section.section2 .section2-wrap .sec2-2 {
+    position: absolute;
+    bottom: 5%;
     padding-right: 5%;
     text-align: right;
   }
@@ -513,7 +523,7 @@ main section.f-sec-flex div.event {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex div.event {
-    padding: 10% 30px;
+    padding: 0 30px;
     width: 40%;
   }
 }
@@ -540,11 +550,12 @@ main section.f-sec-flex div.event .more {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex div.event .more {
-    margin: 9% 0;
+    display: none;
+    margin: 0;
   }
 }
 
-main section.f-sec-flex div.event .more .box {
+main section.f-sec-flex div.event .more a .box {
   width: 30%;
   height: auto;
   padding: 0.6% 0;
@@ -552,22 +563,40 @@ main section.f-sec-flex div.event .more .box {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex div.event .more .box {
+  main section.f-sec-flex div.event .more a .box {
     width: 46%;
-    padding: 2% 0;
   }
 }
 
-main section.f-sec-flex div.event .more .box p {
+main section.f-sec-flex div.event .more a .box p {
   font-size: 3.2vw;
   font-weight: 500;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-sec-flex div.event .more .box p {
+  main section.f-sec-flex div.event .more a .box p {
     font-size: 1.9vw;
   }
+}
+
+main section.f-sec-flex div.event .more-p {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.f-sec-flex div.event .more-p {
+    display: block;
+    width: 28%;
+    text-align: center;
+    background-color: #333333;
+  }
+}
+
+main section.f-sec-flex div.event .more-p a p {
+  font-size: 1.2vw;
+  font-weight: 500;
+  color: #fefefc;
 }
 
 main section.f-sec-flex div.event .rl-icon {
