@@ -432,15 +432,15 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-img-p {
     display: block;
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 52%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -52%);
+            transform: translate(-50%, -52%);
   }
 }
 
 main section.f-sec-flex section.section2 .section2-wrap .sec2-img-p .img img {
-  width: 40%;
+  width: 43%;
   margin: auto;
 }
 
@@ -455,15 +455,15 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-txt p {
-    font-size: 1vw;
+    font-size: 1.1vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-1 {
     position: absolute;
-    top: 5%;
-    padding-left: 5%;
+    top: 7%;
+    padding-left: 6%;
     text-align: left;
   }
 }
@@ -499,8 +499,8 @@ main section.f-sec-flex section.section2 .section2-wrap .sec2-img .img img {
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex section.section2 .section2-wrap .sec2-2 {
     position: absolute;
-    bottom: 5%;
-    padding-right: 5%;
+    bottom: 7%;
+    padding-right: 6%;
     text-align: right;
   }
 }
@@ -523,7 +523,7 @@ main section.f-sec-flex div.event {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex div.event {
-    padding: 0 30px;
+    padding: 0 40px;
     width: 40%;
   }
 }
@@ -531,9 +531,9 @@ main section.f-sec-flex div.event {
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex div.event .ev-wrap {
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 45%;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
   }
 }
 
@@ -549,7 +549,7 @@ main section.f-sec-flex div.event .ev-wrap h2 {
   main section.f-sec-flex div.event .ev-wrap h2 {
     font-size: 2.7vw;
     letter-spacing: 0.3vw;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
   }
 }
 
@@ -565,7 +565,7 @@ main section.f-sec-flex div.event .ev-wrap .more-p {
   main section.f-sec-flex div.event .ev-wrap .more-p {
     width: 35%;
     margin: 0;
-    margin-bottom: 6%;
+    margin-bottom: 10%;
   }
 }
 
@@ -594,7 +594,7 @@ main section.f-sec-flex div.event .ev-wrap .rl-icon {
 
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex div.event .ev-wrap .rl-icon {
-    margin-bottom: 4%;
+    margin-bottom: 8%;
   }
 }
 
@@ -636,6 +636,7 @@ main section.f-sec-flex div.event .ev-wrap .ev-img {
 @media screen and (min-width: 1024px) {
   main section.f-sec-flex div.event .ev-wrap .ev-img {
     margin-top: 0;
+    padding-bottom: 7%;
   }
 }
 
@@ -705,37 +706,46 @@ main section.popup-wrap div.popup-des {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 45%;
     height: 100vh;
-    padding: 8% 40px;
+    padding: 0 40px;
   }
 }
 
-main section.popup-wrap div.popup-des .title {
+@media screen and (min-width: 1024px) {
+  main section.popup-wrap div.popup-des .popup-des-wrap {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+main section.popup-wrap div.popup-des .popup-des-wrap .title {
   width: 100%;
 }
 
-main section.popup-wrap div.popup-des .title div {
+main section.popup-wrap div.popup-des .popup-des-wrap .title div {
   width: 100%;
 }
 
-main section.popup-wrap div.popup-des .title div div {
+main section.popup-wrap div.popup-des .popup-des-wrap .title div div {
   width: 35%;
   margin: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .title div div {
-    width: 33%;
+  main section.popup-wrap div.popup-des .popup-des-wrap .title div div {
+    width: 27%;
   }
 }
 
-main section.popup-wrap div.popup-des .title div div img {
+main section.popup-wrap div.popup-des .popup-des-wrap .title div div img {
   width: 100%;
   height: auto;
 }
 
-main section.popup-wrap div.popup-des .title h2 {
+main section.popup-wrap div.popup-des .popup-des-wrap .title h2 {
   font-size: 8.5vw;
   font-weight: 400;
   letter-spacing: 1.4vw;
@@ -743,15 +753,15 @@ main section.popup-wrap div.popup-des .title h2 {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .title h2 {
-    font-size: 3.6vw;
+  main section.popup-wrap div.popup-des .popup-des-wrap .title h2 {
+    font-size: 3.2vw;
     letter-spacing: 0.7vw;
-    margin: 13% 0 5% 0;
-    text-align: right;
+    margin: 5% 0;
+    text-align: center;
   }
 }
 
-main section.popup-wrap div.popup-des .title h3 {
+main section.popup-wrap div.popup-des .popup-des-wrap .title h3 {
   font-size: 5vw;
   font-weight: 400;
   letter-spacing: 0.4vw;
@@ -759,24 +769,24 @@ main section.popup-wrap div.popup-des .title h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .title h3 {
-    font-size: 2.4vw;
-    text-align: right;
-    letter-spacing: 0.3vw;
-    margin-bottom: 13%;
+  main section.popup-wrap div.popup-des .popup-des-wrap .title h3 {
+    font-size: 2.1vw;
+    text-align: center;
+    letter-spacing: 0.2vw;
+    margin-bottom: 0;
   }
 }
 
-main section.popup-wrap div.popup-des .title h3 span {
+main section.popup-wrap div.popup-des .popup-des-wrap .title h3 span {
   display: inline-block;
   color: #82ca9c;
 }
 
-main section.popup-wrap div.popup-des .tit-des {
+main section.popup-wrap div.popup-des .popup-des-wrap .tit-des {
   width: 100%;
 }
 
-main section.popup-wrap div.popup-des .tit-des p {
+main section.popup-wrap div.popup-des .popup-des-wrap .tit-des p {
   font-size: 3.6vw;
   font-weight: 500;
   font-family: "SCoreDream";
@@ -785,62 +795,64 @@ main section.popup-wrap div.popup-des .tit-des p {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .tit-des p {
-    text-align: right;
-    font-size: 2.1vw;
+  main section.popup-wrap div.popup-des .popup-des-wrap .tit-des p {
+    text-align: center;
+    font-size: 1.4vw;
     letter-spacing: 0.2vw;
     font-weight: 500;
+    margin: 7% 0;
   }
 }
 
-main section.popup-wrap div.popup-des .popup-loc {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc {
   width: 100%;
 }
 
-main section.popup-wrap div.popup-des .popup-loc div.map-wrap {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.map-wrap {
   width: 100%;
   margin: 6.2% 0;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .popup-loc div.map-wrap {
-    margin: 15% 0 5% 0;
+  main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.map-wrap {
+    margin: 0;
+    margin-bottom: 3%;
   }
 }
 
-main section.popup-wrap div.popup-des .popup-loc div.map-wrap img {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.map-wrap img {
   width: 14.5%;
   height: auto;
   margin: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .popup-loc div.map-wrap img {
-    width: 14%;
+  main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.map-wrap img {
+    width: 13%;
   }
 }
 
-main section.popup-wrap div.popup-des .popup-loc div.log-wrap {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.log-wrap {
   width: 100%;
 }
 
-main section.popup-wrap div.popup-des .popup-loc div.log-wrap div {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.log-wrap div {
   width: 55%;
   margin: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .popup-loc div.log-wrap div {
-    width: 35%;
+  main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.log-wrap div {
+    width: 31%;
   }
 }
 
-main section.popup-wrap div.popup-des .popup-loc div.log-wrap div img {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc div.log-wrap div img {
   width: 100%;
   height: auto;
 }
 
-main section.popup-wrap div.popup-des .popup-loc h3 {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc h3 {
   font-size: 4.6vw;
   font-weight: 400;
   letter-spacing: 0.4vw;
@@ -848,36 +860,36 @@ main section.popup-wrap div.popup-des .popup-loc h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des .popup-loc h3 {
-    font-size: 2vw;
+  main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc h3 {
+    font-size: 1.8vw;
     letter-spacing: 0.2vw;
-    margin: 4% 0;
+    margin: 2%;
   }
 }
 
-main section.popup-wrap div.popup-des .popup-loc h3 span {
+main section.popup-wrap div.popup-des .popup-des-wrap .popup-loc h3 span {
   display: inline-block;
   color: #82ca9c;
 }
 
-main section.popup-wrap div.popup-des div.loc-btn {
+main section.popup-wrap div.popup-des .popup-des-wrap div.loc-btn {
   width: 100%;
 }
 
-main section.popup-wrap div.popup-des div.loc-btn div.loc-box {
+main section.popup-wrap div.popup-des .popup-des-wrap div.loc-btn div.loc-box {
   margin: auto;
   width: 40%;
   border: 4px solid #abd4bb;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des div.loc-btn div.loc-box {
+  main section.popup-wrap div.popup-des .popup-des-wrap div.loc-btn div.loc-box {
     width: 30%;
     padding: 0.8% 0 0.4% 0;
   }
 }
 
-main section.popup-wrap div.popup-des div.loc-btn div.loc-box p {
+main section.popup-wrap div.popup-des .popup-des-wrap div.loc-btn div.loc-box p {
   font-weight: 400;
   font-size: 7vw;
   font-family: "SCoreDream";
@@ -886,7 +898,7 @@ main section.popup-wrap div.popup-des div.loc-btn div.loc-box p {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.popup-wrap div.popup-des div.loc-btn div.loc-box p {
+  main section.popup-wrap div.popup-des .popup-des-wrap div.loc-btn div.loc-box p {
     font-size: 2.4vw;
     letter-spacing: 0;
   }
@@ -1017,27 +1029,37 @@ main section.f-wrap footer {
 @media screen and (min-width: 1024px) {
   main section.f-wrap footer {
     width: 30%;
-    padding: 10% 30px;
+    padding: 0 30px;
   }
 }
 
-main section.f-wrap footer div.footer-logo {
+@media screen and (min-width: 1024px) {
+  main section.f-wrap footer .footer-wrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+main section.f-wrap footer .footer-wrap div.footer-logo {
   width: 45%;
   height: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.footer-logo {
-    width: 48%;
+  main section.f-wrap footer .footer-wrap div.footer-logo {
+    width: 40%;
   }
 }
 
-main section.f-wrap footer div.footer-logo h2 a img {
+main section.f-wrap footer .footer-wrap div.footer-logo h2 a img {
   width: 100%;
   height: auto;
 }
 
-main section.f-wrap footer div.f-top {
+main section.f-wrap footer .footer-wrap div.f-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,31 +1067,31 @@ main section.f-wrap footer div.f-top {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.f-top {
-    margin-top: 15%;
+  main section.f-wrap footer .footer-wrap div.f-top {
+    margin-top: 10%;
   }
 }
 
-main section.f-wrap footer div.f-top div {
+main section.f-wrap footer .footer-wrap div.f-top div {
   margin-right: 5%;
 }
 
-main section.f-wrap footer div.f-top div a {
+main section.f-wrap footer .footer-wrap div.f-top div a {
   font-size: 3.4vw;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.f-top div a {
-    font-size: 1.3vw;
+  main section.f-wrap footer .footer-wrap div.f-top div a {
+    font-size: 1.2vw;
   }
 }
 
-main section.f-wrap footer div.sns-icon {
+main section.f-wrap footer .footer-wrap div.sns-icon {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon ul {
+main section.f-wrap footer .footer-wrap div.sns-icon ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,33 +1106,33 @@ main section.f-wrap footer div.sns-icon ul {
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.sns-icon ul {
-    margin: 10% 0;
+  main section.f-wrap footer .footer-wrap div.sns-icon ul {
+    margin: 7% 0;
   }
 }
 
-main section.f-wrap footer div.sns-icon ul li {
+main section.f-wrap footer .footer-wrap div.sns-icon ul li {
   width: 5.5%;
   height: auto;
   margin-right: 7%;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.sns-icon ul li {
+  main section.f-wrap footer .footer-wrap div.sns-icon ul li {
     margin-right: 9%;
   }
 }
 
-main section.f-wrap footer div.sns-icon ul li a {
+main section.f-wrap footer .footer-wrap div.sns-icon ul li a {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon ul li a img {
+main section.f-wrap footer .footer-wrap div.sns-icon ul li a img {
   width: 100%;
   height: auto;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1120,110 +1142,112 @@ main section.f-wrap footer div.sns-icon .rl-icon {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon div {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon div {
   width: 13%;
   margin-left: 3.4%;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon div a {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon div a {
   width: 100%;
 }
 
-main section.f-wrap footer div.sns-icon .rl-icon div a img {
+main section.f-wrap footer .footer-wrap div.sns-icon .rl-icon div a img {
   width: 100%;
   height: auto;
 }
 
-main section.f-wrap footer div.f-des {
+main section.f-wrap footer .footer-wrap div.f-des {
   width: 100%;
 }
 
-main section.f-wrap footer div.f-des ul {
+main section.f-wrap footer .footer-wrap div.f-des ul {
   width: 100%;
 }
 
-main section.f-wrap footer div.f-des ul li {
+main section.f-wrap footer .footer-wrap div.f-des ul li {
   font-size: 3vw;
   color: #fefefc;
   margin-bottom: 5%;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.f-des ul li {
+  main section.f-wrap footer .footer-wrap div.f-des ul li {
     font-size: 1vw;
-    margin-bottom: 6%;
+    margin-bottom: 3%;
   }
 }
 
-main section.f-wrap footer div.f-des ul li:last-child {
+main section.f-wrap footer .footer-wrap div.f-des ul li:last-child {
   margin-bottom: 0;
 }
 
-main section.f-wrap footer div.f-des ul li:nth-child(4) {
+main section.f-wrap footer .footer-wrap div.f-des ul li:nth-child(4) {
   display: inline-block;
   margin-right: 3%;
 }
 
-main section.f-wrap footer div.f-des ul li:nth-child(5) {
+main section.f-wrap footer .footer-wrap div.f-des ul li:nth-child(5) {
   display: inline-block;
 }
 
-main section.f-wrap footer div.f-des ul li:nth-child(5) a {
+main section.f-wrap footer .footer-wrap div.f-des ul li:nth-child(5) a {
   color: #666666;
 }
 
-main section.f-wrap footer div.kcp {
+main section.f-wrap footer .footer-wrap div.kcp {
   width: 100%;
   margin: 11.3% 0;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.kcp {
-    margin: 10% 0;
+  main section.f-wrap footer .footer-wrap div.kcp {
+    display: none;
   }
 }
 
-main section.f-wrap footer div.kcp .k-icon {
+main section.f-wrap footer .footer-wrap div.kcp .k-icon {
   width: 15%;
   margin: auto;
   margin-bottom: 2.6%;
 }
 
-main section.f-wrap footer div.kcp .k-icon img {
+main section.f-wrap footer .footer-wrap div.kcp .k-icon img {
   width: 100%;
   height: auto;
+  margin-bottom: 0;
 }
 
-main section.f-wrap footer div.kcp .k-des {
+main section.f-wrap footer .footer-wrap div.kcp .k-des {
   text-align: center;
   width: 90%;
   margin: auto;
 }
 
-main section.f-wrap footer div.kcp .k-des p {
+main section.f-wrap footer .footer-wrap div.kcp .k-des p {
   font-size: 2.8vw;
   line-height: 2;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.kcp .k-des p {
+  main section.f-wrap footer .footer-wrap div.kcp .k-des p {
     font-size: 0.9vw;
   }
 }
 
-main section.f-wrap footer div.copyright {
+main section.f-wrap footer .footer-wrap div.copyright {
   text-align: center;
 }
 
-main section.f-wrap footer div.copyright p {
+main section.f-wrap footer .footer-wrap div.copyright p {
   font-size: 2.6vw;
   color: #fefefc;
 }
 
 @media screen and (min-width: 1024px) {
-  main section.f-wrap footer div.copyright p {
+  main section.f-wrap footer .footer-wrap div.copyright p {
     font-size: 0.7vw;
+    margin-top: 15%;
   }
 }
 /*# sourceMappingURL=index.css.map */

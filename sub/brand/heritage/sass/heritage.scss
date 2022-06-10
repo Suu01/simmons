@@ -562,11 +562,10 @@ main {
             }
 
             .h_27 {
-                @include responsive(tablet-size) {
-                    position: relative;
-                }
 
                 .img_27 {
+                    text-align: center;
+
                     @include responsive(tablet-size) {
                         @include heritage_text;
                         display: flex;
@@ -575,7 +574,15 @@ main {
                     }
     
                     .ta {
-                        display: none;
+                        display: inline;
+                        width: 18%;
+                        height: 49%;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
     
                         @include responsive(tablet-size) {
                             display: inline-block;
@@ -588,13 +595,6 @@ main {
                         &:nth-child(3) {
                             @include responsive(tablet-size) {
                                 margin-right: 0px;
-                            }
-                        }
-    
-                        &:hover {
-                            @include responsive(tablet-size) {
-                                width: 40%;
-                                height: 59%;
                             }
                         }
                     }
@@ -615,11 +615,10 @@ main {
             }
 
             .h_31 {
-                @include responsive(tablet-size) {
-                    position: relative;
-                }
-
                 .img_31 {
+                    display: flex;
+                    justify-content: center;
+                    
                     @include responsive(tablet-size) {
                         display: flex;
                         justify-content: center;
@@ -629,17 +628,13 @@ main {
                     }
     
                     img {
+                        width: 50%;
+                        height: 90%;
+
                         @include responsive(tablet-size) {
                             display: inline-block;
                             width: 50%;
                             height: 90%;
-                        }
-    
-                        &:hover {
-                            @include responsive(tablet-size) {
-                                width: 80%;
-                                height: 90%;
-                            }
                         }
                     }
                 }
