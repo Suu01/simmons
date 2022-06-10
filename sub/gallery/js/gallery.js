@@ -1,10 +1,19 @@
 // 헤더 메뉴 클릭 시 실행되는 이벤트의 함수 내용
-function openSearch() {
+function openMenu() {
     document.getElementById('menu-sub').style.display = 'block';
 }
 
-function closeSearch() {
+function closeMenu() {
     document.getElementById('menu-sub').style.display = 'none';
+}
+
+// 헤더 검색버튼 클릭 시 실행되는 이벤트의 함수 내용
+function openSearh() {
+    document.getElementById("search-sub").style.width = '100%';
+}
+
+function closeSearch() {
+    document.getElementById("search-sub").style.width = '0%';
 }
 
 // 헤더 메뉴 클릭 시 상세 메뉴 반응

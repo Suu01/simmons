@@ -19,7 +19,7 @@
 
         <nav>
             <ul class="gnb">
-                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openSearch()"></a></li>
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
             </ul>
         </nav>
 
@@ -27,14 +27,12 @@
             <ul class="s-menu">
                 <li><a href="../etc/2_login_member/login_member.html">Login</a></li>
                 <li><a href="../etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
-                <li><a href="#"><img src="./images/search.png" alt="search-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
             </ul>
         </div> 
-    </header> 
 
-    <main>
         <div class="menu-sub" id="menu-sub">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
             
             <ul class="myMenu">
                 <li class="menu-top">
@@ -52,15 +50,27 @@
                 </li>
                 <li><a href="#" class="sub-menu2">Brand</a>
                     <ul class="sub-menu-des2">
-                        <li><a href="../brand/the_black/the_black.html">the Black</a></li>
-                        <li><a href="../brand/heritage/heritage.html">heritage</a></li>
+                        <li><a href="../brand/heritage/heritage.html">the Black</a></li>
+                        <li><a href="../brand/the_black/the_black.html">heritage</a></li>
                     </ul>
                 </li>
-                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
                 <li><a href="../community/community.html">Community</a></li>
             </ul>
         </div>
 
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
         <section class="gallery-top">
             <h2>SIMMONS GALLERY</h2>
             <div class="img-wrap">

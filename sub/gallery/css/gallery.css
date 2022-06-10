@@ -237,11 +237,7 @@ header div.side-menu .s-menu li:last-child a img {
   height: 25px;
 }
 
-main {
-  width: 100%;
-}
-
-main div.menu-sub {
+header div.menu-sub {
   display: none;
   position: relative;
   width: 100%;
@@ -256,20 +252,20 @@ main div.menu-sub {
 }
 
 @media screen and (min-width: 1024px) {
-  main div.menu-sub {
+  header div.menu-sub {
     margin-left: 80px;
     width: 450px;
   }
 }
 
-main div.menu-sub a.closebtn {
+header div.menu-sub a.closebtn {
   position: absolute;
   top: 20px;
   right: 25px;
   font-size: 60px;
 }
 
-main div.menu-sub a {
+header div.menu-sub a {
   color: #333333;
   padding: 8px;
   text-decoration: none;
@@ -279,15 +275,15 @@ main div.menu-sub a {
   transition: 0.3s;
 }
 
-main div.menu-sub a:hover {
+header div.menu-sub a:hover {
   color: #999;
 }
 
-main div.menu-sub a:focus {
+header div.menu-sub a:focus {
   color: #999;
 }
 
-main div.menu-sub ul.myMenu {
+header div.menu-sub ul.myMenu {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -296,35 +292,91 @@ main div.menu-sub ul.myMenu {
   text-align: left;
 }
 
-main div.menu-sub ul.myMenu .menu-top {
+header div.menu-sub ul.myMenu .menu-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main div.menu-sub ul.myMenu .menu-top a {
+header div.menu-sub ul.myMenu .menu-top a {
   font-size: 22px;
   margin-right: 20px;
   margin-bottom: 20px;
   color: #333333;
 }
 
-main div.menu-sub ul.myMenu .menu-top a:hover {
+header div.menu-sub ul.myMenu .menu-top a:hover {
   color: #999;
 }
 
-main div.menu-sub ul.myMenu .menu-top a:focus {
+header div.menu-sub ul.myMenu .menu-top a:focus {
   color: #999;
 }
 
-main div.menu-sub ul.myMenu li {
+header div.menu-sub ul.myMenu li {
   margin-bottom: 10px;
 }
 
-main div.menu-sub ul.myMenu li ul li a {
+header div.menu-sub ul.myMenu li ul li a {
   font-weight: 400;
   font-size: 20px;
   text-indent: 30px;
+}
+
+header div.search-sub {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 1;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header div.search-sub .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #fefefc;
+}
+
+header div.search-sub .closebtn:hover {
+  color: #ccc;
+}
+
+header div.search-sub .search-sub-content {
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateYs(-45%);
+          transform: translateYs(-45%);
+  width: 100%;
+  margin: auto;
+}
+
+header div.search-sub .search-sub-content input {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  margin: auto;
+  background: #fefefc;
+}
+
+header div.search-sub .search-sub-content input:hover {
+  background: #f1f1f1;
+}
+
+main {
+  width: 100%;
 }
 
 main section.gallery-top {
