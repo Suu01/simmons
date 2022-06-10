@@ -280,7 +280,6 @@ main {
         }
     }
 
-    // pc버전 구조 수정
     // f-sec-flex
     section.f-sec-flex {
         @include responsive(pc-size) {
@@ -374,7 +373,7 @@ main {
                         height: auto;
     
                         @include responsive(pc-size) {
-                            width: 40%;
+                            width: 50%;
                         }
     
                         img {
@@ -414,121 +413,104 @@ main {
                 width: 40%;
             }
 
-            h2 {
-                font-size: 6.4vw;
-                letter-spacing: 0.5vw;
-                color: $bg-color;
-                font-family: $sub-font;
-                font-weight: 400;
-
+            .ev-wrap {
                 @include responsive(pc-size) {
-                    font-size: 2.7vw;
-                    letter-spacing: 0.3vw;
-                }
-            }
-
-            .more {
-                margin: 5% 0;
-                text-align: center;
-
-                @include responsive(pc-size) {
-                    display: none;
-                    margin: 0;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
                 }
 
-                a {
-                    .box {
-                        width: 30%;
-                        height: auto;
-                        padding: 0.6% 0;
-                        background-color: $font-color;
+                h2 {
+                    font-size: 6.4vw;
+                    letter-spacing: 0.5vw;
+                    color: $bg-color;
+                    font-family: $sub-font;
+                    font-weight: 400;
     
-                        @include responsive(pc-size) {
-                            width: 46%;
-                            // padding: 2% 0;
-                        }
+                    @include responsive(pc-size) {
+                        font-size: 2.7vw;
+                        letter-spacing: 0.3vw;
+                        margin-bottom: 3%;
+                    }
+                }
     
+                .more-p {
+                    width: 28%;
+                    margin: 5% 0;
+                    height: auto;
+                    padding: 0.6% 0;
+                    background-color: $font-color;
+    
+                    @include responsive(pc-size) {
+                        width: 35%;
+                        margin: 0;
+                        margin-bottom: 6%;
+                    }
+    
+                    a {
                         p {
+                            text-align: center;
                             font-size: 3.2vw;
                             font-weight: 500;
                             color: $bg-color;
     
                             @include responsive(pc-size) {
-                                font-size: 1.9vw;
+                                font-size: 1.5vw;
                             }
                         }
                     }
                 }
-            }
-
-            .more-p {
-                display: none;
-
-                @include responsive(pc-size) {
-                    // position: absolute;
-                    display: block;
-                    width: 28%;
-                    text-align: center;
-                    background-color: $font-color;
-                }
-
-                a {
-                    p {
-                        font-size: 1.2vw;
-                        font-weight: 500;
-                        color: $bg-color;
-                    }
-                }
-            }
-
-            .rl-icon {
-                display: flex;
-                justify-content: flex-end;
-                width: $width-wide;
-                // background-color: pink;
-
-                div {
-                    width: 13%;
-                    margin-left: 3.4%;
-                    // margin-left: 15px;
-
+    
+                .rl-icon {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: $width-wide;
+    
                     @include responsive(pc-size) {
-                        width: 16%;
-                        margin-left: 5%;
+                        margin-bottom: 4%;
                     }
-
-                    a {
-                        width: $width-wide;
-
-                        img {
+    
+                    div {
+                        width: 13%;
+                        margin-left: 3.4%;
+    
+                        @include responsive(pc-size) {
+                            width: 15%;
+                            margin-left: 5%;
+                        }
+    
+                        a {
                             width: $width-wide;
-                            height: auto;
+    
+                            img {
+                                width: $width-wide;
+                                height: auto;
+                            }
                         }
                     }
                 }
-            }
-
-            .ev-img {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 6%;
-                // margin-top: 50px;
-
-                @include responsive(pc-size) {
-                    margin-top: 15%;
-                }
-
-                div {
-                    width: 48%;
-                    height: auto;
-
-                    a {
-                        width: 100%;
-                        
-                        img {
+    
+                .ev-img {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-top: 6%;
+    
+                    @include responsive(pc-size) {
+                        margin-top: 0;
+                    }
+    
+                    div {
+                        width: 48%;
+                        height: auto;
+    
+                        a {
                             width: 100%;
-                            height: auto;
+                            
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
                         }
                     }
                 }
