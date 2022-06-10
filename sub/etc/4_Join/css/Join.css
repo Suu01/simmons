@@ -334,24 +334,21 @@ main nav .wrapper .gnb li a {
 main .title-join {
   position: relative;
   margin: 0 0;
-  padding: 0 0;
+  padding: 0 20px;
   margin-top: 36px;
-  margin-left: 34px;
   padding-top: 33px;
   font-size: 3em;
 }
 
 main .title-join .title {
   margin-top: 55px;
-  display: block;
-  margin: 0 auto;
   padding: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
   main .title-join .title {
     display: block;
-    float: left;
+    padding-left: 42px;
     margin-top: 10px;
   }
 }
@@ -384,12 +381,13 @@ main .title-join .title .title-sub {
 @media screen and (min-width: 768px) {
   main .title-join .title .title-sub {
     display: block;
+    position: relative;
     width: 1024px;
     font-size: 22px;
     font-family: "SCoreDream";
-    margin-top: -30px;
-    margin-left: -320px;
-    padding-left: 279px;
+    margin-top: -55px;
+    margin-left: -360px;
+    padding-left: 510px;
     padding-top: 7px;
   }
 }
@@ -400,10 +398,8 @@ main .title-join .title .title-sub {
     width: 1024px;
     font-size: 22px;
     font-family: "SCoreDream";
-    margin-top: -30px;
-    margin-left: -320px;
-    padding-left: 279px;
-    padding-top: 7px;
+    padding-left: 325px;
+    padding-top: -27px;
   }
 }
 
@@ -439,6 +435,10 @@ main .title-join .form_area .wrap_repw {
   padding: 0 auto;
 }
 
+main .title-join .form_area .wrap_repw .inp_text {
+  margin: 0 auto;
+}
+
 main .title-join .form_area .wrap_repw input {
   width: 427px;
   height: 46px;
@@ -452,9 +452,8 @@ main .title-join .form_area .name-gender {
 }
 
 main .title-join .form_area .name-gender .wrap_name {
-  margin: 0 auto;
-  padding: 0 auto;
-  margin-left: 7px;
+  position: relative;
+  padding-top: 8px;
 }
 
 main .title-join .form_area .name-gender .wrap_name .name_lab {
@@ -470,14 +469,10 @@ main .title-join .form_area .name-gender .wrap_name .name_text input {
   border-radius: 10px;
 }
 
-main .title-join .form_area .name-gender .wrap_name .name_text #join_name {
-  padding-top: 35px;
-  background-color: antiquewhite;
-}
-
 main .title-join .form_area .name-gender .wrap_gender {
-  margin: 0 auto;
-  padding: 0 auto;
+  position: relative;
+  padding-left: 65px;
+  padding-top: -25px;
 }
 
 main .title-join .form_area .name-gender .wrap_gender .join_gender {
@@ -485,38 +480,55 @@ main .title-join .form_area .name-gender .wrap_gender .join_gender {
   width: 47px;
   font-size: 17px;
   padding-left: 9px;
-  padding-top: 2px;
-  margin-top: 10px;
+  padding-top: -22px;
+  margin-top: 20px;
+}
+
+main .title-join .form_area .name-gender .wrap_gender .join_text #choice {
+  position: relative;
+  width: 127px;
+  height: 46px;
+  border-radius: 10px;
 }
 
 main .title-join .form_area .info#info_birth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: beige;
-  font-size: 17px;
+  font-size: 15px;
+  width: 91%;
+  padding-top: 30px;
+  padding-left: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-join .form_area .info#info_birth {
+    position: relative;
+    padding-left: 10px;
+    margin-left: -90px;
+  }
+}
+
+main .title-join .form_area .info#info_birth .birthday {
+  position: relative;
+  padding-right: 15px;
+  width: 25%;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-join .form_area .info#info_birth .birthday {
+    position: relative;
+    padding-left: 75px;
+    margin-left: 5px;
+  }
 }
 
 main .title-join .form_area .info#info_birth select {
   margin-left: 7px;
-}
-
-main .title-join .form_area .info#info_birth select:first-child {
-  margin-left: 0px;
-}
-
-main .title-join .form_area .info#info_birth select::-webkit-scrollbar {
-  width: 10px;
-}
-
-main .title-join .form_area .info#info_birth select::-webkit-scrollbar-thumb {
-  background-color: #b6b6b6;
-  border-radius: 3px;
-}
-
-main .title-join .form_area .info#info_birth select::-webkit-scrollbar-track {
-  background-color: #ebe9e9;
-  border-radius: 6px;
+  width: 110px;
+  height: 46px;
+  border-radius: 10px;
 }
 
 main .title-join .form_area .wrap_phonenum {
@@ -539,11 +551,22 @@ main .title-join .form_area .wrap_join_term {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  padding-top: 30px;
   font-size: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
+  height: 160px;
+  padding: 0 75px;
 }
 
 main .title-join .form_area .wrap_join_term .all_terms ul li {
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 30px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,16 +574,28 @@ main .title-join .form_area .wrap_join_term .all_terms ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: -10px;
 }
 
-main .title-join .form_button {
+main .title-join .form_area .wrap_join_term .all_terms_checkbx ul li {
+  line-height: 30px;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 62px;
+}
+
+main .title-join .join-button {
   margin: 0 auto;
   padding: 0 auto;
   width: 78%;
-  padding-top: 38px;
+  padding-top: 54px;
+  -webkit-transform: translateY(-305px);
+          transform: translateY(-305px);
 }
 
-main .title-join .form_button button .submit {
+main .title-join .join-button button {
   cursor: pointer;
   margin: 0 auto;
   padding: 0 auto;
@@ -572,12 +607,12 @@ main .title-join .form_button button .submit {
   border-radius: 10px;
   border-color: white;
   padding-left: 10%;
-  margin-top: 35px;
+  margin-top: 255px;
   margin-left: -2px;
   font-size: 25px;
 }
 
-main .title-join .form_button button .submit a {
+main .title-join .join-button button a {
   color: #fefefe;
   font-size: 1em;
   font-family: "SCoreDream";
