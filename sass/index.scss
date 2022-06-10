@@ -575,7 +575,6 @@ main {
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
-                    // background-color: yellow;
                 }
 
                 .title {
@@ -589,7 +588,7 @@ main {
                             margin: auto;
     
                             @include responsive(pc-size) {
-                                width: 28%;
+                                width: 27%;
                             }
     
                             img {
@@ -607,9 +606,9 @@ main {
                         margin: 4.2%;
     
                         @include responsive(pc-size) {
-                            font-size: 3.4vw;
+                            font-size: 3.2vw;
                             letter-spacing: 0.7vw;
-                            margin: 6% 0;
+                            margin: 5% 0;
                             text-align: center;
                         }
                     }
@@ -621,7 +620,7 @@ main {
                         margin-bottom: 12.5%;
     
                         @include responsive(pc-size) {
-                            font-size: 2.2vw;
+                            font-size: 2.1vw;
                             text-align: center;
                             letter-spacing: 0.2vw;
                             margin-bottom: 0;
@@ -646,10 +645,10 @@ main {
     
                         @include responsive(pc-size) {
                             text-align: center;
-                            font-size: 1.6vw;
+                            font-size: 1.4vw;
                             letter-spacing: 0.2vw;
                             font-weight: 500;
-                            margin: 8% 0;
+                            margin: 7% 0;
                         }
                     }
                 }
@@ -685,7 +684,7 @@ main {
                             margin: auto;
     
                             @include responsive(pc-size) {
-                                width: 33%;
+                                width: 31%;
                             }
     
                             img {
@@ -702,7 +701,7 @@ main {
                         margin: 3.7% 0;
     
                         @include responsive(pc-size) {
-                            font-size: 1.9vw;
+                            font-size: 1.8vw;
                             letter-spacing: 0.2vw;
                             margin: 2%;
                         }
@@ -852,7 +851,7 @@ main {
             }
 
             @include responsive(pc-size) {
-                width: 33%;
+                width: 30%;
                 padding: 0 30px;
             }
         
@@ -860,7 +859,9 @@ main {
                 @include responsive(pc-size) {
                     position: relative;
                     top: 50%;
-                    transform: translateY(-50%);
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    // background-color: pink;
                 }
 
                 div.footer-logo {
@@ -868,7 +869,7 @@ main {
                     height: auto;
     
                     @include responsive(pc-size) {
-                        width: 48%;
+                        width: 40%;
                     }
             
                     h2 {
@@ -886,7 +887,7 @@ main {
                     margin-top: 20.4%;
     
                     @include responsive(pc-size) {
-                        margin-top: 12%;
+                        margin-top: 10%;
                     }
             
                     div {
@@ -897,7 +898,7 @@ main {
                             color: $bg-color;
     
                             @include responsive(pc-size) {
-                                font-size: 1.25vw;
+                                font-size: 1.2vw;
                             }
                         }
                     }
@@ -971,6 +972,7 @@ main {
     
                             @include responsive(pc-size) {
                                 font-size: 1vw;
+                                margin-bottom: 3%;
                             }
             
                             &:last-child {
@@ -999,7 +1001,7 @@ main {
                     margin: 11.3% 0;
     
                     @include responsive(pc-size) {
-                        margin: 7% auto;
+                        display: none;
                     }
             
                     .k-icon {
@@ -1040,6 +1042,8 @@ main {
     
                         @include responsive(pc-size) {
                             font-size: 0.7vw;
+                            margin-top: 15%;
+                            // text-align: left;
                         }
                     }
                 }
