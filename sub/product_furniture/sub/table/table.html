@@ -4,42 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
     <link rel="stylesheet" href="./css/table.css">
-    <title>SIMMONS</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/table.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
 </head>
 <body>
-    <header> <!-- 세부 메뉴 만들어두기 -->
-        <h1><a href="index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+    <header>
+        <h1><a href="./index.html"><img src="./images/header_logo.png" alt="logo"></a></h1>
+
         <nav>
             <ul class="gnb">
-                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn"></a></li>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><span></span></a></li>
-                <li><a href="#"><span></span></a></li>
+                <li><a href="#"><img src="./images/ham-btn.png" alt="hamburger-btn" onclick="openMenu()"></a></li>
             </ul>
         </nav>
+
         <div class="side-menu">
             <ul class="s-menu">
-                <li><a href="#">Login</a></li>
-                <li><a href="#"><img src="./images/cart.png" alt="cart-icon"></a></li>
-                <li><a href="#"><img src="./images/search.png" alt="search-icon"></a></li>
+                <li><a href="./sub/etc/2_login_member/login_member.html">Login</a></li>
+                <li><a href="./sub/etc/3_Cart/cart.html"><img src="./images/cart.png" alt="cart-icon"></a></li>
+                <li><a href="#"><img src="./images/search.png" alt="search-icon" onclick="openSearh()"></a></li>
             </ul>
-        </div> <!-- side-menu -->
-    </header> <!-- header -->
+        </div> 
+
+        <div class="menu-sub" id="menu-sub">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            
+            <ul class="myMenu">
+                <li class="menu-top">
+                    <a href="./sub/etc/2_login_member/login_member.html">로그인</a>
+                    <a href="./sub/etc/3_Cart/cart.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu1">Product</a>
+                    <ul class="sub-menu-des1">
+                        <li><a href="./sub/product_bed/product_bed.html">Bed</a></li>
+                        <li><a href="./sub/product_bedding/product_bedding.html">Bedding</a></li>
+                        <li><a href="./sub/product_furniture/product_furniture.html">Furniture</a></li>
+                        <li><a href="./sub/product_roomset/product_roomset.html">RoomSet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="sub-menu2">Brand</a>
+                    <ul class="sub-menu-des2">
+                        <li><a href="./sub/brand/the_black/the_black.html">the Black</a></li>
+                        <li><a href="./sub/brand/heritage/heritage.html">heritage</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub/gallery/gallery.html">Gallery</a></li>
+                <li><a href="./sub/community/community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div id="search-sub" class="search-sub">
+            <span class="closebtn" onclick="closeSearch()">×</span>
+
+            <div class="search-sub-content">
+                <form action="#">
+                    <input type="text" placeholder="검색어를 입력하세요!" name="search">
+                </form>
+            </div>
+        </div>
+    </header> 
 
     <main>
-        <section class="slide"> <!----------------------------- !!!!!!!!수정!!!!!!!! -------------------------------->
+        <section class="slide">
             <img src="./images/5.jpg" alt="lund-lookbook">
         </section> <!-- slide -->
         <div class="wrapper">
             <section class="right">
-                <h1 class="name"> <!----------------------------- !!!!!!!!수정!!!!!!!! -------------------------------->
+                <h1 class="name">
                     KENOSHA<br>Lund
                 </h1>
                 <span class="na_bo"></span>
 
-                <form action="#"> <!----------------------------- !!!!!!!!수정!!!!!!!! -------------------------------->
+                <form action="#">
                     <p class="fo_size">
                         규격 <select name="se_size" id="se_size">
                             <option value="">선택하세요.</option>
@@ -97,7 +136,7 @@
                     <img src="./images/simmons_pay_b1_pc.png" alt="simmons_pay">
                 </section> <!-- pay -->
 
-                <section id="description"> <!----------------------------- !!!!!!!!수정!!!!!!!! -------------------------------->
+                <section id="description">
                     <div class="description-text">
                         <img src="./images/Lund_table6.jpg" alt="lund-lookbook2" class="lookbook">
                         <h1>Description</h1>
@@ -107,11 +146,11 @@
                             <br>
                             기하학적 구조의 테이블 다리가 비대칭적인 조화를 이루며 시선을 압도합니다 <br>
                         </p>
-                        <img src="./images/Lund_table7.png" alt="lund_detail"> <!----------------------------- !!!!!!!!수정!!!!!!!! -------------------------------->
+                        <img src="./images/Lund_table7.png" alt="lund_detail">
                     </div> <!-- description-text -->
                 </section> <!-- description -->
         
-                <section id="details"> <!----------------------------- !!!!!!!!수정!!!!!!!! -------------------------------->
+                <section id="details">
                     <h1>Details</h1>
                     <table>
                         <tr>
