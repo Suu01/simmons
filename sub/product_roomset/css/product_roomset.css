@@ -547,6 +547,10 @@ main .wrapper .filter-menu select {
   }
 }
 
+main .wrapper .tabs-contents {
+  margin-bottom: 50px;
+}
+
 main .wrapper .tabs-contents .all {
   display: -ms-grid;
   display: grid;
