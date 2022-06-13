@@ -394,32 +394,28 @@ main section.gallery-top {
 main section.gallery-top h2 {
   width: 100%;
   position: absolute;
-  top: 75%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -75%);
-          transform: translate(-50%, -75%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #fefefc;
   font-size: 28px;
   letter-spacing: 2px;
   font-family: "PT Serif", serif;
   text-align: center;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
   main section.gallery-top h2 {
-    top: 70%;
-    -webkit-transform: translate(-50%, -70%);
-            transform: translate(-50%, -70%);
     font-size: 50px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main section.gallery-top h2 {
-    top: 50%;
     font-size: 70px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    padding-top: 0;
   }
 }
 
