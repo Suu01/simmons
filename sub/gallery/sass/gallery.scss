@@ -267,9 +267,9 @@ main {
         h2 {
             width: 100%;
             position: absolute;
-            top: 70%;
+            top: 75%;
             left: 50%;
-            transform: translate(-50%, -70%);
+            transform: translate(-50%, -75%);
             color: $bg-color;
             font-size: 28px;
             letter-spacing: 2px;
@@ -278,12 +278,15 @@ main {
             // background-color: pink;
 
             @include responsive(tablet-size) {
-                top: 50%;
+                top: 70%;
+                transform: translate(-50%, -70%);
                 font-size: 50px;
             }
 
             @include responsive(pc-size) {
+                top: 50%;
                 font-size: 70px;
+                transform: translate(-50%, -50%);
             }
         }
 
