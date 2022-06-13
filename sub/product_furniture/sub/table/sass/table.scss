@@ -4,9 +4,11 @@
 
 body {
     -ms-overflow-style: none;
+    padding-top: 60px;
 
     @include responsive(pc-size) {
         padding-left: 80px;
+        padding-top: 0;
     }
 }
 
