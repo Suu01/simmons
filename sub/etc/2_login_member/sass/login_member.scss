@@ -313,8 +313,8 @@ main {
         position: relative;
         margin: 0 0;
         padding: 0 20px;
-        margin-top: 36px;
-        padding-top: 33px;
+        margin-top: 5px;
+        padding-top: 5px;
         font-size: 3em;
 
         .title {
@@ -323,8 +323,9 @@ main {
 
             @include responsive(pc-size) {
                 display: block;
-                padding-left: 42px;
-                margin-top: 10px;
+                padding-left: 527px;
+                padding-top: 30px;
+                margin-top: 25px;
             }
 
             .title-fir {
@@ -364,7 +365,7 @@ main {
                     font-size: 22px;
                     font-family: $main-font;
                     padding-left: 275px;
-                    padding-top: 5px;
+                    padding-top: 40px;
                 }
             }
         }
@@ -390,12 +391,13 @@ main {
             }
 
             .loginform-box {
-                
+            
                 margin-left: auto;
                 margin-right: auto;
                  
                 .loginform-input-form {
-                    width: 450px;
+                    display: block;
+                    width: 328px;
                     margin: 0 auto;
                     padding: 0 auto;
                   
@@ -406,7 +408,9 @@ main {
 
                     .inp_wrap{
                         padding-left: -150px;
+                        width: 312px;
 
+                        font-size: 12px;
 
                         .inp_lab {
                             margin-top: 27px;
@@ -415,9 +419,8 @@ main {
                         }
 
                         input {
-                            // width: 427px;
-                            // height: 46px;
-                            width: 328px;
+
+                            width: 300px;
                             height: 46px;
                             border: 1px solid #e1dedf;
    
@@ -433,11 +436,10 @@ main {
                     }
                 }
                 .login-button {
-                    margin: 0 auto;
-                    padding: 0 auto;
-                    width: 78%;
+
+                    width: 58%;
                     padding-top: 64px;
-                    transform: translateY(-210px);
+                    transform: translateY(-277px);
 
                     button {
                         cursor: pointer;
@@ -445,10 +447,10 @@ main {
                         padding: 0 auto;
                         display: block;
                         text-align: center;
-                        width: 328px;
+                        width: 308px;
                         height: 48px;
                         background-color: $point-color;
-                        // border-radius: 10px;
+                        border-radius: 10px;
                         border-color: white;
                         padding-left: 10%;
                         margin-top: 255px;
@@ -460,7 +462,7 @@ main {
                             font-size: 1em;
                             font-family: $main-font;
                             margin-right: 50px;
-                            width: 80%;
+                            width: 95%;
 
                             &:hover {
                                 background-color: whitesmoke;
@@ -476,24 +478,27 @@ main {
         }
 
         .find-login {
-            display: none;
-            margin-top: 20px;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-top: -250px;
             font-size: 16px;
             text-align: center;
+            height: 70px;
 
             @include responsive(tablet-size) {
-                display: none;
-
+                display: flex;
                 position: relative;
                 padding-bottom: 360px;
                 margin-top: 300px;
-                
+                margin: 0 auto;
             }
 
             @include responsive(pc-size) {
                 display: flex;
+                background-color: #333;
                 // position: relative;
-                margin-left: 80px;
+                margin-left: 280px;
                 margin-top: -940px;
 
                 padding-top: 320px;
@@ -502,24 +507,24 @@ main {
 
             
                 .login-id {
-                    
+                    display: flex;
                     @include responsive(pc-size) {
                     padding-top: 20px;
                     padding-left: 70px;
                     margin-top: 450px;
                     
                     .login-align {
-                            
+                        display: flex;   
                         cursor: pointer;
                         color: #333333;
-                        display: flex;
                         justify-content: space-between;
                         margin: 0 auto; 
                         width: 100%;
-                        padding-left: 10px;
-                        margin-left: 30px;
+                        padding-left: 70px;
+                        margin-left: 30px;                       
                         
                         li {
+                            display: flex;
                             &:hover {
                                 color: $point-color;
                             }
@@ -533,6 +538,9 @@ main {
                                 border-right: 0; 
                             }
 
+                            a {
+                                
+                            }
                         }
                     }
 
