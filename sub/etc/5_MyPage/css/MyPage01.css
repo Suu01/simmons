@@ -454,8 +454,8 @@ main .title-cart {
   position: relative;
   margin: 0 0;
   padding: 0 20px;
-  margin-top: 36px;
-  padding-top: 33px;
+  margin-top: 5px;
+  padding-top: 5px;
   font-size: 3em;
 }
 
@@ -467,8 +467,9 @@ main .title-cart .title {
 @media screen and (min-width: 1024px) {
   main .title-cart .title {
     display: block;
-    padding-left: 697px;
-    margin-top: 10px;
+    padding-left: 527px;
+    padding-top: 30px;
+    margin-top: 25px;
   }
 }
 
@@ -476,8 +477,9 @@ main .title-cart .title .title-fir {
   font-size: 1.5em;
   font-family: "SCoreDream";
   font-weight: 500;
-  margin: 0 auto;
-  margin-top: 50px;
+  padding-top: 20px;
+  margin: 30px 0;
+  line-height: 66px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -521,71 +523,69 @@ main .title-cart .title .title-sub {
   }
 }
 
-main .confix {
+main .tabs-menu {
   width: 100%;
-  margin: 0 auto;
-  padding-top: 50px;
-}
-
-main .confix .menu-tabs {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 1024px) {
-  main .confix .menu-tabs {
-    width: 55%;
-    padding-top: 9px;
+  main .tabs-menu {
+    width: 75%;
     margin: 0 auto;
+    padding: 0 auto;
+    padding-top: 130px;
   }
 }
 
-main .confix .menu-tabs li {
+main .tabs-menu .tabs {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-left: 2px solid #e1e1e1;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+main .tabs-menu .tabs li {
   display: table-cell;
   float: left;
   width: 50%;
   height: 50px;
 }
 
-main .confix .menu-tabs li:nth-child(odd) > a {
-  border-left: 2px solid #82ca9c;
-}
-
 @media screen and (min-width: 768px) {
-  main .confix .menu-tabs li {
+  main .tabs-menu .tabs li {
     width: 25%;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  main .confix .menu-tabs li {
-    width: 25%;
-  }
-  main .confix .menu-tabs li:nth-child(3) > a {
-    border-left: 2px solid #fff;
-  }
-}
-
-main .confix .menu-tabs li:nth-child(n+3) {
+main .tabs-menu .tabs li:nth-child(n+3) {
   margin-top: -2px;
 }
 
 @media screen and (min-width: 768px) {
-  main .confix .menu-tabs li:nth-child(n+3) {
+  main .tabs-menu .tabs li:nth-child(n+3) {
+    margin-top: 0;
+  }
+}
+
+main .tabs-menu .tabs li:nth-child(n+3) {
+  margin-top: -2px;
+}
+
+@media screen and (min-width: 768px) {
+  main .tabs-menu .tabs li:nth-child(n+3) {
     margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .confix .menu-tabs li:nth-child(n+3) {
+  main .tabs-menu .tabs li:nth-child(n+3) {
     width: 25%;
   }
 }
 
-main .confix .menu-tabs li:hover {
-  border-bottom: #82ca9c;
+main .tabs-menu .tabs li:hover a {
+  border-bottom-color: #82ca9c;
   border-top: 2px solid #82ca9c;
   z-index: 1;
   background-color: #82ca9c;
@@ -594,20 +594,13 @@ main .confix .menu-tabs li:hover {
   transition: all 0.5s;
 }
 
-@media screen and (min-width: 1024px) {
-  main .confix .menu-tabs li:hover {
-    color: #82ca9c;
-    border-top: #e1e1e1;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  main .confix .menu-tabs li:hover {
+  main .tabs-menu .tabs li:hover a {
     border-bottom-color: transparent;
   }
 }
 
-main .confix .menu-tabs li:hover:after {
+main .tabs-menu .tabs li:hover a:after {
   content: '';
   display: block;
   position: absolute;
@@ -618,7 +611,7 @@ main .confix .menu-tabs li:hover:after {
   background-color: #82ca9c;
 }
 
-main .confix .menu-tabs li:hover::before {
+main .tabs-menu .tabs li:hover a:before {
   content: '';
   display: block;
   position: absolute;
@@ -633,13 +626,15 @@ main .confix .menu-tabs li:hover::before {
   transition: all 0.5s;
 }
 
-main .confix .menu-tabs a {
+main .tabs-menu .tabs li a {
   display: block;
   position: relative;
   height: 50px;
-  border-top: 2px solid #82ca9c;
-  border-bottom: 2px solid #82ca9c;
-  border-right: 2px solid #82ca9c;
+  border-top: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+  border-right: 2px solid #e1e1e1;
+  font-size: 1.2em;
+  font-weight: 450;
   letter-spacing: 0.001em;
   line-height: 50px;
   text-align: center;
@@ -648,17 +643,13 @@ main .confix .menu-tabs a {
   text-align: center;
 }
 
-main .confix .menu-tabs a:hover {
-  color: #fff;
-}
-
 @media screen and (min-width: 768px) {
-  main .confix .menu-tabs a {
+  main .tabs-menu .tabs li a {
     border-bottom: 2px solid #e1e1e1;
   }
 }
 
-main .confix .menu-tabs a:after {
+main .tabs-menu .tabs li a:after {
   content: '';
   display: block;
   position: absolute;
@@ -672,7 +663,7 @@ main .confix .menu-tabs a:after {
 main .notice-content {
   margin: 0 auto;
   padding: 0 auto;
-  padding-top: 280px;
+  padding-top: 200px;
   width: 100%;
   height: 855px;
   -webkit-box-align: center;
@@ -746,6 +737,7 @@ main .notice-content .notice-text .nt-text-alert {
   padding: 0 auto;
   padding-top: 50px;
   padding-bottom: 70px;
+  font-size: 0.85em;
 }
 
 main .notice-content .notice-text button {
@@ -755,7 +747,7 @@ main .notice-content .notice-text button {
   padding-left: 30px;
   display: block;
   text-align: center;
-  width: 328px;
+  width: 230px;
   height: 46px;
   background-color: #82ca9c;
   border-radius: 10px;
@@ -768,7 +760,7 @@ main .notice-content .notice-text button a {
   font-size: 1em;
   font-family: "SCoreDream";
   width: 50%;
-  margin-left: 57px;
+  margin-left: 35px;
 }
 
 @media screen and (min-width: 1024px) {

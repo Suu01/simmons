@@ -467,8 +467,8 @@ main .title-cart {
   position: relative;
   margin: 0 0;
   padding: 0 20px;
-  margin-top: 36px;
-  padding-top: 33px;
+  margin-top: 5px;
+  padding-top: 5px;
   font-size: 3em;
 }
 
@@ -481,7 +481,7 @@ main .title-cart .title {
   main .title-cart .title {
     display: block;
     padding-left: 697px;
-    margin-top: 10px;
+    margin-top: 90px;
   }
 }
 
@@ -518,7 +518,7 @@ main .title-cart .title .title-sub {
     font-family: "SCoreDream";
     margin-top: -50px;
     margin-left: -320px;
-    padding-left: 630px;
+    padding-left: 490px;
     padding-top: 7px;
   }
 }
@@ -535,17 +535,16 @@ main .title-cart .title .title-sub {
 }
 
 main .title-cart nav.content-menu {
+  width: 100%;
   display: block;
-  padding-top: 2px;
-  margin: 0 auto;
   text-align: center;
-  padding-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
   main .title-cart nav.content-menu {
     padding-top: 88px;
     margin: 0 auto;
+    padding: 0 auto;
     width: 50%;
   }
 }
@@ -562,10 +561,10 @@ main .title-cart nav.content-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 150px;
-  margin: 32px auto 34px;
+  width: 130px;
+  margin-top: 5px;
   font-size: 20px;
-  width: 85%;
+  width: 55%;
 }
 
 main .title-cart nav.content-menu ul li:first-child a {
@@ -575,7 +574,7 @@ main .title-cart nav.content-menu ul li:first-child a {
 
 main .title-cart nav.content-menu ul li a {
   color: #333333;
-  width: 180px;
+  width: 150px;
   text-align: center;
   border: 1px solid #666666;
   padding: 10px;
@@ -608,7 +607,7 @@ main .title-cart .notice-content {
 @media screen and (min-width: 768px) {
   main .title-cart .notice-content {
     padding-top: 38px;
-    padding-left: 120px;
+    padding-left: 145px;
     margin: 0 auto;
     padding: 0 auto;
     display: block;
@@ -621,9 +620,9 @@ main .title-cart .notice-content {
 
 @media screen and (min-width: 1024px) {
   main .title-cart .notice-content {
-    padding-top: 38px;
-    padding-left: -5px;
-    margin-left: 150px;
+    padding-top: 58px;
+    padding-left: 40px;
+    margin-left: 100px;
     margin: 0 auto;
     padding: 0 auto;
   }
@@ -633,8 +632,8 @@ main .title-cart .notice-content .notice {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 27%;
-  margin-top: -45px;
+  padding-left: 10%;
+  margin-top: -55px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -648,14 +647,32 @@ main .title-cart .notice-content .notice {
 }
 
 main .title-cart .notice-content .notice-text {
-  font-size: 22px;
+  font-size: 19px;
   color: #666666;
   text-align: center;
-  padding-left: 120px;
   position: relative;
-  padding-left: 30px;
-  padding: 0 auto;
-  margin: 0 auto;
+  padding-left: -220px;
+  margin-left: -10px;
+  margin-top: -55px;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart .notice-content .notice-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 35%;
+    margin-left: -378px;
+    margin-top: -75px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .notice-content .notice-text {
+    padding-left: -350px;
+    margin-left: -550px;
+    padding-top: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -664,7 +681,7 @@ main .title-cart .notice-content .notice-text {
     margin: 0 auto;
     padding: 0 auto;
     width: 100%;
-    margin-left: 1%;
+    margin-left: -3%;
   }
 }
 
@@ -676,7 +693,7 @@ main .title-cart .notice-content .btn-go button {
   margin-top: 45px;
   display: block;
   text-align: center;
-  width: 328px;
+  width: 300px;
   height: 46px;
   background-color: #82ca9c;
   border-color: #fff;
@@ -691,5 +708,19 @@ main .title-cart .notice-content .btn-go button a {
   padding-left: 11px;
   margin-right: 50px;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  main .title-cart .notice-content .btn-go {
+    padding-left: -85%;
+    margin-left: -175px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .title-cart .notice-content .btn-go {
+    padding-left: 20%;
+    margin-left: -175px;
+  }
 }
 /*# sourceMappingURL=cart.css.map */
