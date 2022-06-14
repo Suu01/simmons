@@ -79,6 +79,8 @@ body {
 
 header {
   position: fixed;
+  margin: 0 auto;
+  padding: 0 auto;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -90,7 +92,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 90%;
   height: 60px;
   padding: 0 15px;
   border-bottom: 1px solid #333;
@@ -436,7 +438,6 @@ main nav .wrapper .gnb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 30px;
 }
 
 main nav .wrapper .gnb li {
@@ -523,8 +524,10 @@ main .title-login .title .title-sub {
 }
 
 main .title-login .loginform {
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0 0;
+  padding: 0 20;
+  margin-top: -25px;
+  padding-top: -20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,7 +563,7 @@ main .title-login .loginform .loginform-box {
 
 main .title-login .loginform .loginform-box .loginform-input-form {
   display: block;
-  width: 328px;
+  width: 300px;
   margin: 0 auto;
   padding: 0 auto;
   margin-left: auto;
@@ -578,25 +581,25 @@ main .title-login .loginform .loginform-box .loginform-input-form .inp_wrap {
 main .title-login .loginform .loginform-box .loginform-input-form .inp_wrap .inp_lab {
   margin-top: 27px;
   padding-top: 10px;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 main .title-login .loginform .loginform-box .loginform-input-form .inp_wrap input {
-  width: 300px;
+  width: 245px;
   height: 46px;
   border: 1px solid #e1dedf;
-  font-size: 22px;
+  font-size: 17px;
   margin-top: 8px;
 }
 
 main .title-login .loginform .loginform-box .loginform-input-form .inp_wrap .loginform-id {
-  margin-top: 27px;
+  margin-top: 12px;
   padding-top: 10px;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 main .title-login .loginform .loginform-box .login-button {
-  width: 58%;
+  width: 48%;
   padding-top: 64px;
   -webkit-transform: translateY(-277px);
           transform: translateY(-277px);
@@ -608,13 +611,13 @@ main .title-login .loginform .loginform-box .login-button button {
   padding: 0 auto;
   display: block;
   text-align: center;
-  width: 308px;
+  width: 250px;
   height: 48px;
   background-color: #82ca9c;
   border-radius: 10px;
   border-color: white;
   padding-left: 10%;
-  margin-top: 255px;
+  margin-top: 235px;
   margin-left: -2px;
   font-size: 25px;
 }
@@ -635,14 +638,14 @@ main .title-login .find-login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  padding-top: 2px;
+  padding-left: -40px;
   margin-top: -250px;
-  font-size: 16px;
-  text-align: center;
-  height: 70px;
+  padding-left: -80px;
+  line-height: -16px;
+  font-size: 13px;
 }
 
 @media screen and (min-width: 768px) {
@@ -662,18 +665,15 @@ main .title-login .find-login {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #333;
     margin-left: 280px;
     margin-top: -940px;
     padding-top: 320px;
-    height: 70px;
   }
 }
 
 main .title-login .find-login .login-id {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -682,36 +682,48 @@ main .title-login .find-login .login-id {
     padding-left: 70px;
     margin-top: 450px;
   }
-  main .title-login .find-login .login-id .login-align {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    cursor: pointer;
-    color: #333333;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
-    padding-left: 70px;
-    margin-left: 30px;
-  }
-  main .title-login .find-login .login-id .login-align li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-right: 1px solid #333333;
-    padding-right: 30px;
-    margin-left: 14.5px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .title-login .find-login .login-id .login-align li:hover {
-    color: #82ca9c;
-  }
-  main .title-login .find-login .login-id .login-align li:last-child {
-    border-right: 0;
-  }
+}
+
+main .title-login .find-login .login-id .login-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  color: #333333;
+  margin-left: -70px;
+}
+
+main .title-login .find-login .login-id .login-align li {
+  padding-top: -20px;
+  padding-right: 15px;
+  word-spacing: -100px;
+  display: block;
+}
+
+main .title-login .find-login .login-id .login-align li:hover {
+  color: #82ca9c;
+}
+
+main .title-login .find-login .login-id .login-align li a {
+  width: 65px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: bold;
+  color: #333;
+  border-right: 1px solid #333;
+  color: #333;
+  word-spacing: 3px;
+}
+
+main .title-login .find-login .login-id .login-align li a:last-child {
+  border-right: 0;
+}
+
+main .title-login .find-login .login-id .login-align li a:hover {
+  color: #82ca9c;
 }
 /*# sourceMappingURL=login_member.css.map */

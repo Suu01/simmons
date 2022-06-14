@@ -11,12 +11,14 @@ body {
 // header-area
 header {
     position: fixed;
+    margin: 0 auto;
+    padding: 0 auto;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 60px;
     padding: 0 15px;
     border-bottom: 1px solid #333;
@@ -290,7 +292,7 @@ main {
                 justify-content: flex-end;
                 list-style: none;
                 flex-direction: row;
-                margin-left: 30px;
+
     
                 li {
                     display: inline-block;
@@ -371,8 +373,10 @@ main {
         }
 
         .loginform {        
-            margin: 0 auto;
-            padding: 0 auto;
+            margin: 0 0;
+            padding: 0 20;
+            margin-top: -25px;
+            padding-top: -20px;
             display: flex;
             align-content: center;
         
@@ -397,7 +401,7 @@ main {
                  
                 .loginform-input-form {
                     display: block;
-                    width: 328px;
+                    width: 300px;
                     margin: 0 auto;
                     padding: 0 auto;
                   
@@ -415,29 +419,29 @@ main {
                         .inp_lab {
                             margin-top: 27px;
                             padding-top: 10px;
-                            font-size: 22px;
+                            font-size: 17px;
                         }
 
                         input {
 
-                            width: 300px;
+                            width: 245px;
                             height: 46px;
                             border: 1px solid #e1dedf;
    
-                            font-size: 22px;
+                            font-size: 17px;
                             margin-top: 8px;
                         }  
                         .loginform-id {
-                            margin-top: 27px;
+                            margin-top: 12px;
                             padding-top: 10px;
-                            font-size: 22px;
+                            font-size: 17px;
 
                         }
                     }
                 }
                 .login-button {
 
-                    width: 58%;
+                    width: 48%;
                     padding-top: 64px;
                     transform: translateY(-277px);
 
@@ -447,13 +451,13 @@ main {
                         padding: 0 auto;
                         display: block;
                         text-align: center;
-                        width: 308px;
+                        width: 250px;
                         height: 48px;
                         background-color: $point-color;
                         border-radius: 10px;
                         border-color: white;
                         padding-left: 10%;
-                        margin-top: 255px;
+                        margin-top: 235px;
                         margin-left: -2px;
                         font-size: 25px;
                         
@@ -476,15 +480,18 @@ main {
             }
 
         }
-
         .find-login {
             display: flex;
-            position: relative;
-            justify-content: space-between;
+            width: 100%;
+            
+            position: absolute;
+            padding-top: 2px;
+            padding-left: -40px;
+
             margin-top: -250px;
-            font-size: 16px;
-            text-align: center;
-            height: 70px;
+            padding-left: -80px;
+            line-height: -16px;
+            font-size: 13px;
 
             @include responsive(tablet-size) {
                 display: flex;
@@ -496,61 +503,84 @@ main {
 
             @include responsive(pc-size) {
                 display: flex;
-                background-color: #333;
+                
                 // position: relative;
                 margin-left: 280px;
                 margin-top: -940px;
-
                 padding-top: 320px;
-                height: 70px;
-            }
 
+            }
             
-                .login-id {
-                    display: flex;
-                    @include responsive(pc-size) {
+
+
+            .login-id { 
+                position: relative;
+                margin: 0 auto;
+                // background-color: olivedrab;
+                @include responsive(pc-size) {
                     padding-top: 20px;
                     padding-left: 70px;
                     margin-top: 450px;
+                }
+                
+                .login-align {
+                    display: flex;
+                    justify-content: space-between;
                     
-                    .login-align {
-                        display: flex;   
-                        cursor: pointer;
-                        color: #333333;
-                        justify-content: space-between;
-                        margin: 0 auto; 
-                        width: 100%;
-                        padding-left: 70px;
-                        margin-left: 30px;                       
-                        
-                        li {
-                            display: flex;
-                            &:hover {
-                                color: $point-color;
-                            }
+                    cursor: pointer;
 
-                            border-right: 1px solid #333333;
-                            padding-right: 30px;
-                            margin-left: 14.5px;
-                            justify-content: space-between;
-            
+                    width: 100%;
+                    color: #333333;
+                    margin-left: -70px;
+                    // background-color: #aa8e79;
+                    
+                    li {
+                        padding-top: -20px;
+                        padding-right: 15px;
+                    
+                        word-spacing: -100px;
+                        display: block;
+
+                        &:hover {
+                            color: $point-color;
+                        }
+                        
+                        a {
+                            width: 65px;
+                            // background-color: tomato;
+                            
+                            text-align: center;
+                            font: {
+                                size: 9px;
+                                weight: bold;
+                            }
+                            // border-right: 1px solid #aa8e79;
+                            color: #333;
+                            border-right: 1px solid #333;
+                            color: #333;
+                            word-spacing: 3px;
+
                             &:last-child {
                                 border-right: 0; 
                             }
 
-                            a {
-                                
+                            &:hover {
+                                color: $point-color;
                             }
+
                         }
-                    }
+                    } //li
+
+                } //ul
+
+            } //login.id 끝
+
+        } //find-login
 
 
-                }
-            
-            
-            }
-
-        }
-    
     }
+
+    
 }
+
+
