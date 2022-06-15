@@ -57,7 +57,7 @@ window.onload = function(){
         asell.setAttribute("class","list");
         aother.setAttribute("class","list");
 
-        document.getElementsByClassName("tabP")[0].style.display="none";
+        document.getElementById("tabP").style.display="none";
     }
 
     atel.onclick=function(){
@@ -89,7 +89,7 @@ window.onload = function(){
         asell.setAttribute("class","list");
         aother.setAttribute("class","list");
 
-        document.getElementsByClassName("tabP")[0].style.display="none";
+        document.getElementById("tabP").style.display="none";
     }
     
     aasp.onclick=function(){
@@ -121,7 +121,7 @@ window.onload = function(){
         asell.setAttribute("class","list");
         aother.setAttribute("class","list");
 
-        document.getElementsByClassName("tabP")[0].style.display="none";
+        document.getElementById("tabP").style.display="none";
     }
 
     anotice.onclick=function(){
@@ -153,7 +153,9 @@ window.onload = function(){
         asell.setAttribute("class","list");
         aother.setAttribute("class","list");
 
-        document.getElementsByClassName("tabP")[0].style.display="none";
+        for(var i=0; i<4; i++) {
+            document.getElementById("tabP").style.display="none";
+        } 
     }
     //버튼2
 
