@@ -254,8 +254,8 @@ header {
 }
 
 
-    
 main > h1{
+    margin-top: 60px;
     text-indent: 10%;
     line-height: 2em;
     @include responsive(pc-size){
@@ -268,9 +268,11 @@ main > h1{
 }
     
 .wrapper{   
+    margin-top: 10px;
     @include responsive(pc-size){
         display: flex;
         width: 100%;
+        margin-top: 0;
     }
 }
     
@@ -409,7 +411,7 @@ main > h1{
                     }
                 }
             }
-            .tabP{
+            #tabP{
                 display: none;
                 padding: 20px 0;
                 line-height: 25px;
@@ -430,7 +432,8 @@ main > h1{
             text-align: right;
             input{
                 display: inline-block;
-                width: 250px;
+                width: 65%;
+                max-width: 250px;
                 height: 35px;
             }
             
@@ -443,6 +446,7 @@ main > h1{
                 padding: 5px 25px;
                 color: $bg-color;
                 display: inline-block;
+                // margin: 5px 0 5px 0;
             }
             @include responsive(pc-size){
                 display: none;
@@ -488,7 +492,7 @@ main > h1{
                     }
                 }
             }
-            .tabP{
+            #tabP{
                 display: none;
                 padding: 20px 0;
                 line-height: 25px;
@@ -570,7 +574,7 @@ main > h1{
 
 #qna{
     display: none;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 100px;
     hr{
         border: 1px solid $point-color;
@@ -601,7 +605,7 @@ main > h1{
     display: none;
     fieldset{
         border: none;
-        margin-bottom: 50px;
+        margin: 30px 0;
         legend{
             font-size: 0;
         }
@@ -662,14 +666,16 @@ main > h1{
             }
         }
         fieldset{
-            margin: 50px 0;
+            legend{
+                display: none;
+            }
             ul{
                 @include responsive(pc-size){
                     margin: 20px 10px;
                 }
-                li{
+                li{ 
                     ul{
-                        margin: 10px 0;
+                        margin: 15px 0;
                         li{
                             display: flex;
                             margin: 5px 0;
@@ -680,17 +686,17 @@ main > h1{
                             }
                             &:first-child{
                                 margin-right: 10%;
-                                width: 30%;
+                                width: 40%;
                                 @include responsive(pc-size){
                                     width: 350px;
                                 }
                             }
-                            &:nth-child(2){
+                            &:last-child{
                                 input,
                                 select{
                                     height: 30px;
                                     width: 100%;
-                                    @include responsive(pc-size){
+                                    @include responsive(tablet-size){
                                         max-width: 200px;
                                     }
                                     background-color: $bg-color;
@@ -700,9 +706,6 @@ main > h1{
                                     margin: 0 5px;
                                 }
                             }
-                        }
-                        .detail-name{
-                            width: 450px;
                         }
                         .detail{
                             display: block;
@@ -717,6 +720,7 @@ main > h1{
                             }
                         }
                         @include responsive(tablet-size){
+                            width: 100%;
                             display: flex;
                         }
                     }
@@ -724,7 +728,8 @@ main > h1{
             }
             a{
                 background-color: $point-color;
-                width: 300px;
+                width: 100%;
+                max-width: 300px;
                 margin: 0 auto;
                 padding: 15px 0;
                 text-align: center;
@@ -738,6 +743,7 @@ main > h1{
     display: none;
     .as-pro{
         position: relative;
+        margin: 30px 0;
         h3{
             border-bottom: 2px solid $point-color;
             @include responsive(pc-size){
@@ -789,7 +795,7 @@ main > h1{
     .memAgree{
         fieldset{
             border: none;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             legend{
                 font-size: 0;
             }
@@ -833,11 +839,16 @@ main > h1{
         .mj-head{
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid $gray-color;
+            border-bottom: 2px solid $point-color;
+            @include responsive(pc-size){
+                border-bottom: 1px solid $gray-color;
+            }
             h3{
                 width: 200px;
-                text-decoration: underline;
-                text-underline-offset: 0.1em;
+                @include responsive(pc-size){
+                    text-decoration: underline;
+                    text-underline-offset: 0.1em;
+                }
             }
             p{
                 font-size: 0.8em;
@@ -845,7 +856,7 @@ main > h1{
             }
         }
         fieldset{
-            margin: 50px 0;
+            margin: 30px 0;
             border: none;
             legend{
                 display: none;
@@ -877,7 +888,7 @@ main > h1{
                                 select{
                                     height: 30px;
                                     width: 100%;
-                                    @include responsive(pc-size){
+                                    @include responsive(tablet-size){
                                         max-width: 200px;
                                     }
                                     background-color: $bg-color;
@@ -967,7 +978,8 @@ main > h1{
             }
             .btn-req{
                 background-color: $point-color;
-                width: 300px;
+                width: 100%;
+                max-width: 300px;
                 margin: 0 auto;
                 padding: 15px 0;
                 text-align: center;
@@ -1005,6 +1017,10 @@ main > h1{
                 background-color: $point-color;
                 color: $bg-color;
                 padding: 2px 10px;
+            }
+            input{
+                width: 44%;
+                max-width: 250px;
             }
         }
     }
