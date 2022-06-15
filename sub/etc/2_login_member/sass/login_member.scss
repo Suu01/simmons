@@ -252,6 +252,8 @@ header {
 
 main {
     width: $width-wide;
+    margin: 0 auto;
+
 
     @include responsive(tablet-size) {
         display: flex;
@@ -353,7 +355,7 @@ main {
                 @include responsive(tablet-size) {
                     display: block;
                     width: 1024px;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-family: $main-font;
                     margin-top: -50px;
                     margin-left: -320px;
@@ -374,7 +376,7 @@ main {
 
         .loginform {        
             margin: 0 0;
-            padding: 0 20;
+            // padding: 0 20;
             margin-top: -25px;
             padding-top: -20px;
             display: flex;
@@ -401,9 +403,10 @@ main {
                  
                 .loginform-input-form {
                     display: block;
-                    width: 300px;
-                    margin: 0 auto;
-                    padding: 0 auto;
+                    width: 270px;
+                    // background-color: #333333;
+                    // margin: 0 auto;
+                    // padding: 0 auto;
                   
                     margin-left: auto;
                     margin-right: auto;
@@ -411,7 +414,8 @@ main {
                     overflow-y: hidden;
 
                     .inp_wrap{
-                        padding-left: -150px;
+                        padding-left: 10px;
+                        margin-top: 50px;
                         width: 312px;
 
                         font-size: 12px;
@@ -438,58 +442,62 @@ main {
 
                         }
                     }
-                }
-                .login-button {
 
-                    width: 48%;
-                    padding-top: 64px;
-                    transform: translateY(-277px);
+                    .login-button {
 
-                    button {
-                        cursor: pointer;
-                        margin: 0 auto;
-                        padding: 0 auto;
-                        display: block;
-                        text-align: center;
-                        width: 250px;
-                        height: 48px;
-                        background-color: $point-color;
-                        border-radius: 10px;
-                        border-color: white;
-                        padding-left: 10%;
-                        margin-top: 235px;
-                        margin-left: -2px;
-                        font-size: 25px;
+                        width: 100%;
+
+                        padding-top: 64px;
+                        padding-left: 10px;
+                        transform: translateY(-267px);
                         
-                        a {
-                            color: #fefefe;
-                            font-size: 1em;
-                            font-family: $main-font;
-                            margin-right: 50px;
-                            width: 95%;
-
-                            &:hover {
-                                background-color: whitesmoke;
-                            }
-                            
-                        }
     
+                        button {
+                            cursor: pointer;
+                            margin: 0 auto;
+                            padding: 0 auto;
+                            display: block;
+                            text-align: center;
+                            width: 250px;
+                            height: 48px;
+                            background-color: $point-color;
+                            border-radius: 10px;
+                            border-color: white;
+                            padding-left: 10%;
+                            margin-top: 235px;
+                            margin-left: -2px;
+                            font-size: 25px;
+                            
+                            a {
+                                color: #fefefe;
+                                font-size: 1em;
+                                font-family: $main-font;
+                                margin-right: 50px;
+                                width: 90%;
+    
+                                &:hover {
+                                    background-color: whitesmoke;
+                                }
+                                
+                            }
+        
+                        }
                     }
+
                 }
 
             }
 
         }
         .find-login {
+
             display: flex;
-            width: 100%;
-            
+            width: 105%;
             position: absolute;
             padding-top: 2px;
-            padding-left: -40px;
-
-            margin-top: -250px;
-            padding-left: -80px;
+            padding-left: 7px;
+            margin-top: -220px;
+            // padding-left: -80px;
             line-height: -16px;
             font-size: 13px;
 
@@ -499,13 +507,14 @@ main {
                 padding-bottom: 360px;
                 margin-top: 300px;
                 margin: 0 auto;
+                margin-left: 16px;
             }
 
             @include responsive(pc-size) {
                 display: flex;
                 
                 // position: relative;
-                margin-left: 280px;
+                margin-left: 2px;
                 margin-top: -940px;
                 padding-top: 320px;
 

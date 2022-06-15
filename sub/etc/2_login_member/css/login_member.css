@@ -367,6 +367,7 @@ header div.search-sub .search-sub-content input:hover {
 
 main {
   width: 100%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -503,7 +504,7 @@ main .title-login .title .title-sub {
   main .title-login .title .title-sub {
     display: block;
     width: 1024px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "SCoreDream";
     margin-top: -50px;
     margin-left: -320px;
@@ -525,7 +526,6 @@ main .title-login .title .title-sub {
 
 main .title-login .loginform {
   margin: 0 0;
-  padding: 0 20;
   margin-top: -25px;
   padding-top: -20px;
   display: -webkit-box;
@@ -563,9 +563,7 @@ main .title-login .loginform .loginform-box {
 
 main .title-login .loginform .loginform-box .loginform-input-form {
   display: block;
-  width: 300px;
-  margin: 0 auto;
-  padding: 0 auto;
+  width: 270px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
@@ -573,7 +571,8 @@ main .title-login .loginform .loginform-box .loginform-input-form {
 }
 
 main .title-login .loginform .loginform-box .loginform-input-form .inp_wrap {
-  padding-left: -150px;
+  padding-left: 10px;
+  margin-top: 50px;
   width: 312px;
   font-size: 12px;
 }
@@ -598,14 +597,15 @@ main .title-login .loginform .loginform-box .loginform-input-form .inp_wrap .log
   font-size: 17px;
 }
 
-main .title-login .loginform .loginform-box .login-button {
-  width: 48%;
+main .title-login .loginform .loginform-box .loginform-input-form .login-button {
+  width: 100%;
   padding-top: 64px;
-  -webkit-transform: translateY(-277px);
-          transform: translateY(-277px);
+  padding-left: 10px;
+  -webkit-transform: translateY(-267px);
+          transform: translateY(-267px);
 }
 
-main .title-login .loginform .loginform-box .login-button button {
+main .title-login .loginform .loginform-box .loginform-input-form .login-button button {
   cursor: pointer;
   margin: 0 auto;
   padding: 0 auto;
@@ -622,15 +622,15 @@ main .title-login .loginform .loginform-box .login-button button {
   font-size: 25px;
 }
 
-main .title-login .loginform .loginform-box .login-button button a {
+main .title-login .loginform .loginform-box .loginform-input-form .login-button button a {
   color: #fefefe;
   font-size: 1em;
   font-family: "SCoreDream";
   margin-right: 50px;
-  width: 95%;
+  width: 90%;
 }
 
-main .title-login .loginform .loginform-box .login-button button a:hover {
+main .title-login .loginform .loginform-box .loginform-input-form .login-button button a:hover {
   background-color: whitesmoke;
 }
 
@@ -638,12 +638,11 @@ main .title-login .find-login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 105%;
   position: absolute;
   padding-top: 2px;
-  padding-left: -40px;
-  margin-top: -250px;
-  padding-left: -80px;
+  padding-left: 7px;
+  margin-top: -220px;
   line-height: -16px;
   font-size: 13px;
 }
@@ -657,6 +656,7 @@ main .title-login .find-login {
     padding-bottom: 360px;
     margin-top: 300px;
     margin: 0 auto;
+    margin-left: 16px;
   }
 }
 
@@ -665,7 +665,7 @@ main .title-login .find-login {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 280px;
+    margin-left: 2px;
     margin-top: -940px;
     padding-top: 320px;
   }
