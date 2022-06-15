@@ -267,23 +267,23 @@ main {
         h2 {
             width: 100%;
             position: absolute;
-            top: 70%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, -70%);
+            transform: translate(-50%, -50%);
             color: $bg-color;
             font-size: 28px;
             letter-spacing: 2px;
             font-family: $font;
             text-align: center;
-            // background-color: pink;
+            padding-top: 60px;
 
             @include responsive(tablet-size) {
-                top: 50%;
                 font-size: 50px;
             }
 
             @include responsive(pc-size) {
                 font-size: 70px;
+                padding-top: 0;
             }
         }
 

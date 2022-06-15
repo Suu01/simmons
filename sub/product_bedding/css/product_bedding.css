@@ -547,6 +547,10 @@ main .wrapper .filter-menu select {
   }
 }
 
+main .wrapper .tabs-contents {
+  margin-bottom: 50px;
+}
+
 main .wrapper .tabs-contents .all {
   display: -ms-grid;
   display: grid;
@@ -573,5 +577,9 @@ main .wrapper .tabs-contents .all {
 
 main .wrapper .tabs-contents .all a img {
   width: 100%;
+}
+
+main .wrapper .tabs-contents .all a img:hover {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=product_bedding.css.map */

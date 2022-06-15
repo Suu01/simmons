@@ -434,6 +434,7 @@ main {
 
 
         .tabs-contents {
+            margin-bottom: 50px;
             .all {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
@@ -451,6 +452,10 @@ main {
                 a {
                     img {
                         width: 100%;
+
+                        &:hover {
+                            opacity: 0.4;
+                        }
                     }
                 }
             

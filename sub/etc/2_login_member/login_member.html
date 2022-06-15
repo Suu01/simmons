@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login_member</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/login_member.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/2_login_member.js"></script>
+    <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
 </head>
 <body>
     <header>
@@ -90,49 +91,45 @@
         
             <div class="loginform">
 
-                <div class="loginform-box">
+                <article class="loginform-box">
                     <form class="loginform-input-form">
 
-                        <div class="inp_wrap">
+                        <section class="inp_wrap">
                     
                             <div class="inp_lab">
                                 <label for="join_id">아이디</label>
                             </div>
                             <div class="inp_text">
-                                <input type="text" id="login_id" valid="required" placeholder= "   ">
+                                <input type="text" id="login_id" valid="required" placeholder= " 아이디(이메일 주소) 입력">
                             </div>
         
                             <div class="loginform-id">
                                 <label for="join_id">비밀번호</label>
                             </div>
                             <div class="inp_text">
-                                <input type="text" id="login_pw" valid="required" placeholder="   ">
+                                <input type="text" id="login_pw" valid="required" placeholder=" 비밀번호 입력 ">
                             </div> 
         
-                        </div>
+                        </section>
 
                         <div class="login-button">
-                            <button type="submit" class="loginform-input-submit"><a href="#">로그인</a></button>
+                            <button type="submit" class="loginform-input-submit"><a href="../../../index.html">로그인</a></button>
                         </div>
 
                     </form>
-                </div>
+                </article>
             </div> 
 
-            <div class="find-login">
-                <section id="log">
-
-                    <div class="login-id">
-                        <ul class="login-align">
-                            <li><a href="../4_Join/Join.html">회원가입</a></li>
-                            <li><a href="#">아이디 찾기</a> </li>
-                            <li><a href="#">비밀번호 찾기</a></li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-
+            <nav class="find-login">
+                <div class="login-id">
+                    <ul class="login-align">
+                        <li class="mem"><a href="../4_Join/Join.html">회원가입</a></li>
+                        <li><a href="#">아이디 찾기</a> </li>
+                        <li><a href="#">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
         </div>
 
     </main>

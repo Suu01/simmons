@@ -310,11 +310,12 @@ main {
     }
 
     .title-cart{
+
         position: relative;
         margin: 0 0;
         padding: 0 20px;
-        margin-top: 36px;
-        padding-top: 33px;
+        margin-top: 5px;
+        padding-top: 5px;
         font-size: 3em;
 
             .title {
@@ -323,16 +324,19 @@ main {
 
                 @include responsive(pc-size) {
                     display: block;
-                    padding-left: 697px;
-                    margin-top: 10px;
+                    padding-left: 527px;
+                    padding-top: 30px;
+                    margin-top: 25px;
                 }
 
                 .title-fir {
                     font-size: 1.5em;
                     font-family: $main-font;
                     font-weight: 500;
-                    margin: 0 auto;
-                    margin-top: 50px;
+                    padding-top: 20px;
+                    margin: 30px 0;
+                    line-height: 66px;
+                
 
                     @include responsive(pc-size) {
                         display: block;
@@ -369,21 +373,23 @@ main {
                 }
             }
     }
-    .confix {
+    .tabs-menu {
         width: 100%;
-        margin: 0 auto;
-        padding-top: 50px;
-        .menu-tabs {
+
+        @include responsive(pc-size) {
+            width: 75%;
+            margin: 0 auto;
+            padding: 0 auto;
+            padding-top: 130px;
+        }
+
+        .tabs { 
             display: table;
             width: 100%;
             table-layout: fixed;
+            border-left: 2px solid #e1e1e1;
+            position: relative;
             margin-bottom: 25px;
-
-            @include responsive(pc-size) {
-                width: 55%;
-                padding-top: 9px;
-                margin: 0 auto;
-            }
                     
             li {
                 display: table-cell;
@@ -391,22 +397,18 @@ main {
                 width: 50%;
                 height: 50px;
         
-                &:nth-child(odd) > a {
-                    border-left: 2px solid $point-color;
-                }
-
                 @include responsive(tablet-size) {
                     width: 25%;
                 }
 
-                @include responsive(pc-size) {
-                    width: 25%;
+                &:nth-child(n+3) {
+                    margin-top: -2px;
 
-                    &:nth-child(3) > a {
-                        border-left: 2px solid #fff;
+                    @include responsive(tablet-size) {
+                        margin-top: 0;
                     }
-
                 }
+
 
                 &:nth-child(n+3) {
                     margin-top: -2px;
@@ -421,89 +423,91 @@ main {
                 }
 
                 &:hover {
-                    border-bottom: $point-color;
-                    border-top: 2px solid $point-color;
-                    z-index: 1;
-                    background-color: $point-color;
-                    color: #fff;
+                    a {
+                        border-bottom-color: $point-color;
+                        border-top: 2px solid $point-color;
+                        z-index: 1;
+                        background-color: $point-color;
+                        color: #fff;
 
-                    @include responsive(pc-size) {
-                        color: $point-color;
-                        border-top: #e1e1e1;
+                        transition: all 0.5s;
+
+                        @include responsive(tablet-size) {
+                            border-bottom-color: transparent;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: -2px;
+                            width: 2px;
+                            background-color: $point-color;
+                        }
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: -2px;
+                            left: -2px;
+                            bottom: -2px;
+                            width: 2px;
+                            background-color: $point-color;
+                            box-sizing: inherit;
+
+                            transition: all 0.5s;
+                        }
                     }
+                }
 
-                    transition: all 0.5s;
-
+                a {
+                    display: block;
+                    position: relative;
+                    height: 50px;
+                    border-top: 2px solid #e1e1e1;
+                    border-bottom: 2px solid #e1e1e1;
+                    border-right: 2px solid #e1e1e1;
+    
+                    font: {
+                        size: 1.2em;
+                        weight: 450;
+                    }
+                    
+                    letter-spacing: 0.001em;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 23px;
+                    color: #333333;
+                    text-align: center;
+    
                     @include responsive(tablet-size) {
-                        border-bottom-color: transparent;
+                        border-bottom: 2px solid #e1e1e1;
                     }
-
+    
                     &:after {
                         content: '';
                         display: block;
                         position: absolute;
                         top: 0;
                         right: 0;
-                        bottom: -2px;
+                        bottom: 0;
                         width: 2px;
-                        background-color: $point-color;
-                    } 
-
-                    &::before {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        top: -2px;
-                        left: -2px;
-                        bottom: -2px;
-                        width: 2px;
-                        background-color: $point-color;
-                        box-sizing: inherit;
-                        transition: all 0.5s;
+                        color: #e1e1e1;
                     }
-                } 
+                }
+
             }
 
-            a {
-                display: block;
-                position: relative;
-                height: 50px;
-                border-top: 2px solid $point-color;
-                border-bottom: 2px solid $point-color;
-                border-right: 2px solid $point-color;
-
-                &:hover {
-                    color: #fff;
-                }
-         
-                letter-spacing: 0.001em;
-                line-height: 50px;
-                text-align: center;
-                font-size: 23px;
-                color: #333333;
-                text-align: center;
-
-                @include responsive(tablet-size) {
-                    border-bottom: 2px solid #e1e1e1;
-                }
-
-                &:after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    width: 2px;
-                    color: #e1e1e1;
-                }
-            }
         }
     }
         .notice-content {
+
             margin: 0 auto;
             padding: 0 auto;
-            padding-top: 280px;
+            padding-top: 200px;
             width: $width-wide;
             
             height: 855px;
@@ -560,9 +564,11 @@ main {
                     padding: 0 auto;
                     padding-top: 50px;
                     padding-bottom: 70px;
+                    font-size: 0.85em;
                 }
     
                 button {
+
                     cursor: pointer;
                     margin: 0 auto;
                     padding: 0 auto;
@@ -570,7 +576,7 @@ main {
 
                     display: block;
                     text-align: center;
-                    width: 328px;
+                    width: 230px;
                     height: 46px;
                     background-color: $point-color;
                     border-radius: 10px;
@@ -582,7 +588,7 @@ main {
                         font-size: 1em;
                         font-family: $main-font;
                         width: 50%;
-                        margin-left: 57px;
+                        margin-left: 35px;
 
                         @include responsive(pc-size) {
                             color: #fefefe;
