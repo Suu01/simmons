@@ -374,6 +374,8 @@ main {
             }
         }
         .form_area {
+            // background-color: aqua;
+            width: 80%;
             margin: 0 auto;
             padding: 0 auto;
 
@@ -388,9 +390,10 @@ main {
 
                 .join_text {
                     input {
-                        width: 400px;
+                        width: 270px;
                         height: 46px;
-                        border-radius: 10px;
+                        border-radius: 5px;
+                        border: 2.5px solid lightgray;
                     }
 
                 }
@@ -401,9 +404,10 @@ main {
                 padding: 0 auto;
                 .inp_text {
                     input {
-                        width: 400px;
+                        width: 270px;
                         height: 46px;
-                        border-radius: 10px;
+                        border-radius: 5px;
+                        border: 2.5px solid lightgray;
                     }
                 }
             }
@@ -416,15 +420,16 @@ main {
                     margin: 0 auto;
                 }
                 input {
-                    width: 400px;
+                    width: 270px;
                     height: 46px;
-                    border-radius: 10px;
+                    border-radius: 5px;
+                    border: 2.5px solid lightgray;
                 }
             }
 
             .name-gender {
                 display: flex; 
-
+                
                 .wrap_name {
 
                     position: relative;
@@ -440,9 +445,10 @@ main {
                     .name_text {
                         
                         input {
-                            width: 200px;
+                            width: 160px;
                             height: 46px;
-                            border-radius: 10px;
+                            border-radius: 5px;
+                            border: 2.5px solid lightgray;
                         }
                     }
                 }
@@ -450,27 +456,26 @@ main {
                 .wrap_gender {
 
                     position: relative;
-                    padding-left: 65px;
+                    padding-left: 12px;
                     padding-top: -25px;
 
                     .join_gender {
-
+                        
                         font-size: 17px;
                         width: 47px;
-                        font-size: 17px;
                         padding-left: 9px;
                         padding-top: -22px;
                         margin-top: 20px;
-
-                
+                        
                     }
     
                     .join_text {
                         #choice {
                             position: relative;
-                            width: 127px;
+                            width: 97px;
                             height: 46px;
-                            border-radius: 10px;
+                            border-radius: 5px;
+                            border: 2.5px solid lightgray;
                         }
 
                     }
@@ -493,7 +498,7 @@ main {
                     @include responsive(tablet-size) {
                         position: relative;
                         padding-left: 75px;
-                        margin-left: 5px;
+                        margin-left: 5px; 
                     }
                 }
                 display: flex;
@@ -507,7 +512,8 @@ main {
                     margin-left: 7px;
                     width: 110px;
                     height: 46px;
-                    border-radius: 10px;
+                    border-radius: 5px;
+                    border: 2.5px solid lightgray;
                 }
             }
 
@@ -523,21 +529,23 @@ main {
                     }
                     input {
                         
-                        width: 400px;
+                        width: 270px;
                         height: 46px;
-                        border-radius: 10px;
+                        border-radius: 5px;
+                        border: 2.5px solid lightgray;
                     }
 
                 }
             }
 
             .wrap_join_term {
-                display: flex;   
-                position: relative;
-                padding-top: 30px;
+
+                position: absolute;
+                padding-top: 70px;
+
                 font-size: 17px;
                 align-items: center;
-                width: 90%;
+                width: 80%;
 
                 margin: 0 auto;
                 padding: 0 auto;
@@ -547,8 +555,8 @@ main {
 
                 .all_terms {
                     ul {
-                        padding-top: -45px;
-                        padding-left: 20px;
+                        padding-top: 20px;
+                        padding-left: -20px;
                         margin-left: -50px;
                         width: 250px;
                        
@@ -568,14 +576,15 @@ main {
                 }
 
                 
-                .all_terms_checkbx {
+                .terms_checkbx {
+                    position: absolute;
+                    padding-left: 205px;
+                    line-height: 30px;
                     ul {
-
+                        
                         li {
-                            
-                            line-height: 30px;
+                            line-height: 130px;
                             list-style: none;
-                            
                             justify-content: space-between;
                             padding-left: 62px;
                         }
