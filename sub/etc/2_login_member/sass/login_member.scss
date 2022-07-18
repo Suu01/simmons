@@ -11,12 +11,14 @@ body {
 // header-area
 header {
     position: fixed;
+    margin: 0 auto;
+    padding: 0 auto;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 60px;
     padding: 0 15px;
     border-bottom: 1px solid #333;
@@ -250,6 +252,8 @@ header {
 
 main {
     width: $width-wide;
+    margin: 0 auto;
+
 
     @include responsive(tablet-size) {
         display: flex;
@@ -290,7 +294,7 @@ main {
                 justify-content: flex-end;
                 list-style: none;
                 flex-direction: row;
-                margin-left: 30px;
+
     
                 li {
                     display: inline-block;
@@ -313,8 +317,8 @@ main {
         position: relative;
         margin: 0 0;
         padding: 0 20px;
-        margin-top: 36px;
-        padding-top: 33px;
+        margin-top: 5px;
+        padding-top: 5px;
         font-size: 3em;
 
         .title {
@@ -323,8 +327,9 @@ main {
 
             @include responsive(pc-size) {
                 display: block;
-                padding-left: 42px;
-                margin-top: 10px;
+                padding-left: 527px;
+                padding-top: 30px;
+                margin-top: 25px;
             }
 
             .title-fir {
@@ -350,7 +355,7 @@ main {
                 @include responsive(tablet-size) {
                     display: block;
                     width: 1024px;
-                    font-size: 22px;
+                    font-size: 20px;
                     font-family: $main-font;
                     margin-top: -50px;
                     margin-left: -320px;
@@ -364,14 +369,16 @@ main {
                     font-size: 22px;
                     font-family: $main-font;
                     padding-left: 275px;
-                    padding-top: 5px;
+                    padding-top: 40px;
                 }
             }
         }
 
         .loginform {        
-            margin: 0 auto;
-            padding: 0 auto;
+            margin: 0 0;
+            // padding: 0 20;
+            margin-top: -25px;
+            padding-top: -20px;
             display: flex;
             align-content: center;
         
@@ -390,14 +397,16 @@ main {
             }
 
             .loginform-box {
-                
+            
                 margin-left: auto;
                 margin-right: auto;
                  
                 .loginform-input-form {
-                    width: 450px;
-                    margin: 0 auto;
-                    padding: 0 auto;
+                    display: block;
+                    width: 270px;
+                    // background-color: #333333;
+                    // margin: 0 auto;
+                    // padding: 0 auto;
                   
                     margin-left: auto;
                     margin-right: auto;
@@ -405,144 +414,182 @@ main {
                     overflow-y: hidden;
 
                     .inp_wrap{
-                        padding-left: -150px;
+                        padding-left: 10px;
+                        margin-top: 50px;
+                        width: 312px;
 
+                        font-size: 12px;
 
                         .inp_lab {
                             margin-top: 27px;
                             padding-top: 10px;
-                            font-size: 22px;
+                            font-size: 17px;
                         }
 
                         input {
-                            // width: 427px;
-                            // height: 46px;
-                            width: 328px;
+
+                            width: 245px;
                             height: 46px;
                             border: 1px solid #e1dedf;
    
-                            font-size: 22px;
+                            font-size: 17px;
                             margin-top: 8px;
                         }  
                         .loginform-id {
-                            margin-top: 27px;
+                            margin-top: 12px;
                             padding-top: 10px;
-                            font-size: 22px;
+                            font-size: 17px;
 
                         }
                     }
-                }
-                .login-button {
-                    margin: 0 auto;
-                    padding: 0 auto;
-                    width: 78%;
-                    padding-top: 64px;
-                    transform: translateY(-210px);
 
-                    button {
-                        cursor: pointer;
-                        margin: 0 auto;
-                        padding: 0 auto;
-                        display: block;
-                        text-align: center;
-                        width: 328px;
-                        height: 48px;
-                        background-color: $point-color;
-                        // border-radius: 10px;
-                        border-color: white;
-                        padding-left: 10%;
-                        margin-top: 255px;
-                        margin-left: -2px;
-                        font-size: 25px;
+                    .login-button {
+
+                        width: 100%;
+
+                        padding-top: 64px;
+                        padding-left: 10px;
+                        transform: translateY(-267px);
                         
-                        a {
-                            color: #fefefe;
-                            font-size: 1em;
-                            font-family: $main-font;
-                            margin-right: 50px;
-                            width: 80%;
-
-                            &:hover {
-                                background-color: whitesmoke;
-                            }
-                            
-                        }
     
+                        button {
+                            cursor: pointer;
+                            margin: 0 auto;
+                            padding: 0 auto;
+                            display: block;
+                            text-align: center;
+                            width: 250px;
+                            height: 48px;
+                            background-color: $point-color;
+                            border-radius: 10px;
+                            border-color: white;
+                            padding-left: 10%;
+                            margin-top: 235px;
+                            margin-left: -2px;
+                            font-size: 25px;
+                            
+                            a {
+                                color: #fefefe;
+                                font-size: 1em;
+                                font-family: $main-font;
+                                margin-right: 50px;
+                                width: 90%;
+    
+                                &:hover {
+                                    background-color: whitesmoke;
+                                }
+                                
+                            }
+        
+                        }
                     }
+
                 }
 
             }
 
         }
-
         .find-login {
-            display: none;
-            margin-top: 20px;
-            font-size: 16px;
-            text-align: center;
+
+            display: flex;
+            width: 105%;
+            position: absolute;
+            padding-top: 2px;
+            padding-left: 7px;
+            margin-top: -220px;
+            // padding-left: -80px;
+            line-height: -16px;
+            font-size: 13px;
 
             @include responsive(tablet-size) {
-                display: none;
-
+                display: flex;
                 position: relative;
                 padding-bottom: 360px;
                 margin-top: 300px;
-                
+                margin: 0 auto;
+                margin-left: 16px;
             }
 
             @include responsive(pc-size) {
                 display: flex;
+                
                 // position: relative;
-                margin-left: 80px;
+                margin-left: 2px;
                 margin-top: -940px;
-
                 padding-top: 320px;
-                height: 70px;
-            }
 
+            }
             
-                .login-id {
-                    
-                    @include responsive(pc-size) {
+
+
+            .login-id { 
+                position: relative;
+                margin: 0 auto;
+                // background-color: olivedrab;
+                @include responsive(pc-size) {
                     padding-top: 20px;
                     padding-left: 70px;
                     margin-top: 450px;
+                }
+                
+                .login-align {
+                    display: flex;
+                    justify-content: space-between;
                     
-                    .login-align {
-                            
-                        cursor: pointer;
-                        color: #333333;
-                        display: flex;
-                        justify-content: space-between;
-                        margin: 0 auto; 
-                        width: 100%;
-                        padding-left: 10px;
-                        margin-left: 30px;
-                        
-                        li {
-                            &:hover {
-                                color: $point-color;
-                            }
+                    cursor: pointer;
 
-                            border-right: 1px solid #333333;
-                            padding-right: 30px;
-                            margin-left: 14.5px;
-                            justify-content: space-between;
-            
+                    width: 100%;
+                    color: #333333;
+                    margin-left: -70px;
+                    // background-color: #aa8e79;
+                    
+                    li {
+                        padding-top: -20px;
+                        padding-right: 15px;
+                    
+                        word-spacing: -100px;
+                        display: block;
+
+                        &:hover {
+                            color: $point-color;
+                        }
+                        
+                        a {
+                            width: 65px;
+                            // background-color: tomato;
+                            
+                            text-align: center;
+                            font: {
+                                size: 9px;
+                                weight: bold;
+                            }
+                            // border-right: 1px solid #aa8e79;
+                            color: #333;
+                            border-right: 1px solid #333;
+                            color: #333;
+                            word-spacing: 3px;
+
                             &:last-child {
                                 border-right: 0; 
                             }
 
+                            &:hover {
+                                color: $point-color;
+                            }
+
                         }
-                    }
+                    } //li
+
+                } //ul
+
+            } //login.id 끝
+
+        } //find-login
 
 
-                }
-            
-            
-            }
-
-        }
-    
     }
+
+    
 }
+
+

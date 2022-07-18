@@ -9,6 +9,18 @@
     <script src="./js/4_Join.js"></script>
     <link rel="stylesheet" href="./css/Join.css">
     <link rel="shortcut icon" href="./images/1_favicon_icon.ico.ico">
+
+<script>
+    	window.onload = function() {
+		let frm = document.userInfo;
+		let date = new Date();
+		let year = date.getFullYear();
+            for(let i=1960; i<=year; i++) {
+                frm.birthday.add(new Option(i,i));
+            }
+	    }
+</script>
+
 </head>
 <body>
     <header>
@@ -83,12 +95,13 @@
                     <p>Join</p>
                 </div>
 
-                <div class="title-sub">
+                <!-- <div class="title-sub">
                     <p>회원가입</p>
-                </div>
+                </div> -->
                 
             </div>
         
+            <!-- <form method="post" action="./js/joinjsp.html" name="userInfo"></form> -->
             <div class="form_area">
                 <div class="wrap_email">
                     
@@ -138,7 +151,7 @@
     
                         <div class="join_text">
                             <select name="gender" id="choice" size="1">
-                                <optgroup label="선택">
+                                <optgroup>
                                     <option value="선택" selected>선택</option>
                                     <option value="남">남</option>
                                     <option value="여">여</option>
@@ -149,13 +162,28 @@
                 </div>
 
                 <div class="info" id="info_birth">
-                    <span class="birthday">생년월일</span>
-                    <select class="box" id="birth_year">
-                        <option disabled selected>1990</option>
-                    </select>
+
+                    <!-- <input type="text" name="birthyy" maxlength="4" placeholder="년(4자리)" size="4"> -->
+                    <select class="box" id="birth_year" name= "birthday">
+						<option value="#">년도선택</option>
+					</select> <!-- 스크립트 적용 -->
 
                     <select class="box" id="birth_month">
-                        <option disabled selected>월</option>
+                        
+                        <option value="">월</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+                        
                     </select>
 
                     <select class="box" id="birth_day">
@@ -181,6 +209,10 @@
                                 <label for="join_terms_all">
                                     <span>약관동의</span>
                                 </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="1" value="all_agree" >
+                                </div>
                             
                             </li>
 
@@ -188,44 +220,35 @@
                                 <label for="join_terms1">
                                     <span>이용약관 (필수)</span>
                                 </label>
-                            </li>
 
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="2" value="agree" >
+                                </div>
+
+                            </li>
 
                             <li>
                                 <label for="join_terms2">
                                     <span>개인정보처리방침 (필수)</span>
                                 </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="3" value="agree" >
+                                </div>
                             </li>
 
                             <li>
                                 <label for="join_terms3">
                                     <span>마케팅 수신동의 (선택)</span>
-
                                 </label>
+
+                                <div class="terms_checkbx">
+                                    <input type="checkbox" name="4" value="agree">
+                                </div>
                             </li>
 
                         </ul>
 
-                    </div>
-                    <div class="all_terms_checkbx">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="1" value="all_agree" >
-                            </li>
-
-                            <li>
-                                <input type="checkbox" name="2" value="all_agree" >
-                            </li>
-
-                            <li>
-                                <input type="checkbox" name="3" value="all_agree" >
-                            </li>
-
-                            <li>
-                                <input type="checkbox" name="4" value="all_agree">
-                            </li>
-
-                        </ul>
                     </div>
 
                 </div>
@@ -233,7 +256,12 @@
             </div> 
 
             <div class="join-button">
-                <button type="submit" class="join-input-submit"><a href="#">가입하기</a></button>
+                <div class="join-input-submit">                   
+                    <input type="submit" value="가입하기">
+                    <input type="button" value="취소하기">
+                    <!-- <button type="submit" class="join-input-submit"><a href="#">가입하기</a></button> -->
+                </div>
+
             </div>
 
         </div>
