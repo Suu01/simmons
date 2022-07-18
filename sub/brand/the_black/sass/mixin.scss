@@ -6,6 +6,14 @@
     color: #000;
 }
 
+@mixin p_des($p_des_size:14px) {
+    line-height: 1.5;
+    font-size: $p_des_size;
+    // tablet에서 18px
+    margin: auto;
+    color: #999;
+}
+
 @mixin dire($row: row) {
     display: flex;
     flex-wrap: nowrap;

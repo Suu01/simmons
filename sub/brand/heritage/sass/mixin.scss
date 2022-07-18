@@ -1,5 +1,6 @@
 @mixin num($num_size){
     font: {
+        family: $font;
         size: $num_size;
         weight: 700;
     }
@@ -13,6 +14,14 @@
         weight: $weight;
     }
     color: #000;
+}
+
+@mixin p_des($p_des_size:14px) {
+    line-height: 1.5;
+    font-size: $p_des_size;
+    // tablet에서 18px
+    margin: auto;
+    color: #999;
 }
 
 @mixin shadow($x, $y) {

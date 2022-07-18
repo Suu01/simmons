@@ -504,6 +504,7 @@ main #heritage .wrapper img, main #heritage .wrapper iframe {
 }
 
 main #heritage .wrapper h2 {
+  font-family: "Ramaraja", serif;
   font-size: 2em;
   font-weight: 700;
   color: #82ca9c;
@@ -520,6 +521,7 @@ main #heritage .wrapper h2 {
 
 @media screen and (min-width: 1024px) {
   main #heritage .wrapper h2 {
+    font-family: "Ramaraja", serif;
     font-size: 3em;
     font-weight: 700;
     color: #82ca9c;
@@ -556,29 +558,18 @@ main #heritage .wrapper .sub {
 }
 
 main #heritage .wrapper p {
-  font-size: 0.8em;
-  font-weight: 400;
-  color: #000;
-  text-align: center;
-  line-height: 1.4em;
-  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 14px;
+  margin: auto;
+  color: #999;
 }
 
 @media screen and (min-width: 768px) {
   main #heritage .wrapper p {
-    font-size: 0.75em;
-    font-weight: 400;
-    color: #000;
-    letter-spacing: 0.01em;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main #heritage .wrapper p {
-    font-size: 1em;
-    font-weight: 300;
-    color: #000;
-    letter-spacing: 0.01em;
+    line-height: 1.5;
+    font-size: 18px;
+    margin: auto;
+    color: #999;
   }
 }
 

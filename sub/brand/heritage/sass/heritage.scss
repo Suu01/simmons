@@ -401,18 +401,10 @@ main {
             }
 
             p {
-                @include txt(0.8em, 400);
-                text-align: center;
-                line-height: 1.4em;
-                margin-bottom: 30px;
+                @include p_des;
 
                 @include responsive(tablet-size) {
-                    @include txt(0.75em, 400);
-                    letter-spacing: 0.01em;
-                }
-                @include responsive(pc-size) {
-                    @include txt(1em, 300);
-                    letter-spacing: 0.01em;
+                    @include p_des(18px);
                 }
             }
 

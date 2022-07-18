@@ -345,21 +345,10 @@ main {
             }
 
             p {
-                @include txt(0.73em, 400);
-                text-align: center;
-                letter-spacing: 0.02em;
-                word-break: keep-all;
-                line-height: 1.8em;
-                margin-bottom: 30px;
+                @include p_des;
 
                 @include responsive(tablet-size) {
-                    @include txt(0.75em, 400);
-                    letter-spacing: 0.02em;
-                    line-height: 1.2em;
-                }
-                @include responsive(pc-size) {
-                    @include txt(0.85em, 300);
-                    letter-spacing: 0.01em;
+                    @include p_des(18px);
                 }
             }
 
@@ -474,17 +463,10 @@ main {
                             }
 
                             p {
+                                @include p_des;
+
                                 @include responsive(tablet-size) {
-                                    @include txt(0.65em, 400);
-                                    text-align: left;
-                                    letter-spacing: 0.02em;
-                                    line-height: 1.2em;
-                                    margin-bottom: 15px;
-                                }
-                                @include responsive(pc-size) {
-                                    @include txt(0.83em, 400);
-                                    letter-spacing: 0.03em;
-                                    line-height: 1.3em;
+                                    @include p_des(18px);
                                 }
                             }
                         }
@@ -522,16 +504,10 @@ main {
                             }
 
                             p {
+                                @include p_des;
+
                                 @include responsive(tablet-size) {
-                                    @include txt(0.65em, 400);
-                                    text-align: left;
-                                    letter-spacing: 0.02em;
-                                    line-height: 1.2em;
-                                    margin-bottom: 10px;
-                                }
-                                @include responsive(pc-size) {
-                                    @include txt(0.83em, 400);
-                                    letter-spacing: 0.03em;
+                                    @include p_des(18px);
                                 }
                             }
                         }
@@ -572,29 +548,21 @@ main {
                     }
 
                     .cc_1 {
-                        font-weight: 500;
+                        @include p_des;
+                        text-align: center;
+                        color: #000;
 
                         @include responsive(tablet-size) {
-                            @include txt(0.76em, 500);
-                            letter-spacing: 0.02em;
-                            line-height: 1.2em;
-                        }
-                        @include responsive(pc-size) {
-                            @include txt(0.98em, 500);
-                            line-height: 1.8em;
+                            @include p_des(18px);
                         }
                     }
 
                     .cc_2, .cc_3 {
+                        @include p_des;
+                        text-align: center;
+
                         @include responsive(tablet-size) {
-                            @include txt(0.69em, 400);
-                            letter-spacing: 0.02em;
-                            line-height: 1.2em;
-                        }
-                        @include responsive(pc-size) {
-                            @include txt(0.83em, 400);
-                            letter-spacing: 0.04em;
-                            line-height: 1.5em;
+                            @include p_des(18px);
                         }
                     }
                 }
