@@ -29,7 +29,6 @@
 
 @mixin dire_text_ta {
     width: 47%;
-    // background-color: palegreen;
 }
 
 @mixin wrapper {
@@ -38,7 +37,6 @@
     padding: 0 20px;
     padding-bottom: 20px;
     margin: 0 auto;
-    // background-color: slateblue;
 }
 
 @mixin responsive($break) {

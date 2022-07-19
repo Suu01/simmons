@@ -43,7 +43,6 @@
 
 @mixin heritage_text {
     width: 47%;
-    // background-color: palegreen;
 }
 
 @mixin philosophy_h2($h2-size, $h2-height: 0.8em) {
@@ -94,7 +93,6 @@
     max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
-    // background-color: slateblue;
 }
 
 @mixin responsive($break) {
