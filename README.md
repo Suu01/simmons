@@ -2,7 +2,7 @@
 > Responsive Renewal Team Project Website
 >> 팀프로젝트(4인) : 반응형 리뉴얼 웹사이트
 - 소요기간 : 1.5개월 (디자인 + 코딩 포함)
-- 사용기술 : HTML5, CSS3, Sass, Javascript
+- 사용기술 : HTML5, CSS3, Sass, Javascript, jQuery
 - 구현페이지 : Main, Brand(theBlack, heritage), Gallery(Gallery, Search), Product(Bed, Bedding, Furniture, RoomSet), Product-Details, Community, Login, Insert, Cart, Mypage
 
 
