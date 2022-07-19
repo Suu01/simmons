@@ -40,6 +40,6 @@
 ### 3. PAGE
 **팀원 4명이 함께 Main, Brand(theBlack, heritage), Gallery(Gallery, Search), Product(Bed, Bedding, Furniture, RoomSet), Product-Details, Community, Login, Insert, Cart, Mypage페이지를 기획, 디자인, 코딩하였습니다.**
 
-***해당 팀 프로젝트의 개인별 구현 페이지, 기여도는 개인 프로필 사이트에서 자세하게 확인하실 수 있습니다.***
+***"해당 팀 프로젝트의 개인별 구현 페이지, 기여도는 개인 프로필 사이트에서 자세하게 확인하실 수 있습니다."***
 
 [사이트보기](http://sj19990823.dothome.co.kr/index.html, Simmons)
