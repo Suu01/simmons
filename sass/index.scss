@@ -91,7 +91,6 @@ header {
 
                 &:first-child {
                     font-size: 18px;
-                    // transform: rotate(-90deg);
                     margin-top: 0;
 
                     a {
@@ -267,7 +266,7 @@ main {
         }
 
         video {
-            padding-top: 60px; // 헤더 높이만큼 동영상에 padding값 할당
+            padding-top: 60px;
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -301,7 +300,6 @@ main {
             @include responsive(pc-size) {
                 width: 60%;
                 margin: 0;
-                // background-color: pink;
             }
 
             .section2-wrap {
@@ -610,7 +608,6 @@ main {
                     }
     
                     h2 { 
-                        // width: 100%;
                         font-size: 8.5vw;
                         font-weight: 400;
                         letter-spacing: 1.4vw;
@@ -812,10 +809,8 @@ main {
                         h3 {
                             font-weight: 500;
                             font-size: 6.4vw;
-                            // font-size: 32px;
                             letter-spacing: 0.4vw;
                             margin-bottom: 2.4%;
-                            // margin-bottom: 5px;
 
                             @include responsive(pc-size) {
                                 font-size: 2.3vw;
@@ -827,7 +822,6 @@ main {
                         p {
                             font-weight: 400;
                             font-size: 3.2vw;
-                            // font-size: 16px;
                             letter-spacing: 0.7px;
 
                             @include responsive(pc-size) {
@@ -1057,7 +1051,6 @@ main {
                         @include responsive(pc-size) {
                             font-size: 0.7vw;
                             margin-top: 15%;
-                            // text-align: left;
                         }
                     }
                 }
