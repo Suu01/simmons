@@ -95,7 +95,6 @@ header {
 
                 &:first-child {
                     font-size: 18px;
-                    // transform: rotate(-90deg);
                     margin-top: 0;
 
                     a {
@@ -316,10 +315,8 @@ main {
         ul {
             display: flex;
             justify-content: center;
-            // background-color: pink;
             
             li {
-                // margin-right: 25px;
                 padding: 0 25px;
 
                 .point-color-add {
@@ -360,7 +357,6 @@ main {
 
     div.gallery {
         width: $width-wide;
-        // display: none;
 
         section.gallery-title {
             width: $width-wide;
@@ -417,10 +413,6 @@ main {
                 @include responsive(tablet-size) {
                     margin-bottom: 150px;
                 }
-
-                // @include responsive(pc-size) {
-                //     margin-bottom: 140px;
-                // }
 
                 hr {
                     width: 150px;
@@ -503,13 +495,11 @@ main {
                 width: 100%;
                 max-width: 1320px;
                 margin-bottom: 150px;
-                // height: 755px;
             }
 
             section.search-section {
                 width: $width-wide;
                 border-top: 1px solid #c4c4c4;
-                // border: 1px solid #c4c4c4;
 
                 ::-webkit-scrollbar {
                     width: 2px;  /* 스크롤바의 너비 */
@@ -524,10 +514,6 @@ main {
                 ::-webkit-scrollbar-track {
                     background: #fff;  /*스크롤바 뒷 배경 색상*/
                 }
-                
-                // ::-webkit-scrollbar : 스크롤바 영역에 대한 설정
-                // ::-webkit-scrollbar-thumb : 스크롤바 막대에 대한 설정
-                // ::-webkit-scrollbar-track  : 스크롤바 뒷 배경에 대한 설정
 
                 @include responsive(tablet-size) {
                     width: 500px;
@@ -680,7 +666,6 @@ main {
                     width: 100%;
                     border: 1px solid #c4c4c4;
                     border-left: none;
-                    // background-color: palegoldenrod;
                 }
 
                 iframe {

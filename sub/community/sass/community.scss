@@ -4,10 +4,8 @@
 
 body {
     -ms-overflow-style: none;
-    // padding-top: 60px;
 
     @include responsive(pc-size) {
-        // padding-top: 0;
         padding-left: 80px;
     }
 }
@@ -97,7 +95,6 @@ header {
 
                 &:first-child {
                     font-size: 18px;
-                    // transform: rotate(-90deg);
                     margin-top: 0;
 
                     a {
@@ -352,7 +349,6 @@ main > h1{
         position: absolute;
         top: 30%;
         width: 60%;
-        // margin-left: min(30%,410px);
 
     }
         
@@ -446,7 +442,6 @@ main > h1{
                 padding: 5px 25px;
                 color: $bg-color;
                 display: inline-block;
-                // margin: 5px 0 5px 0;
             }
             @include responsive(pc-size){
                 display: none;
@@ -936,28 +931,6 @@ main > h1{
                                 }
                             }   
                         }
-                        // @include responsive(pc-size){
-                        //     .model{
-                        //         display: flex;
-
-                        //         .file-wrap{
-                        //             a{
-                        //                 display: inline-block;
-                        //                 font-size: 0.9em;
-                        //                 text-align: center;
-                        //                 background-color: $point-color;
-                        //                 color: $bg-color;
-                        //                 padding: 3px 0;
-                        //                 width: 150px;
-                        //             }
-                        //             p{
-                        //                 margin-left: 20px;
-                        //             }
-
-                        //         }
-                                
-                        //     }
-                        // }
                         .detail{
                             display: block;
                             textarea{
@@ -998,10 +971,6 @@ main > h1{
             display: none;
         }
         .search-box2{
-            // position: absolute;
-            // right: 0;
-            // width: 19%;
-            // justify-content: space-between;
             justify-content: right;
             display: flex;
             label{

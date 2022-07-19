@@ -92,7 +92,6 @@ header {
 
                 &:first-child {
                     font-size: 18px;
-                    // transform: rotate(-90deg);
                     margin-top: 0;
 
                     a {
@@ -375,10 +374,7 @@ main {
         nav.content-menu {
             width: 100%;
             display: block;
-            // padding-top: 2px;
-            // margin: 0 auto;
             text-align: center;
-            // padding-left: 30px;
 
             @include responsive(tablet-size) {
                 padding-top: 88px;
