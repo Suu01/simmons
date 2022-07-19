@@ -42,4 +42,5 @@
 
 ***"해당 팀 프로젝트의 개인별 구현 페이지, 기여도는 개인 프로필 사이트에서 자세하게 확인하실 수 있습니다."***
 
-[사이트보기](http://sj19990823.dothome.co.kr/index.html, Simmons)
+[Simmons사이트보기](http://sj19990823.dothome.co.kr/index.html, Simmons)
+김수진 : [프로필사이트보기](http://www.suu823.com/, Sujin's Portfolio)
