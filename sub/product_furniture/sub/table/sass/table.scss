@@ -97,7 +97,6 @@ header {
 
                 &:first-child {
                     font-size: 18px;
-                    // transform: rotate(-90deg);
                     margin-top: 0;
 
                     a {
@@ -287,7 +286,6 @@ main {
         .right {
             width: 100%;
             margin-bottom: 30px;
-            // background-color: aqua;
 
             @include responsive(tablet-size) {
                 margin-top: 30px;
@@ -296,8 +294,6 @@ main {
                 float: right;
                 width: 32%;
                 padding-right: 15px;
-                // margin-left: 2%;
-                // background-color: aqua;
             }
 
             h1 {
@@ -476,12 +472,10 @@ main {
             .icon {
                 text-align: center;
                 width: 100%;
-                // background-color: pink;
                 display: flex;
                 justify-content: space-between;
 
                 @include responsive(pc-size) {
-                    // text-align: left;
                 }
 
                 button {
